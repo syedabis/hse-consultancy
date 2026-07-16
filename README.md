@@ -61,6 +61,18 @@ node tools/normalize.js about-us services contact-us
 #    nav rewrite and page-specific copy (gasco_content.py)
 python tools/rebrand.py
 python tools/gasco_content.py home-04 about-us services contact-us projects our-team
+
+# 5. /accreditation/ and the 6 /services/<slug>/ detail pages are bespoke
+#    (no template source to mirror) - built from services/body.html's
+#    already-processed header/footer, so run them before step 6
+python -c "import sys; sys.path.insert(0,'tools'); import gasco_content as g; g.build_accreditation_page(); [g.build_service_detail_page(s) for s in g.SERVICE_DETAILS]"
+
+# 6. strip the big photo breadcrumb banner from every non-home page, replacing
+#    it with a compact breadcrumb + heading + 2-line description - must run
+#    LAST, after step 5, or accreditation/service-detail pages would copy an
+#    already-stripped header from services and lose their own title/description
+python -c "import sys; sys.path.insert(0,'tools'); import gasco_content as g; g.strip_all_banners()"
+node tools/normalize.js about-us services contact-us projects our-team accreditation engineering-consultancy integrated-epc-services pipeline-construction operations-maintenance rental-compression-production outsource-warehousing
 ```
 
 Then add the route to `content/routes.json` (`"/about-us/": "about-us"`). Slugs
@@ -74,19 +86,34 @@ them in sync with `routes.json` and the `NAV`/`PAGE_MAP` tables in
 ## Pages
 
 `/` (home), `/about-us/`, `/services/`, `/contact-us/`,
-`/projects/` (Flagship Projects), `/our-team/` (Our Team).
+`/projects/` (Flagship Projects), `/our-team/` (Our Team),
+`/accreditation/` (Our Certifications), and 6 service detail pages under
+`/services/<slug>/` (one per division - `engineering-consultancy`,
+`integrated-epc-services`, `pipeline-construction`, `operations-maintenance`,
+`rental-compression-production`, `outsource-warehousing`), linked from the
+Services grid's "Learn more".
 
 Content is mapped from **gascoengineering.com.pk**. Demo-only template pages
-(price-plan, faqs, request-quote) were removed per the brief. The GEPL logo is
+(price-plan, faqs, request-quote) were removed per the brief. The GASCO logo is
 at `public/gasco/gepl-white.png`.
 
+Every page except Home used the BuildGo template's big full-bleed photo +
+breadcrumb banner. Client asked for it gone site-wide, replaced with a small
+breadcrumb line + heading + a real 2-line description of that page (matching
+the reference layout). Handled by `strip_breadcrumb_banner()` /
+`strip_all_banners()` in `tools/gasco_content.py` — run **last**, after
+`build_accreditation_page()`/`build_service_detail_page()`, since those two
+copy their header from `services/body.html` and expect the original banner
+format still intact at that point (see the ordering note in the function's
+docstring-comment).
+
 The 8 cards on `/projects/`, the 4-card image-accordion strip and the 3
-"Flagship Projects" teaser cards on Home now link out to GEPL's real project
+"Flagship Projects" teaser cards on Home now link out to GASCO's real project
 pages on gascoengineering.com.pk (`target="_blank"`) — the demo theme's
 `/portfolio/<slug>` detail pages and WordPress blog permalinks were never real
 routes here and 404'd. The two rotating "text slider" marquee widgets
 (Home + About Us) had the same dead-link problem; both now point to
-`/projects/` and show GEPL's 6 business divisions instead of the template's
+`/projects/` and show GASCO's 6 business divisions instead of the template's
 construction-industry words.
 
 ## Known placeholders (need real values)
@@ -94,4 +121,12 @@ construction-industry words.
 - Brand accent color is still the template amber `#FFBF43` (awaiting GASCO colors).
 - Home counters (6 divisions / 10+ projects / 5 pillars) and the skill-bar
   percentages are derived/placeholder figures — replace with real numbers.
-- Section/team/project **photos** are still the template's stock images.
+- Section/team/project **photos** are still the template's stock images
+  (Services page cards are placeholder stock photos too).
+- Home's "Our Certifications" section and the `/accreditation/` page use
+  GASCO's real certificate scans (ISO 9001:2015, ISO 14001:2015, ISO
+  45001:2018, PEC license) at `public/gasco/cert-*.jpg` (resized/compressed
+  for web). The original high-res scans (5-7MB each) are kept at
+  `_cert-originals/` - tracked in git (unlike `_mirror/`, these came from the
+  client and can't be regenerated) but outside `public/` so they aren't
+  deployed with the site.

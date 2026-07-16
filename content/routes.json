@@ -4,5 +4,12 @@
   "/services/": "services",
   "/contact-us/": "contact-us",
   "/projects/": "projects",
-  "/our-team/": "our-team"
+  "/our-team/": "our-team",
+  "/accreditation/": "accreditation",
+  "/services/engineering-consultancy/": "engineering-consultancy",
+  "/services/integrated-epc-services/": "integrated-epc-services",
+  "/services/pipeline-construction/": "pipeline-construction",
+  "/services/operations-maintenance/": "operations-maintenance",
+  "/services/rental-compression-production/": "rental-compression-production",
+  "/services/outsource-warehousing/": "outsource-warehousing"
 }
