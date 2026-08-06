@@ -677,11 +677,13 @@ body, #page, .site {
     }
 }
 
-/* History Animated Timeline */
+/* History Horizontal Animated Continuous Timeline */
 .gasco-history-animated-section {
     background: #FFFFFF;
-    padding: 95px 20px;
+    padding: 85px 0 95px;
     color: #1A1A1A;
+    overflow: hidden;
+    position: relative;
 }
 .gasco-history-container {
     max-width: 1050px;
@@ -690,7 +692,8 @@ body, #page, .site {
 .gasco-history-header {
     text-align: center;
     max-width: 750px;
-    margin: 0 auto 65px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
 }
 .gasco-history-header .pill-badge {
     display: inline-block;
@@ -703,6 +706,7 @@ body, #page, .site {
     letter-spacing: 1.2px;
     color: #555555;
     margin-bottom: 16px;
+    background: #FFFFFF;
 }
 .gasco-history-header h2 {
     font-size: 38px;
@@ -710,132 +714,156 @@ body, #page, .site {
     color: #1A1A1A;
     margin: 0;
 }
-.gasco-timeline-wrap {
+
+/* Horizontal Viewport & Continuous Track */
+.gasco-horizontal-timeline-viewport {
     position: relative;
-    padding: 20px 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0 20px;
 }
-.gasco-timeline-wrap::before {
+.gasco-horizontal-timeline-viewport::before,
+.gasco-horizontal-timeline-viewport::after {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%;
-    width: 3px;
+    width: 140px;
+    z-index: 10;
+    pointer-events: none;
+}
+.gasco-horizontal-timeline-viewport::before {
+    left: 0;
+    background: linear-gradient(to right, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.gasco-horizontal-timeline-viewport::after {
+    right: 0;
+    background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Horizontal Gold Line Axis */
+.timeline-horizontal-axis {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
+    height: 3px;
     background: #EAEAEA;
-    transform: translateX(-50%);
     z-index: 1;
 }
-.gasco-timeline-wrap::after {
+.timeline-horizontal-axis::after {
     content: '';
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 3px;
-    height: 120px;
-    background: linear-gradient(180deg, rgba(255, 191, 67, 0) 0%, #FFBF43 50%, rgba(255, 191, 67, 0) 100%);
-    transform: translateX(-50%);
-    z-index: 2;
-    animation: goldLinePulse 6s linear infinite;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 191, 67, 0) 0%, #FFBF43 50%, rgba(255, 191, 67, 0) 100%);
     filter: drop-shadow(0 0 6px #FFBF43);
 }
-@keyframes goldLinePulse {
-    0% { top: 0%; opacity: 0.2; }
-    50% { opacity: 1; }
-    100% { top: 100%; opacity: 0.2; }
-}
-.gasco-timeline-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 30px;
-    margin-bottom: 50px;
+
+/* Continuous Marquee Track */
+.gasco-horizontal-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: gascoHorizontalMarquee 50s linear infinite;
+    z-index: 2;
     position: relative;
+}
+.gasco-horizontal-marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes gascoHorizontalMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.gasco-horizontal-timeline-list {
+    display: flex;
+    gap: 32px;
+    padding: 0 16px;
+}
+
+/* Timeline Card Item */
+.gasco-h-timeline-item {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 320px;
+    flex-shrink: 0;
+    position: relative;
 }
 
-/* Force both elements into Row 1 */
-.timeline-year-box,
-.timeline-card-box {
-    grid-row: 1;
+.h-timeline-year {
+    font-size: 26px;
+    font-weight: 800;
+    color: #FFBF43;
+    background: linear-gradient(135deg, #FFBF43 0%, #D49B27 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
 }
 
-/* Odd Items (1, 3, 5...): Card on Left (Col 1), Year on Right (Col 2) */
-.gasco-timeline-item:nth-child(odd) .timeline-card-box {
-    grid-column: 1;
-    grid-row: 1;
-    text-align: left;
-}
-.gasco-timeline-item:nth-child(odd) .timeline-year-box {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left;
-    padding-left: 10px;
-}
-
-/* Even Items (2, 4, 6...): Year on Left (Col 1), Card on Right (Col 2) */
-.gasco-timeline-item:nth-child(even) .timeline-year-box {
-    grid-column: 1;
-    grid-row: 1;
-    text-align: right;
-    padding-right: 10px;
-}
-.gasco-timeline-item:nth-child(even) .timeline-card-box {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left;
-}
-
-.timeline-dot-node {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.h-timeline-dot {
     width: 18px;
     height: 18px;
     background: #FFBF43;
     border: 4px solid #FFFFFF;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(255, 191, 67, 0.25);
+    box-shadow: 0 0 0 3px rgba(255, 191, 67, 0.3);
     z-index: 3;
+    margin-bottom: 18px;
     transition: all 0.3s ease;
-    animation: dotPulse 3s infinite alternate;
 }
-@keyframes dotPulse {
-    0% { box-shadow: 0 0 0 3px rgba(255, 191, 67, 0.25); }
-    100% { box-shadow: 0 0 0 8px rgba(255, 191, 67, 0.4); }
+.gasco-h-timeline-item:hover .h-timeline-dot {
+    transform: scale(1.25);
+    box-shadow: 0 0 0 6px rgba(255, 191, 67, 0.5);
+    background: #D49B27;
 }
-.timeline-year-box span {
-    font-size: 32px;
-    font-weight: 800;
-    color: #FFBF43;
-    background: linear-gradient(135deg, #FFBF43 0%, #D49B27 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.timeline-card-box {
+
+.h-timeline-card {
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
+    border-top: 3px solid #FFBF43;
     border-radius: 14px;
-    padding: 22px 26px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+    padding: 22px 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
     transition: all 0.35s ease;
+    text-align: left;
 }
-.gasco-timeline-item:hover .timeline-card-box {
-    transform: translateY(-4px);
+.gasco-h-timeline-item:hover .h-timeline-card {
+    transform: translateY(-6px);
     border-color: #FFBF43;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.09);
 }
-.timeline-card-box h4 {
-    font-size: 18px;
+.h-timeline-card h4 {
+    font-size: 16px;
     font-weight: 700;
     color: #1A1A1A;
     margin: 0 0 8px 0;
+    line-height: 1.35;
 }
-.timeline-card-box p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #555555;
+.h-timeline-card p {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #555855;
     margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 @media (max-width: 992px) {
@@ -844,13 +872,10 @@ body, #page, .site {
     .gasco-split-subcard:first-child { border-right: none; border-bottom: 1px solid #EAEAEA; padding-bottom: 20px; }
     .gasco-strategy-4cards-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 20px; }
     .gasco-strategy-card-item:not(:last-child)::after { display: none; }
-    .gasco-timeline-wrap::before, .gasco-timeline-wrap::after, .timeline-dot-node { left: 25px; }
-    .gasco-timeline-item { grid-template-columns: 1fr; padding-left: 55px; gap: 10px; }
-    .gasco-timeline-item:nth-child(odd) .timeline-card-box, .gasco-timeline-item:nth-child(even) .timeline-card-box { grid-column: 1; text-align: left; }
-    .gasco-timeline-item:nth-child(odd) .timeline-year-box, .gasco-timeline-item:nth-child(even) .timeline-year-box { grid-column: 1; text-align: left; margin-bottom: 5px; }
 }
 @media (max-width: 576px) {
     .gasco-strategy-4cards-grid { grid-template-columns: 1fr; }
+    .gasco-h-timeline-item { width: 280px; }
 }
 </style>
 
@@ -1244,132 +1269,263 @@ body, #page, .site {
 </section>
 
 
-<!-- Section 5: History & Milestones Timeline -->
+<!-- Section 5: History & Milestones Horizontal Continuous Timeline -->
 <section class="gasco-history-animated-section">
     <div class="gasco-history-container">
         <div class="gasco-history-header">
             <span class="pill-badge">OUR JOURNEY &amp; MILESTONES</span>
             <h2>50 Years of Engineering Legacy</h2>
         </div>
-        <div class="gasco-timeline-wrap">
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2024</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Mining Construction Services</h4>
-                    <p>The Reko Diq Copper-Gold Project</p>
+    </div>
+
+    <div class="gasco-horizontal-timeline-viewport">
+        <div class="timeline-horizontal-axis"></div>
+        <div class="gasco-horizontal-marquee-track">
+            <!-- First Set -->
+            <div class="gasco-horizontal-timeline-list">
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2024</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Mining Construction Services</h4>
+                        <p>The Reko Diq Copper-Gold Project</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2021</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Condensate Handling Facility</h4>
+                        <p>Started Provision of Complete Condensate Handling Facility on BOM Basis</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2018</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Rental Processing &amp; Production Facilities</h4>
+                        <p>Started Provision of Rental Processing &amp; Production Facilities in Oil &amp; Gas Sector</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2016</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Flagship Projects</h4>
+                        <p>Started Construction of National Flagship Projects – 42” x 80 km RLNG Pipeline</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2014</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>EPCC Contracts</h4>
+                        <p>Gas Plants, Gas Compression Stations, Plant Facilities, Booster Stations</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2009</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Civil &amp; Earthworks</h4>
+                        <p>Started Civil &amp; Earthworks in Oil &amp; Gas Sector</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2008</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Compressor Re-Staging &amp; MEIC Expansion</h4>
+                        <p>Performed in-house &amp; on-site compressor re-staging and expanded E&amp;C services to include MEIC for gas fields.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2007</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Turnkey Compression Solutions</h4>
+                        <p>Started providing complete turnkey compression solutions including EPCC of compression stations.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2003</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>First Pakistani Rental Compression Provider</h4>
+                        <p>First Pakistani Private Company to offer Compression on Rental Basis along with operations &amp; maintenance.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1998</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>First Prime EPCC Contract</h4>
+                        <p>Received first contract as the prime EPCC body.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1996</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>First EPC Contract</h4>
+                        <p>Received first EPC contract with international principals.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1995</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>EPC Contractor Journey</h4>
+                        <p>Gasco embarked on its EPC contractor journey.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1993</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Incorporation</h4>
+                        <p>Transformed into Gasco Engineering (Pvt) Limited.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1990</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Establishment in Karachi</h4>
+                        <p>Established as an equipment supplier and indenter in Karachi, Pakistan.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1975</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Indenting &amp; Imports</h4>
+                        <p>Started Oil &amp; Gas Indenting &amp; Imports.</p>
+                    </div>
                 </div>
             </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2021</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Condensate Handling Facility</h4>
-                    <p>Started Provision of Complete Condensate Handling Facility on BOM Basis</p>
+
+            <!-- Duplicate Set for Seamless Continuous Infinite Scroll -->
+            <div class="gasco-horizontal-timeline-list" aria-hidden="true">
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2024</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Mining Construction Services</h4>
+                        <p>The Reko Diq Copper-Gold Project</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2018</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Rental Processing &amp; Production Facilities</h4>
-                    <p>Started Provision of Rental Processing &amp; Production Facilities in Oil &amp; Gas Sector</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2021</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Condensate Handling Facility</h4>
+                        <p>Started Provision of Complete Condensate Handling Facility on BOM Basis</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2016</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Flagship Projects</h4>
-                    <p>Started Construction of National Flagship Projects – 42” x 80 km RLNG Pipeline</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2018</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Rental Processing &amp; Production Facilities</h4>
+                        <p>Started Provision of Rental Processing &amp; Production Facilities in Oil &amp; Gas Sector</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2014</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>EPCC Contracts</h4>
-                    <p>Gas Plants, Gas Compression Stations, Plant Facilities, Booster Stations</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2016</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Flagship Projects</h4>
+                        <p>Started Construction of National Flagship Projects – 42” x 80 km RLNG Pipeline</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2009</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Civil &amp; Earthworks</h4>
-                    <p>Started Civil &amp; Earthworks in Oil &amp; Gas Sector</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2014</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>EPCC Contracts</h4>
+                        <p>Gas Plants, Gas Compression Stations, Plant Facilities, Booster Stations</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2008</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Compressor Re-Staging &amp; MEIC Expansion</h4>
-                    <p>Gasco performed in-house &amp; on-site compressor re-staging / re-cylindering with in-house capability of engine/compressor top ends, major overhauls &amp; troubleshooting. Gasco reorganised its structure to become a pipeline construction contractor, expanding E&amp;C services to include MEIC (mechanical, electrical, instrumentation &amp; civil) for gas fields.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2009</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Civil &amp; Earthworks</h4>
+                        <p>Started Civil &amp; Earthworks in Oil &amp; Gas Sector</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2007</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Turnkey Compression Solutions</h4>
-                    <p>Gasco started to provide complete turnkey compression solutions including engineering, supply, procurement, construction &amp; commissioning of complete compression stations.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2008</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Compressor Re-Staging &amp; MEIC Expansion</h4>
+                        <p>Performed in-house &amp; on-site compressor re-staging and expanded E&amp;C services to include MEIC for gas fields.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>2003</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>First Pakistani Rental Compression Provider</h4>
-                    <p>Gasco became the First Pakistani Private Company to offer Compression on the Rental Basis along with the operations &amp; maintenance of the compressor packages. This also marked the start of the Rental Compression niche for Gasco.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2007</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Turnkey Compression Solutions</h4>
+                        <p>Started providing complete turnkey compression solutions including EPCC of compression stations.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>1998</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>First Prime EPCC Contract</h4>
-                    <p>Gasco as the prime EPCC (engineering, procurement, construction &amp; commissioning) body received its first contract.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">2003</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>First Pakistani Rental Compression Provider</h4>
+                        <p>First Pakistani Private Company to offer Compression on Rental Basis along with operations &amp; maintenance.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>1996</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>First EPC Contract</h4>
-                    <p>Gasco with its principals received the first EPC (engineering, procurement, construction) contract.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1998</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>First Prime EPCC Contract</h4>
+                        <p>Received first contract as the prime EPCC body.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>1995</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>EPC Contractor Journey</h4>
-                    <p>Gasco embarked on its EPC contractor journey.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1996</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>First EPC Contract</h4>
+                        <p>Received first EPC contract with international principals.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>1993</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Incorporation</h4>
-                    <p>Gasco Engineering Services was transformed into Gasco Engineering (Pvt) Limited.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1995</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>EPC Contractor Journey</h4>
+                        <p>Gasco embarked on its EPC contractor journey.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>1990</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Establishment in Karachi</h4>
-                    <p>Gasco Engineering Services was established as an indenter – equipment supplier in Karachi, Pakistan.</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1993</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Incorporation</h4>
+                        <p>Transformed into Gasco Engineering (Pvt) Limited.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gasco-timeline-item">
-                <div class="timeline-year-box"><span>1975</span></div>
-                <div class="timeline-dot-node"></div>
-                <div class="timeline-card-box">
-                    <h4>Indenting &amp; Imports</h4>
-                    <p>Started Oil &amp; Gas Indenting &amp; Imports</p>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1990</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Establishment in Karachi</h4>
+                        <p>Established as an equipment supplier and indenter in Karachi, Pakistan.</p>
+                    </div>
+                </div>
+                <div class="gasco-h-timeline-item">
+                    <div class="h-timeline-year">1975</div>
+                    <div class="h-timeline-dot"></div>
+                    <div class="h-timeline-card">
+                        <h4>Indenting &amp; Imports</h4>
+                        <p>Started Oil &amp; Gas Indenting &amp; Imports.</p>
+                    </div>
                 </div>
             </div>
         </div>
