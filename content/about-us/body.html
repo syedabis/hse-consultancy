@@ -1,3 +1,105 @@
+
+<style id="gasco-bulletproof-overrides">
+/* Bulletproof Visibility & Reset Overrides for About Us Page */
+body, #page, .site {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #1A1A1A !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+/* Force all animated/invisible elements to be 100% visible */
+*, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+}
+.elementor-invisible, [data-settings*="animation"], [class*="animated"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* Header Fixes */
+.custom-header-builder {
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06) !important;
+    position: relative !important;
+    z-index: 9999 !important;
+}
+.custom-header-builder .header_mega-menu .menu-link {
+    color: #1A1A1A !important;
+    font-weight: 600 !important;
+}
+.custom-header-builder .flexitype-search-icon {
+    color: #1A1A1A !important;
+}
+.custom-header-builder .flexitype-search-icon i {
+    color: #1A1A1A !important;
+}
+
+/* Strip unwanted Elementor background image leaks */
+.elementor-section, .elementor-top-section, .elementor-inner-section, .e-con {
+    background-image: none !important;
+}
+
+/* Ensure clean contrast for Vision & Values section */
+.gasco-vv-content-col {
+    background: #FFFFFF !important;
+    color: #1A1A1A !important;
+}
+.gasco-vv-content-col p, .gasco-vv-content-col li span {
+    color: #4A5568 !important;
+}
+
+/* Ensure CTA Banner is fully visible & crisp */
+.gasco-cta-banner-section {
+    background: #F7F5EE !important;
+    border-top: 1px solid #EAE6DC !important;
+    border-bottom: 1px solid #EAE6DC !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+.gasco-cta-banner-left h2 {
+    color: #1A1A1A !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.gasco-cta-banner-btn {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-flex !important;
+}
+
+/* Section Headings Contrast */
+.gasco-strategy-heading-row h2, .gasco-people-heading-row h2 {
+    color: #1A1A1A !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.gasco-strategy-badge, .gasco-people-badge {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+</style>
+
+
+<style>
+/* Reset and Global Overrides for About Us */
+body, #page, .site {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+}
+.site {
+    position: relative;
+    overflow-x: hidden;
+}
+.custom-header-builder {
+    position: relative;
+    z-index: 999;
+}
+</style>
+
 <!-- site content start -->
 	<div>
 
@@ -21,17 +123,15 @@
 		
 	
 	
-	<div id="page" class="site &lt;br /&gt;
-&lt;b&gt;Warning&lt;/b&gt;:  Undefined variable $vertical_header in &lt;b&gt;/home/u827988815/domains/nextwpcook.com/public_html/buildgo/wp-content/plugins/flexitype-pro/modules/header-footer/themes/default/fhf-header.php&lt;/b&gt; on line &lt;b&gt;39&lt;/b&gt;&lt;br /&gt;
-">
-		<div class="custom-header-builder flexitype-transparent-header">
+	<div id="page" class="site ">
+		<div class="custom-header-builder">
 					<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-					<div data-elementor-type="wp-post" data-elementor-id="42" class="elementor elementor-42">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-be1d27f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be1d27f" data-element_type="section" data-e-type="section">
+					<div data-elementor-type="wp-post" data-elementor-id="1275" class="elementor elementor-1275">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-1bff562 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1bff562" data-element_type="section" data-e-type="section">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-84d4495" data-id="84d4495" data-element_type="column" data-e-type="column">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-99b0bc4" data-id="99b0bc4" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-1c8d344 elementor-widget elementor-widget-flexitype-logo" data-id="1c8d344" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-logo.default">
+						<div class="elementor-element elementor-element-d6ff4ea elementor-widget__width-auto elementor-widget elementor-widget-flexitype-logo" data-id="d6ff4ea" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-logo.default">
 				<div class="elementor-widget-container">
 					        <div class="flexitype-builder-logo">
                             <a href="/" class="custom-logo-link">
@@ -42,25 +142,25 @@
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9caab00" data-id="9caab00" data-element_type="column" data-e-type="column">
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a9618a7" data-id="a9618a7" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-71e3097 elementor-widget-tablet__width-auto responsive elementor-widget elementor-widget-flexitype-megamenu" data-id="71e3097" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-megamenu.default">
+						<div class="elementor-element elementor-element-b57196b elementor-widget-tablet__width-auto responsive elementor-widget__width-auto elementor-widget elementor-widget-flexitype-megamenu" data-id="b57196b" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-megamenu.default">
 				<div class="elementor-widget-container">
 					            <div class="header_mega mega-menu-main">
                 <div class="header_mega-menu">
                     <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" class="menu-link">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us/" class="menu-link">About Us</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/" class="menu-link">Services</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projects/" class="menu-link">Projects</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/our-team/" class="menu-link">Our Team</a></li></ul></div>                </div>                   
-                <div class="header_nav-menu-responsive nav_menu_popup-780">
+                <div class="header_nav-menu-responsive nav_menu_popup-990">
                     <div class="nav_menu_bar">
                         <i class="flaticon flaticon-menu-3"></i>
                     </div>
                     <div class="nav_menu_bar-popup">
                         <div class="nav_menu_bar-popup-top">
                                                         <div class="nav_menu_bar-popup-top-logo">
-                                <a href="/"><img src="/gasco/gepl-black.png" alt="Mobile Logo"></a>
+                                <a href="/"><img src="/gasco/gepl-white.png" alt="Mobile Logo"></a>
                             </div>
                                                         <div class="nav_menu_bar-popup-close"><i class="fal fa-times"></i></div>
                         </div>
-                        <div class="vertical-menu vertical_menu-780">
+                        <div class="vertical-menu vertical_menu-990">
                             <div class="menu-main-menu-container"><ul id="mobilemenu" class="d-block"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" class="menu-link">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us/" class="menu-link">About Us</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/" class="menu-link">Services</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projects/" class="menu-link">Projects</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/our-team/" class="menu-link">Our Team</a></li></ul></div>                        </div>
                     </div>
                 </div>
@@ -70,9 +170,9 @@
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f779515 elementor-hidden-tablet elementor-hidden-mobile" data-id="f779515" data-element_type="column" data-e-type="column">
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9f45500 elementor-hidden-tablet elementor-hidden-mobile" data-id="9f45500" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-46e3b6e elementor-widget__width-auto elementor-widget elementor-widget-flexitype-search" data-id="46e3b6e" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-search.default">
+						<div class="elementor-element elementor-element-211d39e elementor-widget__width-auto elementor-widget elementor-widget-flexitype-search" data-id="211d39e" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-search.default">
 				<div class="elementor-widget-container">
 					            <div class="flexitype-search">
                 <div class="search">
@@ -90,144 +190,17 @@
             </div>
         				</div>
 				</div>
-				<div class="elementor-element elementor-element-e04460a elementor-widget__width-auto xxl-display-n elementor-widget elementor-widget-flexitype-creative-button" data-id="e04460a" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-creative-button.default">
+				<div class="elementor-element elementor-element-e1f7b0b elementor-widget__width-auto xxl-display-n elementor-widget elementor-widget-flexitype-creative-button" data-id="e1f7b0b" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-creative-button.default">
 				<div class="elementor-widget-container">
 					        <div class="flexitype-btn">
-            <a class="flexitype-btn-wrapper button-isi  right" href="/contact-us" data-text="Get Started">
-                <span>Get Started</span>
+            <a class="flexitype-btn-wrapper button-isi  right" href="/contact-us" data-text="Contact Us">
+                <span>Contact Us</span>
                                     <i class="flaticon flaticon-right-up"></i>
                             </a>
         </div>
         				</div>
 				</div>
-				<div class="elementor-element elementor-element-ed7fa89 elementor-widget__width-initial elementor-widget elementor-widget-flexitype-offcanvas" data-id="ed7fa89" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-offcanvas.default">
-				<div class="elementor-widget-container">
-					            <div class="offcanvas-flexitype right_left">
-                <div class="flexitype-offcanvas-popup-icon">
-                    <i class="flaticon flaticon-menu-6"></i>
-                </div>
-                <div class="flexitype-offcanvas-popup">
-                    <div class="sidebar-close-btn"><i class="fal fa-times"></i></div>
-                    <style>.elementor-1010 .elementor-element.elementor-element-2b8e5e3:not(.elementor-motion-effects-element-type-background), .elementor-1010 .elementor-element.elementor-element-2b8e5e3 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-secondary );}.elementor-1010 .elementor-element.elementor-element-2b8e5e3{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-1010 .elementor-element.elementor-element-2b8e5e3 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1010 .elementor-element.elementor-element-2b8e5e3 a:hover{color:#FFBF43;}.elementor-1010 .elementor-element.elementor-element-84ec4c2{text-align:start;}.elementor-1010 .elementor-element.elementor-element-84ec4c2 img{width:170px;}.elementor-1010 .elementor-element.elementor-element-c6c1b3d > .elementor-widget-container{margin:10px 0px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-c6c1b3d .elementor-heading-title{font-family:"DM Sans", Sans-serif;font-size:18px;line-height:28px;color:var( --e-global-color-dcfb5ad );}.elementor-1010 .elementor-element.elementor-element-e9aa831{--divider-border-style:solid;--divider-color:#474644;--divider-border-width:1px;}.elementor-1010 .elementor-element.elementor-element-e9aa831 .elementor-divider-separator{width:100%;}.elementor-1010 .elementor-element.elementor-element-e9aa831 .elementor-divider{padding-block-start:15px;padding-block-end:15px;}.elementor-1010 .elementor-element.elementor-element-4a94071 > .elementor-widget-container{margin:0px 0px 5px 0px;}.elementor-1010 .elementor-element.elementor-element-4a94071 .elementor-heading-title{font-size:28px;line-height:36px;color:var( --e-global-color-592bf40 );}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item{display:flex;flex-direction:flex;align-items:start;justify-content:start;text-align:left;box-shadow:0px 0px 0px 0px rgba(0,0,0,0.5);border-radius:0px 0px 0px 0px;padding:0px 0px 0px 0px;transition:0.4s;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-content > a{justify-content:left;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-content{justify-content:left;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-content .title{align-items:left;flex-direction:column;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-overlay{border-radius:0px 0px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-icon i{color:var( --e-global-color-primary );font-size:40px;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-icon svg path{fill:var( --e-global-color-primary );}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-icon svg{max-width:40px;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-icon{width:50px;height:50px;min-width:50px;margin:0px 25px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-content h5{font-size:22px;line-height:32px;color:var( --e-global-color-592bf40 );}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-content h5 a{color:var( --e-global-color-592bf40 );}.elementor-1010 .elementor-element.elementor-element-60998cc .icon__box-item-content p{font-size:18px;line-height:26px;color:var( --e-global-color-dcfb5ad );margin:0px 0px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-a332098 > .elementor-widget-container{margin:15px 0px 15px 0px;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item{display:flex;flex-direction:flex;align-items:start;justify-content:start;text-align:left;box-shadow:0px 0px 0px 0px rgba(0,0,0,0.5);border-radius:0px 0px 0px 0px;padding:0px 0px 0px 0px;transition:0.4s;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-content > a{justify-content:left;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-content{justify-content:left;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-content .title{align-items:left;flex-direction:column;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-overlay{border-radius:0px 0px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-icon i{color:var( --e-global-color-primary );font-size:40px;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-icon svg path{fill:var( --e-global-color-primary );}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-icon svg{max-width:40px;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-icon{width:50px;height:50px;min-width:50px;margin:0px 25px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-content h5{font-size:22px;line-height:32px;color:var( --e-global-color-592bf40 );}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-content h5 a{color:var( --e-global-color-592bf40 );}.elementor-1010 .elementor-element.elementor-element-a332098 .icon__box-item-content p{font-size:18px;line-height:26px;color:var( --e-global-color-dcfb5ad );margin:0px 0px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item{display:flex;flex-direction:flex;align-items:start;justify-content:start;text-align:left;box-shadow:0px 0px 0px 0px rgba(0,0,0,0.5);border-radius:0px 0px 0px 0px;padding:0px 0px 0px 0px;transition:0.4s;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-content > a{justify-content:left;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-content{justify-content:left;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-content .title{align-items:left;flex-direction:column;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-overlay{border-radius:0px 0px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-icon i{color:var( --e-global-color-primary );font-size:40px;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-icon svg path{fill:var( --e-global-color-primary );}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-icon svg{max-width:40px;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-icon{width:50px;height:50px;min-width:50px;margin:0px 25px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-content h5{font-size:22px;line-height:32px;color:var( --e-global-color-592bf40 );}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-content h5 a{color:var( --e-global-color-592bf40 );}.elementor-1010 .elementor-element.elementor-element-625b386 .icon__box-item-content p{font-size:18px;line-height:26px;color:var( --e-global-color-dcfb5ad );margin:0px 0px 0px 0px;}.elementor-1010 .elementor-element.elementor-element-06a847f{--divider-border-style:solid;--divider-color:#474644;--divider-border-width:1px;}.elementor-1010 .elementor-element.elementor-element-06a847f .elementor-divider-separator{width:100%;}.elementor-1010 .elementor-element.elementor-element-06a847f .elementor-divider{padding-block-start:15px;padding-block-end:15px;}.elementor-1010 .elementor-element.elementor-element-69d8413{--grid-template-columns:repeat(0, auto);--icon-size:14px;--grid-column-gap:14px;--grid-row-gap:0px;}.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-social-icon{background-color:#313131;--icon-padding:15px;}.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-social-icon i{color:#CCCCCC;}.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-social-icon svg{fill:#CCCCCC;}.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-icon{border-radius:50px 50px 50px 50px;}.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-social-icon:hover{background-color:var( --e-global-color-primary );}.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-social-icon:hover i{color:var( --e-global-color-secondary );}.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-social-icon:hover svg{fill:var( --e-global-color-secondary );}@media(max-width:767px){.elementor-1010 .elementor-element.elementor-element-69d8413 .elementor-widget-container{text-align:center;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="1010" class="elementor elementor-1010">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-2b8e5e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b8e5e3" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a7047cf" data-id="a7047cf" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-84ec4c2 elementor-widget elementor-widget-image" data-id="84ec4c2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="392" height="80" src="/gasco/gepl-white.png" class="attachment-full size-full wp-image-644" alt="">															</div>
-				</div>
-				<div class="elementor-element elementor-element-c6c1b3d elementor-widget elementor-widget-heading" data-id="c6c1b3d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default">Delivering integrated engineering, EPC, pipeline construction and O&amp;M services to Pakistan's oil &amp; gas industry.</p>				</div>
-				</div>
-				<div class="elementor-element elementor-element-e9aa831 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="e9aa831" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-4a94071 elementor-widget elementor-widget-heading" data-id="4a94071" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Address</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-60998cc elementor-widget elementor-widget-flexitype-icon-box" data-id="60998cc" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-phone"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Phone:                        </h5>
-                                                                <p><a href="tel:+92 21 34320635-36">+92 21 34320635-36</a></p>
-                                    </div>
-                            </div>
-        </div>
-
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-a332098 elementor-widget elementor-widget-flexitype-icon-box" data-id="a332098" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-email-3"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Email Address:                        </h5>
-                                                                <p><a href="mailto:info@gascoengineering.com.pk">info@gascoengineering.com.pk</a></p>
-                                    </div>
-                            </div>
-        </div>
-
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-625b386 elementor-widget elementor-widget-flexitype-icon-box" data-id="625b386" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-location-1"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Location:                        </h5>
-                                                                <p><a href="https://www.google.com/maps">501 Amber Estate, Shahra-e-Faisal, Karachi 75350, Pakistan</a></p>
-                                    </div>
-                            </div>
-        </div>
-
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-06a847f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="06a847f" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-69d8413 e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="69d8413" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-f0b04a9" href="https://www.facebook.com/" target="_blank">
-						<span class="elementor-screen-only">Facebook-f</span>
-						<i aria-hidden="true" class="fab fa-facebook-f"></i>					</a>
-				</span>
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-0d28f7e" href="https://x.com/" target="_blank">
-						<span class="elementor-screen-only">X-twitter</span>
-						<i aria-hidden="true" class="fab fa-x-twitter"></i>					</a>
-				</span>
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-3984a38" href="https://www.instagram.com/" target="_blank">
-						<span class="elementor-screen-only">Instagram</span>
-						<i aria-hidden="true" class="fab fa-instagram"></i>					</a>
-				</span>
-							<span class="elementor-grid-item" role="listitem">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-a513edd" href="https://www.linkedin.com/" target="_blank">
-						<span class="elementor-screen-only">Linkedin-in</span>
-						<i aria-hidden="true" class="fab fa-linkedin-in"></i>					</a>
-				</span>
-					</div>
-						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-		                </div>
-                <div class="offcanvas-overlay"></div>
-            </div>
-        				</div>
-				</div>
+				
 					</div>
 		</div>
 					</div>
@@ -235,148 +208,1154 @@
 				</div>
 				</header>
 
-			</div><div class="site-all-content">
-<main id="primary" class="site-main">
+			</div>
 
-
-		<div data-elementor-type="wp-post" data-elementor-id="490" class="elementor elementor-490">
-						
 <style>
-/* the header was designed to float over a dark hero photo (white nav text,
-   transparent background) - every page that photo just got removed from
-   needs that text switched to a dark color or it's invisible on white */
-.custom-header-builder .header_mega-menu ul li.menu-item > .menu-link,
-.custom-header-builder .header_mega-menu ul li.menu-item > .menu-link::before,
-.custom-header-builder .flexitype-search-icon i,
-.custom-header-builder .flexitype-offcanvas-popup-icon i {color:#1A1A1A !important;}
-.custom-header-builder .header_mega-menu ul li.menu-item:hover > .menu-link {color:#FFBF43 !important;}
-.gasco-page-header{max-width:1340px;margin:0 auto;padding:146px 20px 8px;}
-.gasco-page-header .meta ul{list-style:none;display:flex;gap:6px;padding:0;margin:0 0 10px;font-size:13px;opacity:.6;}
-.gasco-page-header .meta ul li.separator{opacity:.5;}
-.gasco-page-header .meta ul a{color:inherit;text-decoration:none;}
-.gasco-page-header .meta ul .current{color:#FFBF43;}
-.gasco-page-header h1{margin:0 0 10px;}
-.gasco-page-header p{max-width:640px;opacity:.75;line-height:1.55;margin:0;}
+/* Global Modern About Us Styles matching Homepage Light Aesthetic */
+.gasco-about-hero {
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.78) 0%, rgba(17, 17, 17, 0.88) 100%), url('/pictures/Dhok%20Sultan%20-%20pg%2033.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 160px 20px 80px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.gasco-about-hero .hero-badge {
+    display: inline-block;
+    background: rgba(255, 191, 67, 0.18);
+    border: 1px solid #FFBF43;
+    color: #FFBF43;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 18px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+.gasco-about-hero h1 {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin: 0 0 16px;
+    letter-spacing: -0.5px;
+}
+.gasco-about-hero p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #E5E5E5;
+    max-width: 780px;
+    margin: 0 auto 25px;
+}
+.gasco-about-hero .meta ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #CCCCCC;
+}
+.gasco-about-hero .meta ul a { color: #CCCCCC; text-decoration: none; }
+.gasco-about-hero .meta ul .current { color: #FFBF43; font-weight: 600; }
+
+/* 2-Column Standard Screenshot Layout (Founder) */
+.gasco-split-layout-section {
+    background: #FFFFFF;
+    padding: 85px 20px;
+    color: #1A1A1A;
+    font-family: inherit;
+}
+.gasco-split-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gasco-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+.gasco-split-left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.gasco-split-img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.gasco-split-subcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    padding-top: 5px;
+}
+.gasco-split-subcard {
+    text-align: center;
+    padding: 10px 15px;
+}
+.gasco-split-subcard:first-child {
+    border-right: 1px solid #EAEAEA;
+}
+.gasco-split-subcard .subcard-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 12px;
+    background: rgba(255, 191, 67, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D49B27;
+    font-size: 20px;
+}
+.gasco-split-subcard h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 6px 0;
+}
+.gasco-split-subcard .role-badge {
+    font-size: 11px;
+    font-weight: 700;
+    color: #D49B27;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+.gasco-split-subcard p {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #666666;
+    margin: 0;
+}
+.gasco-split-right-col {
+    padding-top: 10px;
+}
+.gasco-split-pill {
+    display: inline-block;
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+    padding: 5px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #555555;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+}
+.gasco-split-right-col h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.22;
+    color: #1A1A1A;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.5px;
+}
+.gasco-split-right-col .text-content p {
+    font-size: 15px;
+    line-height: 1.68;
+    color: #555555;
+    margin: 0 0 16px 0;
+}
+.gasco-split-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #FFBF43;
+    color: #1A1A1A;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 191, 67, 0.3);
+    margin-top: 15px;
+}
+.gasco-split-btn:hover {
+    background: #e6a935;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(255, 191, 67, 0.4);
+    color: #1A1A1A;
+}
+
+/* Vision & Values Refined Section */
+.gasco-vision-values-section {
+    background: #FAFAFA;
+    padding: 70px 20px 25px;
+    color: #1A1A1A;
+}
+.gasco-vv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gasco-vv-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.gasco-vv-header .line {
+    flex: 1;
+    height: 1px;
+    background: #E0E0E0;
+    max-width: 250px;
+}
+.gasco-vv-header h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+.gasco-vv-tabs-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.gasco-vv-segmented-tabs {
+    display: inline-flex;
+    background: #EFEFEF;
+    padding: 6px;
+    border-radius: 35px;
+    gap: 6px;
+}
+.gasco-vv-tab-btn {
+    background: transparent;
+    border: none;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 32px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.gasco-vv-tab-btn.active {
+    background: #FFBF43;
+    color: #1A1A1A;
+    box-shadow: 0 4px 15px rgba(255, 191, 67, 0.4);
+}
+.gasco-vv-card-container {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+.gasco-vv-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 45px;
+    align-items: center;
+}
+.gasco-vv-image-wrap img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.gasco-vv-pane {
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+.gasco-vv-pane.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.gasco-vv-pane p.main-desc {
+    font-size: 17px;
+    line-height: 1.65;
+    color: #1A1A1A;
+    font-weight: 500;
+    margin: 0 0 22px 0;
+}
+.gasco-vv-pane h4.sub-heading {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 16px 0;
+}
+.gasco-vv-pane ul.vv-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.gasco-vv-pane ul.vv-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 12px;
+}
+.gasco-vv-pane ul.vv-list li .check-icon {
+    width: 22px;
+    height: 22px;
+    background: rgba(255, 191, 67, 0.2);
+    border-radius: 50%;
+    color: #D49B27;
+    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-weight: 800;
+}
+
+/* Full Width 4-Card Business Strategy Section */
+.gasco-strategy-fullwidth-section {
+    background: #F9F9F9;
+    padding: 30px 20px 90px;
+    color: #1A1A1A;
+    font-family: inherit;
+}
+.gasco-strategy-fullwidth-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gasco-strategy-top-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.gasco-strategy-top-left img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.gasco-strategy-top-right .pill-badge {
+    display: inline-block;
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+    padding: 5px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #555555;
+    margin-bottom: 18px;
+    background: #FFFFFF;
+}
+.gasco-strategy-top-right h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.22;
+    color: #1A1A1A;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.5px;
+}
+.gasco-strategy-top-right p {
+    font-size: 15px;
+    line-height: 1.68;
+    color: #555555;
+    margin: 0 0 16px 0;
+}
+
+/* Bottom Full-Width 4-Cards Grid (Sleek Dark High Contrast Aesthetic) */
+.gasco-strategy-4cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    background: #111111;
+    border: 1px solid #2B2B2B;
+    border-radius: 18px;
+    padding: 35px 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.gasco-strategy-card-item {
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+.gasco-strategy-card-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15%;
+    bottom: 15%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.12);
+}
+.gasco-strategy-card-item .card-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 16px;
+    background: rgba(255, 191, 67, 0.18);
+    border: 1px solid rgba(255, 191, 67, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFBF43;
+    font-size: 22px;
+}
+.gasco-strategy-card-item h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+    letter-spacing: 0.2px;
+}
+.gasco-strategy-card-item p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #D1D5DB;
+    margin: 0;
+}
+
+/* History Animated Timeline */
+.gasco-history-animated-section {
+    background: #FFFFFF;
+    padding: 95px 20px;
+    color: #1A1A1A;
+}
+.gasco-history-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.gasco-history-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 65px;
+}
+.gasco-history-header .pill-badge {
+    display: inline-block;
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+    padding: 5px 16px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #555555;
+    margin-bottom: 16px;
+}
+.gasco-history-header h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1A1A1A;
+    margin: 0;
+}
+.gasco-timeline-wrap {
+    position: relative;
+    padding: 20px 0;
+}
+.gasco-timeline-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: #EAEAEA;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.gasco-timeline-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 120px;
+    background: linear-gradient(180deg, rgba(255, 191, 67, 0) 0%, #FFBF43 50%, rgba(255, 191, 67, 0) 100%);
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: goldLinePulse 6s linear infinite;
+    filter: drop-shadow(0 0 6px #FFBF43);
+}
+@keyframes goldLinePulse {
+    0% { top: 0%; opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { top: 100%; opacity: 0.2; }
+}
+.gasco-timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 40px;
+    position: relative;
+    align-items: center;
+}
+/* Timeline Alternating Layout Fix with Exact Padding Alignment */
+.gasco-timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin-bottom: 45px;
+    position: relative;
+    align-items: center;
+}
+
+/* Odd Items (1, 3, 5...): Card on Left (Col 1), Year on Right (Col 2) */
+.gasco-timeline-item:nth-child(odd) .timeline-card-box {
+    grid-column: 1;
+    text-align: right;
+}
+.gasco-timeline-item:nth-child(odd) .timeline-year-box {
+    grid-column: 2;
+    text-align: left;
+    padding-left: 25px;
+}
+
+/* Even Items (2, 4, 6...): Year on Left (Col 1), Card on Right (Col 2) */
+.gasco-timeline-item:nth-child(even) .timeline-year-box {
+    grid-column: 1;
+    text-align: right;
+    padding-right: 25px;
+}
+.gasco-timeline-item:nth-child(even) .timeline-card-box {
+    grid-column: 2;
+    text-align: left;
+}
+
+.timeline-dot-node {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: #FFBF43;
+    border: 4px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255, 191, 67, 0.25);
+    z-index: 3;
+    transition: all 0.3s ease;
+    animation: dotPulse 3s infinite alternate;
+}
+@keyframes dotPulse {
+    0% { box-shadow: 0 0 0 3px rgba(255, 191, 67, 0.25); }
+    100% { box-shadow: 0 0 0 8px rgba(255, 191, 67, 0.4); }
+}
+.timeline-year-box span {
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFBF43;
+    background: linear-gradient(135deg, #FFBF43 0%, #D49B27 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.timeline-card-box {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 14px;
+    padding: 22px 26px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+    transition: all 0.35s ease;
+}
+.gasco-timeline-item:hover .timeline-card-box {
+    transform: translateY(-4px);
+    border-color: #FFBF43;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.timeline-card-box h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 8px 0;
+}
+.timeline-card-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .gasco-split-grid, .gasco-vv-content-grid, .gasco-strategy-top-grid { grid-template-columns: 1fr; gap: 35px; }
+    .gasco-split-subcards { grid-template-columns: 1fr; }
+    .gasco-split-subcard:first-child { border-right: none; border-bottom: 1px solid #EAEAEA; padding-bottom: 20px; }
+    .gasco-strategy-4cards-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 20px; }
+    .gasco-strategy-card-item:not(:last-child)::after { display: none; }
+    .gasco-timeline-wrap::before, .gasco-timeline-wrap::after, .timeline-dot-node { left: 25px; }
+    .gasco-timeline-item { grid-template-columns: 1fr; padding-left: 55px; gap: 10px; }
+    .gasco-timeline-item:nth-child(odd) .timeline-card-box, .gasco-timeline-item:nth-child(even) .timeline-card-box { grid-column: 1; text-align: left; }
+    .gasco-timeline-item:nth-child(odd) .timeline-year-box, .gasco-timeline-item:nth-child(even) .timeline-year-box { grid-column: 1; text-align: left; margin-bottom: 5px; }
+}
+@media (max-width: 576px) {
+    .gasco-strategy-4cards-grid { grid-template-columns: 1fr; }
+}
 </style>
-<div class="gasco-page-header">
-  <div class="meta"><ul><li class="home item"><a href="/">Home</a></li><li class="separator">/</li><li class="current item">About Us</li></ul></div>
-  <h1 class="elementor-heading-title elementor-size-default">About Us</h1>
-  <p>Learn about GASCO Engineering (Pvt.) Ltd. — our history, leadership and the values that guide every project we deliver.</p>
-  </div>
 
-				</div>
-		
-    <div class="section-nopading">
-        <div class="full-width">
-            		<div data-elementor-type="wp-page" data-elementor-id="25" class="elementor elementor-25">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-7b6638b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b6638b" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-178ed7f" data-id="178ed7f" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-c3191f5 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="c3191f5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default">Our Mission</h6>				</div>
-				</div>
-				<div class="elementor-element elementor-element-3cff67d elementor-widget elementor-widget-heading" data-id="3cff67d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Committed to Excellence in Oil &amp; Gas</h2>				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ecb0fea" data-id="ecb0fea" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-2cf7f72 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2cf7f72" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-custom">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1205df6" data-id="1205df6" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-de5f4ef elementor-widget elementor-widget-flexitype-icon-box" data-id="de5f4ef" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-data-visualization"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Project Planning                        </h5>
-                                                                <p>Delivering competitive, high-quality products &amp; services</p>
-                                    </div>
-                            </div>
+<!-- Hero Section -->
+<div class="gasco-about-hero">
+    <div class="meta">
+        <ul>
+            <li class="home item"><a href="/">Home</a></li>
+            <li class="separator">/</li>
+            <li class="current item">About Us</li>
+        </ul>
+    </div>
+    <span class="hero-badge">ESTABLISHED 1975 &bull; PREMIER ENERGY INFRASTRUCTURE</span>
+    <h1>Pioneering Oil &amp; Gas Engineering Across Pakistan</h1>
+    <p>For over 30 years, Gasco Engineering (Pvt.) Ltd. has delivered turnkey EPCC, cross-country pipeline construction, compressor station engineering, and operational services to Pakistan's leading oil &amp; gas producers.</p>
+</div>
+
+<!-- Section 1: Honoring Our Founder (2-Column Screenshot Layout) -->
+<section class="gasco-split-layout-section">
+    <div class="gasco-split-container">
+        <div class="gasco-split-grid">
+            <div class="gasco-split-left-col">
+                <div class="gasco-split-img-box">
+                    <img src="/about-us/Founders%20pic.png" alt="Mr. S. H. Hadi Naqvi (Late) - Founder of GASCO Engineering">
+                </div>
+            </div>
+            <div class="gasco-split-right-col">
+                <span class="gasco-split-pill">OUR FOUNDER &amp; LEGACY</span>
+                <h2>Honoring Our Founder: Mr. S. H. Hadi Naqvi (Late)</h2>
+                <div class="text-content">
+                    <p>GASCO was founded by Mr. S. H. Hadi Naqvi (Late), a visionary entrepreneur whose integrity, foresight, and resolve shaped the company’s foundation. Beginning with limited resources, his steadfast leadership transformed GASCO into a trusted name in Pakistan’s oil and gas sector.</p>
+                    <p>Raised in a modest town yet guided by a global vision, Mr. Hadi Naqvi anticipated the nation’s evolving energy needs and committed himself to delivering reliable, high-quality solutions. His entrepreneurial acumen and unwavering resolve enabled GASCO to grow, adapt, and excel in a dynamic industry.</p>
+                    <p>Today, GASCO stands as a living testament to his enduring spirit—built on the values he instilled and guided by the vision he set in motion. As we move forward, every milestone we achieve carries his legacy onward, shaping a future rooted in commitment, resilience, and excellence.</p>
+                </div>
+                <a href="/projects/" class="gasco-split-btn">
+                    <span>EXPLORE OUR PROJECTS</span>
+                    <i class="flaticon flaticon-right-up"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+/* Impact Overview & Key Stats Section */
+.gasco-impact-stats-section {
+    background: #FFFFFF;
+    padding: 80px 20px 90px;
+    color: #1A1A1A;
+    font-family: inherit;
+    border-bottom: 1px solid #EAEAEA;
+}
+.gasco-impact-stats-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Centered Bold Paragraph with Highlighted Muted Text */
+.gasco-impact-statement {
+    font-size: 26px;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #1A1A1A;
+    max-width: 960px;
+    margin: 0 auto 60px;
+    letter-spacing: -0.3px;
+}
+.gasco-impact-statement .muted-text {
+    color: #8A94A6;
+    font-weight: 500;
+}
+
+/* 4-Column Statistics Row */
+.gasco-impact-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.gasco-stat-item {
+    text-align: center;
+}
+.gasco-stat-item .stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1A1A1A;
+    line-height: 1;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.gasco-stat-item .stat-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #666666;
+}
+
+@media (max-width: 992px) {
+    .gasco-impact-statement {
+        font-size: 20px;
+    }
+    .gasco-impact-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+@media (max-width: 576px) {
+    .gasco-impact-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+
+<!-- Overview & Impact Statistics (Directly Below Founder Section) -->
+<section class="gasco-impact-stats-section">
+    <div class="gasco-impact-stats-container">
+        
+        <p class="gasco-impact-statement">
+            At GASCO we are committed to revolutionizing the energy infrastructure sector with innovative, sustainable, and cost-effective EPCC solutions. With a proven track record of delivering exceptional projects across Pakistan, we combine <span class="muted-text">state-of-the-art technology, skilled expertise, and customer-centric approaches to bring energy visions to life.</span>
+        </p>
+
+        <div class="gasco-impact-stats-grid">
+            <div class="gasco-stat-item">
+                <div class="stat-number">35M+</div>
+                <div class="stat-label">Safe Man-Hours</div>
+            </div>
+            <div class="gasco-stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Years of Excellence</div>
+            </div>
+            <div class="gasco-stat-item">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Successful Projects</div>
+            </div>
+            <div class="gasco-stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Safety &amp; Compliance</div>
+            </div>
         </div>
 
-        				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-dbca27a" data-id="dbca27a" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-d6fd6e8 elementor-widget elementor-widget-flexitype-icon-box" data-id="d6fd6e8" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-creative-thinking"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Labor Preparation                        </h5>
-                                                                <p>Focused on customer needs and satisfaction</p>
-                                    </div>
-                            </div>
+    </div>
+</section>
+
+
+<!-- Section 2: Vision & Values (Tabbed Container) -->
+<section class="gasco-vision-values-section">
+    <div class="gasco-vv-container">
+        <div class="gasco-vv-header">
+            <div class="line"></div>
+            <h2>OUR VISION &amp; VALUES</h2>
+            <div class="line"></div>
+        </div>
+        <div class="gasco-vv-tabs-wrap">
+            <div class="gasco-vv-segmented-tabs">
+                <button class="gasco-vv-tab-btn active" onclick="switchGascoTab('vision', this)">VISION</button>
+                <button class="gasco-vv-tab-btn" onclick="switchGascoTab('mission', this)">MISSION</button>
+                <button class="gasco-vv-tab-btn" onclick="switchGascoTab('values', this)">VALUES</button>
+            </div>
+        </div>
+        <div class="gasco-vv-card-container">
+            <div class="gasco-vv-content-grid">
+                <div class="gasco-vv-image-wrap">
+                    <img id="gasco-tab-img" src="/pictures/HTDC%20Project%20pg%2031.jpeg" alt="Gasco Infrastructure &amp; Facilities">
+                </div>
+                <div class="gasco-vv-text-wrap">
+                    <div id="pane-vision" class="gasco-vv-pane active">
+                        <p class="main-desc">Gasco to be the global oil &amp; gas industry's premier facilities and infrastructure provider, admired by customers and employees for consistently delivering and rewarding excellence.</p>
+                        <h4 class="sub-heading">To achieve this, we will:</h4>
+                        <ul class="vv-list">
+                            <li><span class="check-icon">&#10003;</span> <span>Work to world-class standards across all EPCC and field operations</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span>Focus always on customer satisfaction and long-term client trust</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span>Respect the environment and be sensitive to the communities in which we work</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span>Promote and reward on merit and professional integrity</span></li>
+                        </ul>
+                    </div>
+                    <div id="pane-mission" class="gasco-vv-pane">
+                        <p class="main-desc">To engineer, construct, and operate vital oil &amp; gas infrastructure safely, efficiently, and on schedule while maintaining an unwavering commitment to HSE standards.</p>
+                        <h4 class="sub-heading">Our commitment to excellence:</h4>
+                        <ul class="vv-list">
+                            <li><span class="check-icon">&#10003;</span> <span>Execute all projects with over 35 Million Safe Man-Hours and Zero Lost-Time Injuries</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span>Maintain ISO 9001, ISO 14001, and ISO 45001 certified quality &amp; safety frameworks</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span>Provide turnkey EPCC services from conceptual design to field commissioning</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span>Deploy rapid-response rental gas compression and processing skids</span></li>
+                        </ul>
+                    </div>
+                    <div id="pane-values" class="gasco-vv-pane">
+                        <p class="main-desc">Our core values define every project we undertake and guide our workforce across all operational sites throughout Pakistan.</p>
+                        <h4 class="sub-heading">Key core values:</h4>
+                        <ul class="vv-list">
+                            <li><span class="check-icon">&#10003;</span> <span><strong>Integrity:</strong> Absolute transparency and ethical conduct in all business dealings</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span><strong>Safety First:</strong> Uncompromising Zero-Harm culture protecting our workforce and assets</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span><strong>Engineering Precision:</strong> Relentless quality control and technical accuracy</span></li>
+                            <li><span class="check-icon">&#10003;</span> <span><strong>Client Partnerships:</strong> Building sustainable, value-driven relationships with industry leaders</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+/* CTA Banner Section matching Screenshot */
+.gasco-cta-banner-section {
+    background: #F7F5EE;
+    border-top: 1px solid #EAE6DC;
+    border-bottom: 1px solid #EAE6DC;
+    padding: 14px 20px;
+    color: #1A1A1A;
+    font-family: inherit;
+}
+.gasco-cta-banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.gasco-cta-banner-left h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #1A1A1A;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+.gasco-cta-banner-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #FFBF43;
+    color: #1A1A1A;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 16px 36px;
+    border-radius: 35px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 191, 67, 0.3);
+    flex-shrink: 0;
+}
+.gasco-cta-banner-btn:hover {
+    background: #e6a935;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(255, 191, 67, 0.4);
+    color: #1A1A1A;
+}
+
+@media(max-width: 768px) {
+    .gasco-cta-banner-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+
+<!-- CTA Banner: Get Expert Support -->
+<section class="gasco-cta-banner-section">
+    <div class="gasco-cta-banner-container">
+        <div class="gasco-cta-banner-left">
+            <h2>Get Expert Oil &amp; Gas Engineering Support</h2>
+        </div>
+        <div class="gasco-cta-banner-right">
+            <a href="/contact-us/" class="gasco-cta-banner-btn">
+                <span>WORK WITH US</span>
+                <i class="flaticon flaticon-right-up"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section 3: Business Strategy (Full-Width 4-Cards Layout) -->
+<section class="gasco-strategy-fullwidth-section">
+    <div class="gasco-strategy-fullwidth-container">
+        <div class="gasco-strategy-top-grid">
+            <div class="gasco-strategy-top-left">
+                <img src="/pictures/SSGC_42_RLNG_80_Kms_Pipeline_Project_pg_37.jpg" alt="GASCO Oil &amp; Gas Infrastructure Construction">
+            </div>
+            <div class="gasco-strategy-top-right">
+                <span class="pill-badge">BUSINESS STRATEGY</span>
+                <h2>Driving Sustainable Value Across Energy Infrastructure</h2>
+                <p>Gasco aims to generate sustainable growth in value by leveraging its core competencies: the ability to engineer, build, and operate oil &amp; gas infrastructure, and the ability to create and deliver value-adding investments.</p>
+                <p>Our strategy is designed to anticipate customer requirements, provide a broad and competitive range of services, develop leading-edge concepts, and deliver beyond customer expectations.</p>
+            </div>
+        </div>
+        <div class="gasco-strategy-4cards-grid">
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h4>Client Focus</h4>
+                <p>Anticipating customer requirements with a broad, competitive range of products and services.</p>
+            </div>
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h4>Innovative Concepts</h4>
+                <p>Developing leading-edge field concepts &amp; delivering beyond customer expectations.</p>
+            </div>
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+                <h4>Core Competencies</h4>
+                <p>Engineering, constructing, and operating vital oil &amp; gas equipment &amp; facilities.</p>
+            </div>
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h4>Portfolio Growth</h4>
+                <p>Investing in a balanced portfolio of rental processing fleets &amp; infrastructure assets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section 4: Our People & Workforce (Reversed Layout: Text Left, Image Right + Black 4-Cards Grid) -->
+<section class="gasco-strategy-fullwidth-section" style="background: #FFFFFF;">
+    <div class="gasco-strategy-fullwidth-container">
+        
+        <!-- Top 2-Column Grid: Text Left, Image Right -->
+        <div class="gasco-strategy-top-grid">
+            <div class="gasco-strategy-top-right">
+                <span class="pill-badge">OUR PEOPLE &amp; WORKFORCE</span>
+                <h2>Empowering Our People, Safeguarding Our Workforce</h2>
+                <p>Gasco considers its employees to be its most important asset. We prioritize local recruitment and invest heavily in continuous training and career development. The health, safety, and security of our workforce are of paramount importance, with rigorous HSE protocols safeguarding their interests across all operations.</p>
+                <p>Our people represent the ultimate example of diversity, teamwork, and dedication. Gasco fosters an inclusive environment that empowers individuals, encourages cross-cultural collaboration, and drives superior business results.</p>
+            </div>
+            <div class="gasco-strategy-top-left">
+                <img src="/pictures/Pg%2016.jpeg" alt="GASCO Workforce, Engineers and Field Technicians">
+            </div>
         </div>
 
-        				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-0d61cee elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0d61cee" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-00a43e3" data-id="00a43e3" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-e512756 elementor-widget elementor-widget-image" data-id="e512756" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" width="564" height="740" src="/wp-content/uploads/2024/09/about-4.jpg" class="attachment-full size-full wp-image-974" alt="">															</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0aa36b4" data-id="0aa36b4" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-d47fd5a elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="d47fd5a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default">About GASCO Engineering</h6>				</div>
-				</div>
-				<div class="elementor-element elementor-element-cda6942 elementor-widget elementor-widget-heading" data-id="cda6942" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">A Culturally Diverse Company United by Shared Values</h2>				</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2e38222 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2e38222" data-element_type="section" data-e-type="section">
+        <!-- Bottom Full-Width 4-Cards Grid (Sleek Dark High Contrast) -->
+        <div class="gasco-strategy-4cards-grid">
+            
+            <!-- Card 1 -->
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <h4>World-Class Workforce</h4>
+                <p>Attracting, developing, and retaining top-tier talent equipped to meet future energy challenges.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h4>Engaging Workplace</h4>
+                <p>Offering an empowering environment presenting every individual with opportunities to attain full potential.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+                <h4>Innovative Thinking</h4>
+                <p>Fostering global, cross-cultural understanding that directly benefits Gasco's diverse client base.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="gasco-strategy-card-item">
+                <div class="card-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                <h4>Community Impact</h4>
+                <p>Supporting education, healthcare, and human services in local communities where our teams live and work.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Section 5: History & Milestones Timeline -->
+<section class="gasco-history-animated-section">
+    <div class="gasco-history-container">
+        <div class="gasco-history-header">
+            <span class="pill-badge">OUR JOURNEY &amp; MILESTONES</span>
+            <h2>50 Years of Engineering Legacy</h2>
+        </div>
+        <div class="gasco-timeline-wrap">
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2024</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Mining Construction Services</h4>
+                    <p>The Reko Diq Copper-Gold Project</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2021</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Condensate Handling Facility</h4>
+                    <p>Started Provision of Complete Condensate Handling Facility on BOM Basis</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2018</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Rental Processing &amp; Production Facilities</h4>
+                    <p>Started Provision of Rental Processing &amp; Production Facilities in Oil &amp; Gas Sector</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2016</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Flagship Projects</h4>
+                    <p>Started Construction of National Flagship Projects – 42” x 80 km RLNG Pipeline</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2014</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>EPCC Contracts</h4>
+                    <p>Gas Plants, Gas Compression Stations, Plant Facilities, Booster Stations</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2009</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Civil &amp; Earthworks</h4>
+                    <p>Started Civil &amp; Earthworks in Oil &amp; Gas Sector</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2008</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Compressor Re-Staging &amp; MEIC Expansion</h4>
+                    <p>Gasco performed in-house &amp; on-site compressor re-staging / re-cylindering with in-house capability of engine/compressor top ends, major overhauls &amp; troubleshooting. Gasco reorganised its structure to become a pipeline construction contractor, expanding E&amp;C services to include MEIC (mechanical, electrical, instrumentation &amp; civil) for gas fields.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2007</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Turnkey Compression Solutions</h4>
+                    <p>Gasco started to provide complete turnkey compression solutions including engineering, supply, procurement, construction &amp; commissioning of complete compression stations.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>2003</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>First Pakistani Rental Compression Provider</h4>
+                    <p>Gasco became the First Pakistani Private Company to offer Compression on the Rental Basis along with the operations &amp; maintenance of the compressor packages. This also marked the start of the Rental Compression niche for Gasco.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>1998</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>First Prime EPCC Contract</h4>
+                    <p>Gasco as the prime EPCC (engineering, procurement, construction &amp; commissioning) body received its first contract.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>1996</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>First EPC Contract</h4>
+                    <p>Gasco with its principals received the first EPC (engineering, procurement, construction) contract.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>1995</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>EPC Contractor Journey</h4>
+                    <p>Gasco embarked on its EPC contractor journey.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>1993</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Incorporation</h4>
+                    <p>Gasco Engineering Services was transformed into Gasco Engineering (Pvt) Limited.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>1990</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Establishment in Karachi</h4>
+                    <p>Gasco Engineering Services was established as an indenter – equipment supplier in Karachi, Pakistan.</p>
+                </div>
+            </div>
+            <div class="gasco-timeline-item">
+                <div class="timeline-year-box"><span>1975</span></div>
+                <div class="timeline-dot-node"></div>
+                <div class="timeline-card-box">
+                    <h4>Indenting &amp; Imports</h4>
+                    <p>Started Oil &amp; Gas Indenting &amp; Imports</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function switchGascoTab(tabName, btnEl) {
+    var btns = document.querySelectorAll('.gasco-vv-tab-btn');
+    btns.forEach(function(b) { b.classList.remove('active'); });
+    btnEl.classList.add('active');
+    
+    var panes = document.querySelectorAll('.gasco-vv-pane');
+    panes.forEach(function(p) { p.classList.remove('active'); });
+    
+    var activePane = document.getElementById('pane-' + tabName);
+    if(activePane) {
+        activePane.classList.add('active');
+    }
+    
+    var imgEl = document.getElementById('gasco-tab-img');
+    if(imgEl) {
+        if(tabName === 'vision') {
+            imgEl.src = '/pictures/HTDC%20Project%20pg%2031.jpeg';
+        } else if(tabName === 'mission') {
+            imgEl.src = '/pictures/Dhok%20Sultan%20-%20pg%2033.jpeg';
+        } else if(tabName === 'values') {
+            imgEl.src = '/pictures/Pg%202.jpeg';
+        }
+    }
+}
+</script>
+
+</div>
+
+
+<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+			<div class="footer-width-fixer">		<div data-elementor-type="wp-post" data-elementor-id="1276" class="elementor elementor-1276">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-83bdf65 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="83bdf65" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-18e86e7" data-id="18e86e7" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5925f11" data-id="5925f11" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-ec04d06 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ec04d06" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c182d0e" data-id="c182d0e" data-element_type="column" data-e-type="column" style="background-image: url('/pictures/Dhok%20Sultan%20-%20pg%2033.jpeg') !important; background-size: cover !important; background-position: center !important;">
 			<div class="elementor-widget-wrap elementor-element-populated">
 					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-6493014 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="6493014" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-9ecadca elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="9ecadca" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Trusted Across Pakistan's Oil &amp; Gas Sector</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Partner With GASCO for Your Next Oil &amp; Gas Project</h2>				</div>
 				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<div class="elementor-element elementor-element-857ce60 elementor-widget elementor-widget-heading" data-id="857ce60" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default">GASCO has gained an enviable reputation in the Oil &amp; Gas industry with its efficient service and excellent post-project follow-up. Founded by Mr. S. H. Hadi Naqvi (Late) — a visionary entrepreneur whose integrity, foresight and resolve shaped the company's foundation </p>				</div>
-				</div>
-				<div class="elementor-element elementor-element-9f3d774 elementor-widget elementor-widget-flexitype-creative-button" data-id="9f3d774" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-creative-button.default">
+				<div class="elementor-element elementor-element-4431350 elementor-widget elementor-widget-flexitype-creative-button" data-id="4431350" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-creative-button.default">
 				<div class="elementor-widget-container">
 					        <div class="flexitype-btn">
-            <a class="flexitype-btn-wrapper button-isi  right" href="/projects/" data-text="See Projects">
-                <span>See Projects</span>
+            <a class="flexitype-btn-wrapper button-isi  right" href="/contact-us/" data-text="Contact Us">
+                <span>Contact Us</span>
                                     <i class="flaticon flaticon-right-up"></i>
                             </a>
         </div>
@@ -386,420 +1365,48 @@
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-0c6f4f5 elementor-section-full_width overflow-hidden elementor-section-height-default elementor-section-height-default" data-id="0c6f4f5" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-96fdcfd" data-id="96fdcfd" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-474a9b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="474a9b2" data-element_type="section" data-e-type="section">
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-377ed52 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="377ed52" data-element_type="section" data-e-type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d992e1e" data-id="d992e1e" data-element_type="column" data-e-type="column">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8f62354" data-id="8f62354" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-b8cbf44 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="b8cbf44" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d4b758e" data-id="d4b758e" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-d8c2bd2 elementor-widget elementor-widget-flexitype-text-slide" data-id="d8c2bd2" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-text-slide.default">
-				<div class="elementor-widget-container">
-					        <!-- Text Slider Area Start -->
-        <div class="text__slider">
-            <div class="text-slide">
-                <div class="sliders text_scroll">
-                    <ul>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="no-text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>ENGINEERING &amp; CONSULTANCY                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>RENTAL COMPRESSION                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="no-text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>PIPELINE CONSTRUCTION                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>EPC SERVICES                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="no-text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>OPERATIONS &amp; MAINTENANCE                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>OUTSOURCE WAREHOUSING                                    </a>
-                                </h2>
-                            </li>
-                                            </ul>
-
-                </div>
-                <div class="sliders text_scroll">
-                    <ul>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="no-text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>ENGINEERING &amp; CONSULTANCY                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>RENTAL COMPRESSION                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="no-text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>PIPELINE CONSTRUCTION                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>EPC SERVICES                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="no-text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>OPERATIONS &amp; MAINTENANCE                                    </a>
-                                </h2>
-                            </li>
-                                                    <li>
-                                <h2>
-                                    <a href="/projects/" class="text-border no-icon-border">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59"><style>.a{fill:#ffbf43}</style><path class="a" d="m31 29.5c34 19.6 18.1 35.5-1.5 1.5-19.6 34-35.5 18.1-1.5-1.5-34-19.6-18.1-35.5 1.5-1.5 19.6-34 35.5-18.1 1.5 1.5z"></path><path class="a" d="m30.5 30.5c10.2 38-12.2 38-2 0-38 10.2-38-12.2 0-2-10.2-38 12.2-38 2 0 38-10.2 38 12.2 0 2z"></path></svg>OUTSOURCE WAREHOUSING                                    </a>
-                                </h2>
-                            </li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Text Slider Area Start -->
-        				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-918fbdd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="918fbdd" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7b3c69b" data-id="7b3c69b" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-a561b69 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a561b69" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bcd4aec" data-id="bcd4aec" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ee40a3e elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="ee40a3e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default">Our Vision &amp; Values</h6>				</div>
-				</div>
-				<div class="elementor-element elementor-element-f8fecf5 elementor-widget elementor-widget-heading" data-id="f8fecf5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Our Vision, Mission &amp; Values</h2>				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-829d402" data-id="829d402" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-a902a68 elementor-widget elementor-widget-image" data-id="a902a68" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="870" height="420" src="/wp-content/uploads/2024/09/who-we-are.jpg" class="attachment-full size-full wp-image-356" alt="" srcset="/wp-content/uploads/2024/09/who-we-are.jpg 870w, /wp-content/uploads/2024/09/who-we-are-600x290.jpg 600w" sizes="(max-width: 870px) 100vw, 870px">															</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-61bdca5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="61bdca5" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6363457" data-id="6363457" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-49182c9 elementor-widget__width-auto elementor-widget-tablet__width-initial elementor-widget elementor-widget-flexitype-counter" data-id="49182c9" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-counter.default">
-				<div class="elementor-widget-container">
-					            <div class="flexitype_counter">
-                                <div class="flexitype_counter-content">
-                    <div class="flexitype_counter-content-number">
-                        <h2>
-                                                        <span class="flexitype_counter9830" data-count-start="0">
-                                678                            </span>
-                                                            <span class="suffix">+</span>
-                                                    </h2>
-                    </div>
-                                            <div class="flexitype_counter-content-title">
-                            <p>Complete Projects</p>
-                        </div>
-                                    </div>
-            </div>
-            
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-bc48792 elementor-widget__width-auto elementor-widget-tablet__width-initial elementor-widget elementor-widget-flexitype-counter" data-id="bc48792" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-counter.default">
-				<div class="elementor-widget-container">
-					            <div class="flexitype_counter">
-                                <div class="flexitype_counter-content">
-                    <div class="flexitype_counter-content-number">
-                        <h2>
-                                                        <span class="flexitype_counter1037" data-count-start="0">
-                                120                            </span>
-                                                            <span class="suffix">+</span>
-                                                    </h2>
-                    </div>
-                                            <div class="flexitype_counter-content-title">
-                            <p>Team Members</p>
-                        </div>
-                                    </div>
-            </div>
-            
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-f319080 elementor-widget__width-auto elementor-widget-tablet__width-initial elementor-widget elementor-widget-flexitype-counter" data-id="f319080" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-counter.default">
-				<div class="elementor-widget-container">
-					            <div class="flexitype_counter">
-                                <div class="flexitype_counter-content">
-                    <div class="flexitype_counter-content-number">
-                        <h2>
-                                                        <span class="flexitype_counter8588" data-count-start="0">
-                                635                            </span>
-                                                            <span class="suffix">+</span>
-                                                    </h2>
-                    </div>
-                                            <div class="flexitype_counter-content-title">
-                            <p>Client Reviews</p>
-                        </div>
-                                    </div>
-            </div>
-            
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-6f87f84 elementor-widget__width-auto elementor-widget-tablet__width-initial elementor-widget elementor-widget-flexitype-counter" data-id="6f87f84" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-counter.default">
-				<div class="elementor-widget-container">
-					            <div class="flexitype_counter">
-                                <div class="flexitype_counter-content">
-                    <div class="flexitype_counter-content-number">
-                        <h2>
-                                                        <span class="flexitype_counter733" data-count-start="0">
-                                89                            </span>
-                                                            <span class="suffix">+</span>
-                                                    </h2>
-                    </div>
-                                            <div class="flexitype_counter-content-title">
-                            <p>Winning Awards</p>
-                        </div>
-                                    </div>
-            </div>
-            
-        				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-65e6dd3 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="65e6dd3" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fee23a3" data-id="fee23a3" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-ce3fcaa elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ce3fcaa" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1d1a045" data-id="1d1a045" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-ea00b27 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="ea00b27" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default">Our Leadership</h6>				</div>
-				</div>
-				<div class="elementor-element elementor-element-1934c5d elementor-widget elementor-widget-heading" data-id="1934c5d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Driven by Safety &amp; Integrity</h2>				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-ee9f6d7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ee9f6d7" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f670163" data-id="f670163" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-a181622 slider-slide_box_yes elementor-widget elementor-widget-flexitype-team-slider" data-id="a181622" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-team-slider.default">
-				<div class="elementor-widget-container">
-					        <div class="flexitype_slider">
-            <div class="swiper flexitype_slide303 slide_box">
-                <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                <div class="flexitype_team-item">
-        <div class="flexitype_team-item-image">
-            <img decoding="async" src="/wp-content/uploads/2024/09/team-1.jpg" alt="image">
-        </div>
-        <div class="flexitype_team-item-content">            
-            <div class="title">
-                                    <h6>Lisa Thompson</h6>                    
-                                                    <span>CEO Founder</span>
-                            </div>
-                    </div>
-    </div>
-                                                                                </div>
-                                            <div class="swiper-slide">
-                                <div class="flexitype_team-item">
-        <div class="flexitype_team-item-image">
-            <img decoding="async" src="/wp-content/uploads/2024/09/team-2.jpg" alt="image">
-        </div>
-        <div class="flexitype_team-item-content">            
-            <div class="title">
-                                    <h6>Derya Kurtulus</h6>                    
-                                                    <span>Project Manager</span>
-                            </div>
-                    </div>
-    </div>
-                                                                                </div>
-                                            <div class="swiper-slide">
-                                <div class="flexitype_team-item">
-        <div class="flexitype_team-item-image">
-            <img decoding="async" src="/wp-content/uploads/2024/09/team-3.jpg" alt="image">
-        </div>
-        <div class="flexitype_team-item-content">            
-            <div class="title">
-                                    <h6>Jonathan Michael</h6>                    
-                                                    <span>Architecture Design</span>
-                            </div>
-                    </div>
-    </div>
-                                                                                </div>
-                                            <div class="swiper-slide">
-                                <div class="flexitype_team-item">
-        <div class="flexitype_team-item-image">
-            <img decoding="async" src="/wp-content/uploads/2024/09/team-4.jpg" alt="image">
-        </div>
-        <div class="flexitype_team-item-content">            
-            <div class="title">
-                                    <h6>Nicholas Andrew</h6>                    
-                                                    <span>Project Manager</span>
-                            </div>
-                    </div>
-    </div>
-                                                                                </div>
-                                    </div>
-            </div>
-                                </div>
-        
-        				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-		        </div>
-    </div>
-</main><!-- #main -->
-
-
-		<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
-			<div class="footer-width-fixer">		<div data-elementor-type="wp-post" data-elementor-id="57" class="elementor elementor-57">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-d03f516 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d03f516" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b60838c" data-id="b60838c" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-f2f4ed2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f2f4ed2" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7a4afcf" data-id="7a4afcf" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-927c063 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="927c063" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4a60e29" data-id="4a60e29" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-19d9b18 elementor-widget elementor-widget-heading" data-id="19d9b18" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Partner With GASCO for Your Next Project</h2>				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b67c27c" data-id="b67c27c" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-fbe4cca elementor-view-stacked elementor-widget__width-auto e-transform e-transform elementor-shape-circle elementor-widget elementor-widget-icon" data-id="fbe4cca" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:45,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-3,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-wrapper">
-			<a class="elementor-icon" href="/request-quote">
-			<i aria-hidden="true" class="flaticon flaticon-right-up"></i>			</a>
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c8f416a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c8f416a" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-191e096" data-id="191e096" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-3326e23 elementor-widget elementor-widget-flexitype-logo" data-id="3326e23" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-logo.default">
+						<div class="elementor-element elementor-element-6f82a1a elementor-widget elementor-widget-flexitype-logo" data-id="6f82a1a" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-logo.default">
 				<div class="elementor-widget-container">
 					        <div class="flexitype-builder-logo">
                             <a href="/" class="custom-logo-link">
-                    <img src="/gasco/gepl-white.png" alt="logo">
+                    <img src="/gasco/gepl-black.png" alt="logo">
                 </a>
                     </div>
         				</div>
 				</div>
-				<div class="elementor-element elementor-element-ba07dcf elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="ba07dcf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0f1907d elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="0f1907d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">We’re your trusted Oil &amp; Gas engineering partner</h2>				</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c50e17a" data-id="c50e17a" data-element_type="column" data-e-type="column">
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-81afc7c" data-id="81afc7c" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-54dfc30 elementor-widget elementor-widget-heading" data-id="54dfc30" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-c757d49 elementor-widget elementor-widget-heading" data-id="c757d49" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">Address</h2>				</div>
 				</div>
-				<div class="elementor-element elementor-element-3cab02a elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="3cab02a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-89e5cf9 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="89e5cf9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<p class="elementor-heading-title elementor-size-default"><a href="https://www.google.com/maps">501 Amber Estate, Shahra-e-Faisal, Karachi 75350, Pakistan</a></p>				</div>
 				</div>
-				<div class="elementor-element elementor-element-dac0d28 elementor-widget elementor-widget-heading" data-id="dac0d28" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-644a745 elementor-widget elementor-widget-heading" data-id="644a745" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="tel:+123%20(256)%20568%2058">+92 21 34320635-36</a></h2>				</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-13bd116" data-id="13bd116" data-element_type="column" data-e-type="column">
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5d18356" data-id="5d18356" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-2dea5f8 elementor-widget elementor-widget-heading" data-id="2dea5f8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-d75549d elementor-widget elementor-widget-heading" data-id="d75549d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">Quick links</h2>				</div>
 				</div>
-				<div class="elementor-element elementor-element-afb3cee elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="afb3cee" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-1cc6d72 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1cc6d72" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
@@ -831,13 +1438,13 @@
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4963740" data-id="4963740" data-element_type="column" data-e-type="column">
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b6f094f" data-id="b6f094f" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-1625486 elementor-widget elementor-widget-heading" data-id="1625486" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-1af5fd6 elementor-widget elementor-widget-heading" data-id="1af5fd6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">Support</h2>				</div>
 				</div>
-				<div class="elementor-element elementor-element-d6b997e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d6b997e" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-7b22e3a elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="7b22e3a" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
@@ -847,7 +1454,7 @@
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/contact-us">
+											<a href="/about-us">
 
 											<span class="elementor-icon-list-text">Privacy policy</span>
 											</a>
@@ -859,19 +1466,19 @@
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-82fa57a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="82fa57a" data-element_type="section" data-e-type="section">
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-cc678b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cc678b5" data-element_type="section" data-e-type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-25a0099" data-id="25a0099" data-element_type="column" data-e-type="column">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8d1d627" data-id="8d1d627" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-83d5182 elementor-widget elementor-widget-text-editor" data-id="83d5182" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-f2d1070 elementor-widget elementor-widget-text-editor" data-id="f2d1070" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Copyright 2026 – All Rights Reserved By <a href="https://themeforest.net/user/themeori/portfolio">GASCO</a></p>								</div>
+									<p>Copyright 2026 – All Rights Reserved By <a href="https://themeforest.net/user/themeori/portfolio" target="_blank" rel="noopener">GASCO</a></p>								</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2365e36" data-id="2365e36" data-element_type="column" data-e-type="column">
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c6fe7ad" data-id="c6fe7ad" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-0e1237a e-grid-align-right e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="0e1237a" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
+						<div class="elementor-element elementor-element-220097e e-grid-align-right e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="220097e" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
 							<span class="elementor-grid-item" role="listitem">
@@ -930,7 +1537,7 @@
 <link rel="stylesheet" id="widget-icon-list-css" href="/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.1.4" media="all">
 <link rel="stylesheet" id="e-animation-grow-css" href="/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=4.1.4" media="all">
 <link rel="stylesheet" id="elementor-post-1010-css" href="/wp-content/uploads/elementor/css/post-1010.css?ver=1782478613" media="all">
+<link rel="stylesheet" id="elementor-gf-local-dmsans-css" href="/wp-content/uploads/elementor/google-fonts/css/dmsans.css?ver=1747285766" media="all">
 <link rel="stylesheet" id="widget-divider-css" href="/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.1.4" media="all">
 <link rel="stylesheet" id="widget-social-icons-css" href="/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.1.4" media="all">
 <link rel="stylesheet" id="e-apple-webkit-css" href="/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.1.4" media="all">
-<link rel="stylesheet" id="elementor-post-490-css" href="/wp-content/uploads/elementor/css/post-490.css?ver=1782480523" media="all"></div>
