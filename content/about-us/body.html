@@ -680,39 +680,40 @@ body, #page, .site {
 /* History Horizontal Animated Continuous Timeline */
 .gasco-history-animated-section {
     background: #FFFFFF;
-    padding: 85px 0 95px;
+    padding: 95px 0 105px;
     color: #1A1A1A;
     overflow: hidden;
     position: relative;
 }
 .gasco-history-container {
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .gasco-history-header {
     text-align: center;
-    max-width: 750px;
-    margin: 0 auto 45px;
+    max-width: 800px;
+    margin: 0 auto 55px;
     padding: 0 20px;
 }
 .gasco-history-header .pill-badge {
     display: inline-block;
     border: 1px solid #D0D0D0;
     border-radius: 20px;
-    padding: 5px 16px;
-    font-size: 11px;
+    padding: 6px 18px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: #555555;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     background: #FFFFFF;
 }
 .gasco-history-header h2 {
-    font-size: 38px;
+    font-size: 44px;
     font-weight: 800;
     color: #1A1A1A;
     margin: 0;
+    letter-spacing: -0.5px;
 }
 
 /* Horizontal Viewport & Continuous Track */
@@ -720,7 +721,7 @@ body, #page, .site {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding: 30px 0 20px;
+    padding: 35px 0 25px;
 }
 .gasco-horizontal-timeline-viewport::before,
 .gasco-horizontal-timeline-viewport::after {
@@ -728,7 +729,7 @@ body, #page, .site {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 140px;
+    width: 160px;
     z-index: 10;
     pointer-events: none;
 }
@@ -744,10 +745,10 @@ body, #page, .site {
 /* Horizontal Gold Line Axis */
 .timeline-horizontal-axis {
     position: absolute;
-    top: 86px;
+    top: 104px;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 4px;
     background: #EAEAEA;
     z-index: 1;
 }
@@ -759,34 +760,38 @@ body, #page, .site {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, rgba(255, 191, 67, 0) 0%, #FFBF43 50%, rgba(255, 191, 67, 0) 100%);
-    filter: drop-shadow(0 0 6px #FFBF43);
+    filter: drop-shadow(0 0 8px #FFBF43);
 }
 
 /* Continuous Marquee Track */
 .gasco-horizontal-marquee-track {
-    display: flex;
-    width: max-content;
-    animation: gascoHorizontalMarquee 50s linear infinite;
+    display: flex !important;
+    width: max-content !important;
+    will-change: transform !important;
+    animation: gascoHorizontalMarquee 40s linear infinite !important;
+    -webkit-animation: gascoHorizontalMarquee 40s linear infinite !important;
     z-index: 2;
     position: relative;
 }
 .gasco-horizontal-marquee-track:hover {
-    animation-play-state: paused;
+    animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
 }
 
+@-webkit-keyframes gascoHorizontalMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
 @keyframes gascoHorizontalMarquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 .gasco-horizontal-timeline-list {
-    display: flex;
-    gap: 32px;
-    padding: 0 16px;
+    display: flex !important;
+    gap: 36px;
+    padding: 0 18px;
+    flex-shrink: 0 !important;
 }
 
 /* Timeline Card Item */
@@ -794,71 +799,71 @@ body, #page, .site {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 320px;
-    flex-shrink: 0;
+    width: 380px !important;
+    flex-shrink: 0 !important;
     position: relative;
 }
 
 .h-timeline-year {
-    font-size: 26px;
-    font-weight: 800;
+    font-size: 34px !important;
+    font-weight: 800 !important;
     color: #FFBF43;
     background: linear-gradient(135deg, #FFBF43 0%, #D49B27 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     letter-spacing: -0.5px;
 }
 
 .h-timeline-dot {
-    width: 18px;
-    height: 18px;
+    width: 22px !important;
+    height: 22px !important;
     background: #FFBF43;
-    border: 4px solid #FFFFFF;
+    border: 5px solid #FFFFFF !important;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(255, 191, 67, 0.3);
+    box-shadow: 0 0 0 4px rgba(255, 191, 67, 0.35);
     z-index: 3;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     transition: all 0.3s ease;
 }
 .gasco-h-timeline-item:hover .h-timeline-dot {
-    transform: scale(1.25);
-    box-shadow: 0 0 0 6px rgba(255, 191, 67, 0.5);
+    transform: scale(1.3);
+    box-shadow: 0 0 0 7px rgba(255, 191, 67, 0.55);
     background: #D49B27;
 }
 
 .h-timeline-card {
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
-    border-top: 3px solid #FFBF43;
-    border-radius: 14px;
-    padding: 22px 24px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    border-top: 4px solid #FFBF43;
+    border-radius: 16px;
+    padding: 26px 28px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
     width: 100%;
-    min-height: 170px;
+    min-height: 200px !important;
     display: flex;
     flex-direction: column;
     transition: all 0.35s ease;
     text-align: left;
 }
 .gasco-h-timeline-item:hover .h-timeline-card {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     border-color: #FFBF43;
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
 }
 .h-timeline-card h4 {
-    font-size: 16px;
-    font-weight: 700;
-    color: #1A1A1A;
-    margin: 0 0 8px 0;
-    line-height: 1.35;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+    color: #1A1A1A !important;
+    margin: 0 0 10px 0 !important;
+    line-height: 1.35 !important;
 }
 .h-timeline-card p {
-    font-size: 13.5px;
-    line-height: 1.55;
-    color: #555855;
-    margin: 0;
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+    color: #555855 !important;
+    margin: 0 !important;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     line-clamp: 4;
@@ -875,7 +880,7 @@ body, #page, .site {
 }
 @media (max-width: 576px) {
     .gasco-strategy-4cards-grid { grid-template-columns: 1fr; }
-    .gasco-h-timeline-item { width: 280px; }
+    .gasco-h-timeline-item { width: 300px !important; }
 }
 </style>
 
@@ -1531,6 +1536,50 @@ body, #page, .site {
         </div>
     </div>
 </section>
+
+<script>
+(function() {
+    function initMarqueeTicker() {
+        var track = document.querySelector('.gasco-horizontal-marquee-track');
+        if (!track) return;
+        
+        var isPaused = false;
+        var currentOffset = 0;
+        var speed = 1.2; // Smooth 60fps movement
+        
+        track.addEventListener('mouseenter', function() { isPaused = true; });
+        track.addEventListener('mouseleave', function() { isPaused = false; });
+        track.addEventListener('touchstart', function() { isPaused = true; }, {passive: true});
+        track.addEventListener('touchend', function() { isPaused = false; }, {passive: true});
+
+        function animateTicker() {
+            var firstList = track.querySelector('.gasco-horizontal-timeline-list');
+            if (firstList) {
+                var singleWidth = firstList.offsetWidth + 36;
+                if (!isPaused) {
+                    currentOffset -= speed;
+                    if (Math.abs(currentOffset) >= singleWidth) {
+                        currentOffset = 0;
+                    }
+                    track.style.transform = 'translate3d(' + currentOffset + 'px, 0, 0)';
+                }
+            }
+            requestAnimationFrame(animateTicker);
+        }
+        
+        // Remove CSS animation so JS handles 100% reliable continuous 60fps scrolling
+        track.style.animation = 'none';
+        track.style.webkitAnimation = 'none';
+        requestAnimationFrame(animateTicker);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMarqueeTicker);
+    } else {
+        setTimeout(initMarqueeTicker, 100);
+    }
+})();
+</script>
 
 <script>
 function switchGascoTab(tabName, btnEl) {
