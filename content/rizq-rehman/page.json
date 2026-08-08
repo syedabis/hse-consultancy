@@ -1,0 +1,50 @@
+{
+  "slug": "rizq-rehman",
+  "lang": "en-US",
+  "title": "Rizq-2 & Rehman-4, 5 Field Infrastructure – GASCO",
+  "bodyClass": "wp-singular page-template page-template-page-builder page-template-page-builder-php page page-id-24 wp-embed-responsive wp-theme-buildgo theme-buildgo woocommerce-no-js fhf-header fhf-footer fhf-template-buildgo fhf-stylesheet-buildgo elementor-default elementor-kit-5 elementor-page elementor-page-24",
+  "headAssets": [
+    {
+      "type": "css",
+      "href": "/wp-content/themes/buildgo/assets/css/bootstrap.min.css?ver=2.0.6"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/themes/buildgo/assets/css/fontawesome.css?ver=2.0.6"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/themes/buildgo/assets/css/animate.css?ver=2.0.6"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/themes/buildgo/assets/css/meanmenu.min.css?ver=2.0.6"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/themes/buildgo/assets/sass/style.css?ver=2.0.6"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/themes/buildgo/style.css?ver=2.0.6"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.50.0"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.1.4"
+    },
+    {
+      "type": "css",
+      "href": "//fonts.googleapis.com/css?family=DM%20Sans:400,500,600,700,800%7CInstrument%20Sans:500,600,700,400&#038;display=swap"
+    },
+    {
+      "type": "icon",
+      "href": "/gasco/favicon.png",
+      "sizes": "32x32"
+    }
+  ],
+  "scripts": []
+}

@@ -2,7 +2,7 @@
   "slug": "portfolio-4-columns",
   "lang": "en-US",
   "title": "Flagship Projects &#8211; GASCO",
-  "bodyClass": "wp-singular page-template page-template-page-builder page-template-page-builder-php page page-id-388 wp-embed-responsive wp-theme-buildgo theme-buildgo woocommerce-no-js fhf-header fhf-footer fhf-template-buildgo fhf-stylesheet-buildgo elementor-default elementor-kit-5 elementor-page elementor-page-388",
+  "bodyClass": "wp-singular page-template page-template-elementor_header_footer page page-id-1272 wp-embed-responsive wp-theme-buildgo theme-buildgo woocommerce-no-js fhf-header fhf-footer fhf-template-buildgo fhf-stylesheet-buildgo elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-1272",
   "headAssets": [
     {
       "type": "style",
@@ -80,6 +80,14 @@
     {
       "type": "css",
       "href": "/wp-content/uploads/elementor/css/post-5.css?ver=1782478613"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/uploads/elementor/css/post-1272.css?ver=1782478613"
+    },
+    {
+      "type": "css",
+      "href": "/wp-content/uploads/elementor/css/post-1275.css?ver=1782478613"
     },
     {
       "type": "css",
