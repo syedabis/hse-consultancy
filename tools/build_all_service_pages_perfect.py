@@ -87,7 +87,7 @@ configs = {
         "showcase_p2": "From initial concept and Front-End Engineering Design (FEED) to detailed mechanical, piping, electrical, instrumentation, and civil engineering packages, our multidisciplinary team delivers precision and compliance.",
         "showcase_p3": "Our engineers strictly follow ASME, API, and ISO standards to optimize facility efficiency, minimize design risks, and streamline field construction.",
         "showcase_btn": "Request Engineering Proposal ↗",
-        "showcase_img": "/wp-content/uploads/2024/09/banner-1.jpg",
+        "showcase_img": "/pictures/Page 18.jpeg",
         "statement_text": "At GASCO, our engineering and design department provides world-class technical consultancy and detailed engineering packages tailored to Pakistan's energy infrastructure. We combine <span>cutting-edge software</span>, <span>experienced multidisciplinary engineers</span>, and <span>rigorous industry standards</span> to turn complex engineering challenges into efficient, buildable solutions.",
         "stat1_val": "30+", "stat1_lbl": "Years Engineering",
         "stat2_val": "100+", "stat2_lbl": "Detailed Design Packages",
@@ -104,9 +104,9 @@ configs = {
             ("06", "Design Verification", "Final design validation, third-party code compliance audit, and site engineering support.")
         ],
         "projects_head": "Featured Engineering Projects",
-        "proj1": ("/wp-content/uploads/2024/09/portfolio-1.jpg", "MOL Pakistan", "Central Compression FEED &amp; Engineering", "Front-end engineering design and 3D piping layouts for Makori Central Compression Facility."),
-        "proj2": ("/wp-content/uploads/2024/09/portfolio-2.jpg", "PPL (Pakistan Petroleum)", "Amine Sweetening Unit Detailed Design", "Detailed mechanical engineering and stress analysis for high-pressure gas sweetening absorber column."),
-        "proj3": ("/wp-content/uploads/2024/09/blog-1.jpg", "Mari Petroleum (MPCL)", "Gas Booster Station Piping &amp; E&amp;I Design", "Comprehensive electrical, instrumentation, and piping stress analysis for field booster compressor skids.")
+        "proj1": ("/pictures/Pg 16.jpeg", "MOL Pakistan", "Central Compression FEED &amp; Engineering", "Front-end engineering design and 3D piping layouts for Makori Central Compression Facility."),
+        "proj2": ("/pictures/HTDC Project pg 31.jpeg", "PPL (Pakistan Petroleum)", "Amine Sweetening Unit Detailed Design", "Detailed mechanical engineering and stress analysis for high-pressure gas sweetening absorber column."),
+        "proj3": ("/pictures/Dhok Sultan - pg 33.jpeg", "Mari Petroleum (MPCL)", "Gas Booster Station Piping &amp; E&amp;I Design", "Comprehensive electrical, instrumentation, and piping stress analysis for field booster compressor skids.")
     },
     "pipeline-construction": {
         "hero_badge": "Premier Pipeline Construction Contractor",
@@ -118,7 +118,7 @@ configs = {
         "showcase_p2": "We handle high-pressure steel trunklines, wellhead gathering networks, and sales gas pipelines ranging from small diameter flowlines to large diameter main transmission pipelines.",
         "showcase_p3": "Equipped with specialized welding rigs, automatic NDT inspection equipment, and heavy trenching machinery, our team executes fast-track pipeline projects across complex terrains and HDD water crossings.",
         "showcase_btn": "Request Pipeline Proposal ↗",
-        "showcase_img": "/wp-content/uploads/2024/09/service-3.jpg",
+        "showcase_img": "/pictures/SSGC_42_RLNG_80_Kms_Pipeline_Project_pg_37.jpg",
         "statement_text": "GASCO delivers resilient, high-integrity pipeline networks that safely connect gas fields to national transmission grids. Upholding the highest HSE standards, we integrate <span>advanced welding technology</span>, <span>rigorous NDT inspection</span>, and <span>environmental stewardship</span> to ensure long-term pipeline asset integrity.",
         "stat1_val": "500+", "stat1_lbl": "KM Pipelines Laid",
         "stat2_val": "30+", "stat2_lbl": "Cross-Country Lines",
@@ -135,9 +135,9 @@ configs = {
             ("06", "Hydrotest &amp; Tie-In", "Hydrostatic pressure testing, dewatering, vacuum drying, final hot tie-ins, and commissioning.")
         ],
         "projects_head": "Featured Pipeline Projects",
-        "proj1": ("/wp-content/uploads/2024/09/portfolio-5.jpg", "PGNIG", "Rizq-2, Rehman-4 &amp; Rehman-5 Lines", "High-pressure gas gathering pipelines connecting multiple wellheads to the central processing facility."),
-        "proj2": ("/wp-content/uploads/2024/09/portfolio-6.jpg", "MOL Pakistan", "Makori High-Pressure Gas Loopline", "Fast-track cross-country steel pipeline installation including HDD river crossing and valve stations."),
-        "proj3": ("/wp-content/uploads/2024/09/portfolio-7.jpg", "Mari Petroleum (MPCL)", "Field Booster Interconnecting Network", "Large-diameter gathering network tie-in connecting booster compressors to the main transmission line.")
+        "proj1": ("/pictures/RDMC - Water Piprline - pg 29.jpeg", "PGNIG", "Rizq-2, Rehman-4 &amp; Rehman-5 Lines", "High-pressure gas gathering pipelines connecting multiple wellheads to the central processing facility."),
+        "proj2": ("/pictures/Shewa Relocation - pg 32.jpeg", "MOL Pakistan", "Makori High-Pressure Gas Loopline", "Fast-track cross-country steel pipeline installation including HDD river crossing and valve stations."),
+        "proj3": ("/pictures/SSGC_42_RLNG_80_Kms_Pipeline_Project_pg_37.jpg", "Mari Petroleum (MPCL)", "Field Booster Interconnecting Network", "Large-diameter gathering network tie-in connecting booster compressors to the main transmission line.")
     },
     "rental-compression-production": {
         "hero_badge": "Flexible Rental Compression &amp; Production Fleet",
@@ -149,7 +149,7 @@ configs = {
         "showcase_p2": "Our mobile compression fleet enables operators to boost wellhead pressures, extend depleted field life, and increase sales gas volumes without heavy upfront capital investments.",
         "showcase_p3": "Every compression package is pre-engineered, factory-tested, skid-mounted, and supported by 24/7 on-site operations and maintenance technicians to ensure optimal uptime.",
         "showcase_btn": "Explore Rental Fleet ↗",
-        "showcase_img": "/wp-content/uploads/2024/09/service-4.jpg",
+        "showcase_img": "/pictures/Dehydration unit pg 36.jpg",
         "statement_text": "GASCO provides fast-deployable compression solutions tailored to changing reservoir dynamics. Our rental fleet offers <span>flexible commercial terms</span>, <span>rapid field deployment</span>, and <span>guaranteed uptime</span>, empowering operators to maximize production economics with zero capital risk.",
         "stat1_val": "50+", "stat1_lbl": "Mobile Compressor Skids",
         "stat2_val": "98%+", "stat2_lbl": "Fleet Availability",
@@ -166,9 +166,9 @@ configs = {
             ("06", "24/7 O&amp;M &amp; Monitoring", "Continuous on-site operator coverage, daily telemetry monitoring, and preventive maintenance.")
         ],
         "projects_head": "Featured Compression Projects",
-        "proj1": ("/wp-content/uploads/2024/09/portfolio-1.jpg", "Engro Fertilizers", "3 x 7,950 HP Gas Compression Package", "High-capacity rental compression station delivering 150 MMSCFD gas boosting for fertilizer feed."),
-        "proj2": ("/wp-content/uploads/2024/09/portfolio-2.jpg", "Eni Pakistan", "Bhit Wellhead Booster Compression", "Wellhead pressure boosting compression package extending economic field production."),
-        "proj3": ("/wp-content/uploads/2024/09/portfolio-3.jpg", "OMV Pakistan", "Miano 18 Low-Pressure Boosting Skid", "Skid-mounted gas compressor package boosting low-pressure well gas into main gathering header.")
+        "proj1": ("/pictures/Pg 16.jpeg", "Engro Fertilizers", "3 x 7,950 HP Gas Compression Package", "High-capacity rental compression station delivering 150 MMSCFD gas boosting for fertilizer feed."),
+        "proj2": ("/pictures/HTDC Project pg 31.jpeg", "Eni Pakistan", "Bhit Wellhead Booster Compression", "Wellhead pressure boosting compression package extending economic field production."),
+        "proj3": ("/pictures/Dehydration unit pg 36.jpg", "OMV Pakistan", "Miano 18 Low-Pressure Boosting Skid", "Skid-mounted gas compressor package boosting low-pressure well gas into main gathering header.")
     },
     "outsource-warehousing": {
         "hero_badge": "Secure Industrial Warehousing &amp; Logistics",
@@ -180,7 +180,7 @@ configs = {
         "showcase_p2": "We provide secure indoor climate-controlled storage and heavy-duty outdoor yards designed for critical spare parts, line pipes, valves, instrumentation, and heavy machinery.",
         "showcase_p3": "Utilizing real-time inventory management software, nitrogen purging preservation protocols, and 24/7 security, we protect high-value assets and streamline client supply chains.",
         "showcase_btn": "Request Storage Quote ↗",
-        "showcase_img": "/wp-content/uploads/2024/10/about-6.jpg",
+        "showcase_img": "/pictures/Page 32.jpeg",
         "statement_text": "GASCO provides comprehensive industrial warehousing solutions that minimize inventory loss and reduce client overhead. Combining <span>state-of-the-art storage infrastructure</span>, <span>rigorous asset preservation</span>, and <span>integrated ERP tracking</span>, we safeguard critical energy sector inventory nationwide.",
         "stat1_val": "100k+", "stat1_lbl": "SQ.FT Storage Capacity",
         "stat2_val": "100%", "stat2_lbl": "Preservation Integrity",
@@ -197,9 +197,9 @@ configs = {
             ("06", "Hot-Shot Site Logistics", "Express dispatch and secure transport direct to onshore drilling rigs and plant sites.")
         ],
         "projects_head": "Featured Warehousing Hubs",
-        "proj1": ("/wp-content/uploads/2024/09/portfolio-4.jpg", "Multinational E&P", "Central Oilfield Materials Storage Hub", "Turnkey management of major multinational E&P spare parts inventory and drilling consumables."),
-        "proj2": ("/wp-content/uploads/2024/09/portfolio-5.jpg", "GASCO Operations", "Heavy Machinery &amp; Valve Preservation Yard", "Specialized preservation yard for high-pressure control valves, turbines, and compressor spares."),
-        "proj3": ("/wp-content/uploads/2024/09/portfolio-6.jpg", "Pipeline Division", "Line Pipe &amp; Heavy Fitting Depot", "Dedicated outdoor pipe storage depot with 24/7 crane handling and protective coating maintenance.")
+        "proj1": ("/pictures/Page 32.jpeg", "Multinational E&P", "Central Oilfield Materials Storage Hub", "Turnkey management of major multinational E&P spare parts inventory and drilling consumables."),
+        "proj2": ("/pictures/Pg 2.jpeg", "GASCO Operations", "Heavy Machinery &amp; Valve Preservation Yard", "Specialized preservation yard for high-pressure control valves, turbines, and compressor spares."),
+        "proj3": ("/pictures/pg 21.jpeg", "Pipeline Division", "Line Pipe &amp; Heavy Fitting Depot", "Dedicated outdoor pipe storage depot with 24/7 crane handling and protective coating maintenance.")
     },
     "operations-maintenance": {
         "hero_badge": "Specialized Operations &amp; Maintenance Provider",
@@ -211,7 +211,7 @@ configs = {
         "showcase_p2": "With an availability and uptime guarantee of 98% and above, we handle routine gas plant operations, preventive maintenance, condition monitoring, and major annual turnarounds (TAR).",
         "showcase_p3": "Our O&M team brings over 14 years of field experience operating gas processing plants, sweetening units, compressor stations, and power generation skids.",
         "showcase_btn": "Request O&M Proposal ↗",
-        "showcase_img": "/wp-content/uploads/2024/10/subscribe.jpg",
+        "showcase_img": "/pictures/Dhok Sultan - pg 33.jpeg",
         "statement_text": "GASCO ensures maximum plant productivity and equipment longevity through disciplined facility operations and predictive maintenance. Backed by <span>certified plant engineers</span>, <span>98%+ guaranteed availability</span>, and <span>uncompromising safety protocols</span>, we optimize facility lifecycle performance.",
         "stat1_val": "98%+", "stat1_lbl": "Plant Uptime Guarantee",
         "stat2_val": "14+", "stat2_lbl": "Years O&M Track Record",
@@ -228,9 +228,9 @@ configs = {
             ("06", "Emergency Field Support", "Rapid 24/7 technical dispatch, root-cause failure analysis, and immediate OEM spare replacement.")
         ],
         "projects_head": "Featured O&M Projects",
-        "proj1": ("/wp-content/uploads/2024/09/portfolio-8.jpg", "PPL (Pakistan Petroleum)", "HRL Compressor Revamp &amp; Turnaround", "Major overhaul and annual turnaround execution for Kandhkot gas field compressor package."),
-        "proj2": ("/wp-content/uploads/2024/09/skill.jpg", "MOL Pakistan", "Makori Gas Plant Long-Term O&M", "Long-term facility operations and routine maintenance contract maintaining 98%+ plant availability."),
-        "proj3": ("/wp-content/uploads/2024/09/about-5.jpg", "Mari Petroleum (MPCL)", "Field Booster Station Maintenance", "24/7 operation and predictive maintenance of gas pressure boosting compressor stations.")
+        "proj1": ("/pictures/Dhok Sultan - pg 33.jpeg", "PPL (Pakistan Petroleum)", "HRL Compressor Revamp &amp; Turnaround", "Major overhaul and annual turnaround execution for Kandhkot gas field compressor package."),
+        "proj2": ("/pictures/Pg 16.jpeg", "MOL Pakistan", "Makori Gas Plant Long-Term O&M", "Long-term facility operations and routine maintenance contract maintaining 98%+ plant availability."),
+        "proj3": ("/pictures/Jhal Magsi Development Project  pg 30.jpeg", "Mari Petroleum (MPCL)", "Field Booster Station Maintenance", "24/7 operation and predictive maintenance of gas pressure boosting compressor stations.")
     }
 }
 

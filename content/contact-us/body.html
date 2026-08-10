@@ -35,7 +35,7 @@
 				<div class="elementor-widget-container">
 					        <div class="flexitype-builder-logo">
                             <a href="/" class="custom-logo-link">
-                    <img src="/gasco/gepl-black.png" alt="logo">
+                    <img src="/gasco/gepl-white.png" alt="logo">
                 </a>
                     </div>
         				</div>
@@ -48,7 +48,7 @@
 				<div class="elementor-widget-container">
 					            <div class="header_mega mega-menu-main">
                 <div class="header_mega-menu">
-                    <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" class="menu-link">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us/" class="menu-link">About Us</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/" class="menu-link">Services</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projects/" class="menu-link">Projects</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/our-team/" class="menu-link">Our Team</a></li></ul></div>                </div>                   
+                    <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" class="menu-link">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us/" class="menu-link">About Us</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/" class="menu-link">Services</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projects/" class="menu-link">Projects</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/our-team/" class="menu-link">Our Team</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/contact-us/" class="menu-link">Contact Us</a></li></ul></div>                </div>                   
                 <div class="header_nav-menu-responsive nav_menu_popup-691">
                     <div class="nav_menu_bar">
                         <i class="flaticon flaticon-menu-3"></i>
@@ -56,12 +56,12 @@
                     <div class="nav_menu_bar-popup">
                         <div class="nav_menu_bar-popup-top">
                                                         <div class="nav_menu_bar-popup-top-logo">
-                                <a href="/"><img src="/gasco/gepl-black.png" alt="Mobile Logo"></a>
+                                <a href="/"><img src="/gasco/gepl-white.png" alt="Mobile Logo"></a>
                             </div>
                                                         <div class="nav_menu_bar-popup-close"><i class="fal fa-times"></i></div>
                         </div>
                         <div class="vertical-menu vertical_menu-691">
-                            <div class="menu-main-menu-container"><ul id="mobilemenu" class="d-block"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" class="menu-link">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us/" class="menu-link">About Us</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/" class="menu-link">Services</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projects/" class="menu-link">Projects</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/our-team/" class="menu-link">Our Team</a></li></ul></div>                        </div>
+                            <div class="menu-main-menu-container"><ul id="mobilemenu" class="d-block"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" class="menu-link">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us/" class="menu-link">About Us</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/" class="menu-link">Services</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/projects/" class="menu-link">Projects</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/our-team/" class="menu-link">Our Team</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/contact-us/" class="menu-link">Contact Us</a></li></ul></div>                        </div>
                     </div>
                 </div>
             </div>
@@ -239,168 +239,612 @@
 <main id="primary" class="site-main">
 
 
-		<div data-elementor-type="wp-post" data-elementor-id="490" class="elementor elementor-490">
-						
+		<div data-elementor-type="wp-page" data-elementor-id="1272" class="elementor elementor-1272">
 <style>
-/* the header was designed to float over a dark hero photo (white nav text,
-   transparent background) - every page that photo just got removed from
-   needs that text switched to a dark color or it's invisible on white */
-.custom-header-builder .header_mega-menu ul li.menu-item > .menu-link,
-.custom-header-builder .header_mega-menu ul li.menu-item > .menu-link::before,
-.custom-header-builder .flexitype-search-icon i,
-.custom-header-builder .flexitype-offcanvas-popup-icon i {color:#1A1A1A !important;}
-.custom-header-builder .header_mega-menu ul li.menu-item:hover > .menu-link {color:#FFBF43 !important;}
-.gasco-page-header{max-width:1340px;margin:0 auto;padding:146px 20px 8px;}
-.gasco-page-header .meta ul{list-style:none;display:flex;gap:6px;padding:0;margin:0 0 10px;font-size:13px;opacity:.6;}
-.gasco-page-header .meta ul li.separator{opacity:.5;}
-.gasco-page-header .meta ul a{color:inherit;text-decoration:none;}
-.gasco-page-header .meta ul .current{color:#FFBF43;}
-.gasco-page-header h1{margin:0 0 10px;}
-.gasco-page-header p{max-width:640px;opacity:.75;line-height:1.55;margin:0;}
+/* 1. Header Transparent Layout & Pill Navigation (Parity with Services Page) */
+.custom-header-builder.flexitype-transparent-header,
+header#masthead {
+    background: transparent !important;
+    position: absolute !important;
+    top: 0; left: 0; width: 100%;
+    z-index: 9999 !important;
+}
+header#masthead section.elementor-element-be1d27f {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+header#masthead section.elementor-element-be1d27f .elementor-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: relative !important;
+    width: 100% !important;
+}
+header#masthead .custom-logo-link img {
+    max-width: 170px !important;
+    filter: none !important;
+}
+/* Left Column: Logo */
+header#masthead .elementor-element-84d4495 {
+    width: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    z-index: 2 !important;
+}
+
+/* Center Column: Navigation Menu Pill centered at 50% */
+header#masthead .elementor-element-9caab00 {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 1 !important;
+}
+header#masthead .elementor-element-9caab00 > .elementor-widget-wrap {
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    width: auto !important;
+}
+header#masthead .elementor-widget-flexitype-megamenu {
+    width: auto !important;
+    max-width: fit-content !important;
+    margin: 0 auto !important;
+}
+header#masthead .elementor-widget-flexitype-megamenu > .elementor-widget-container {
+    background-color: #FFFFFF !important;
+    padding: 0px 24px !important;
+    border-radius: 80px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    width: max-content !important;
+}
+header#masthead .header_mega-menu ul li.menu-item {
+    margin: 0 10px !important;
+}
+header#masthead .header_mega-menu ul li.menu-item > .menu-link {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: #222222 !important;
+    padding: 12px 6px !important;
+}
+header#masthead .header_mega-menu ul li.menu-item:hover > .menu-link {
+    color: #FFBF43 !important;
+}
+
+/* Right Column: Search Icon & Contact Us Button */
+header#masthead .elementor-element-f779515 {
+    width: auto !important;
+    margin-left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    z-index: 2 !important;
+}
+header#masthead .elementor-element-f779515 > .elementor-widget-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 20px !important;
+    width: auto !important;
+}
+header#masthead .elementor-element-46e3b6e,
+header#masthead .elementor-element-e04460a {
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+}
+header#masthead .flexitype-search-icon i {
+    color: #FFFFFF !important;
+    font-size: 22px !important;
+}
+
+/* Hide offcanvas grid icon */
+header#masthead .elementor-element-ed7fa89 {
+    display: none !important;
+}
+
+/* Header Contact Us Dark Button Parity */
+header#masthead .elementor-element-e04460a .flexitype-btn-wrapper {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: #FFFFFF !important;
+    background-color: #111827 !important;
+    border-radius: 50px !important;
+    padding: 8px 8px 8px 24px !important;
+    gap: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+header#masthead .elementor-element-e04460a .flexitype-btn-wrapper span {
+    color: #FFFFFF !important;
+}
+header#masthead .elementor-element-e04460a .flexitype-btn-wrapper i {
+    color: #111827 !important;
+    background: #FFFFFF !important;
+    font-size: 14px !important;
+    padding: 8px !important;
+    border-radius: 50% !important;
+    width: 28px !important;
+    height: 28px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* 2. Hero Section Parity */
+.elementor-element-4d26541 {
+    position: relative !important;
+    padding: 240px 12px 250px 12px !important;
+    min-height: 750px !important;
+    background: #0F172A !important;
+    border-left: 1px solid #1F2539 !important;
+}
+.elementor-element-4d26541 > .elementor-container {
+    max-width: 1420px !important;
+}
+.elementor-element-4d26541 .elementor-background-video-container {
+    opacity: 0.65 !important;
+}
+
+/* 3. Subtitle Pill Badge */
+.elementor-element-0aefbdb > .elementor-widget-container {
+    margin: 0px 0px 24px 0px !important;
+    padding: 8px 24px !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+    width: auto !important;
+}
+.elementor-element-0aefbdb .elementor-heading-title {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    line-height: 14px !important;
+    color: #FFFFFF !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 !important;
+}
+
+/* 4. Giant Headings */
+.elementor-element-6482d61 .elementor-heading-title {
+    font-size: 110px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    line-height: 1.1 !important;
+    color: #FFFFFF !important;
+    letter-spacing: -2px !important;
+    margin: 0 !important;
+}
+.elementor-element-e078d5f .elementor-heading-title {
+    font-size: 85px !important;
+    font-weight: 700 !important;
+    text-transform: capitalize !important;
+    line-height: 1.0 !important;
+    -webkit-text-stroke-width: 1.5px !important;
+    -webkit-text-stroke-color: #FFFFFF !important;
+    stroke-width: 1.5px !important;
+    stroke: #FFFFFF !important;
+    color: transparent !important;
+    margin: 0 0 40px 0 !important;
+}
+@media(max-width: 768px) {
+    .elementor-element-6482d61 .elementor-heading-title { font-size: 60px !important; }
+    .elementor-element-e078d5f .elementor-heading-title { font-size: 45px !important; }
+}
+
+/* 5. Creative Gold Button */
+.elementor-element-04e43db {
+    margin-top: 30px !important;
+}
+.elementor-element-04e43db .flexitype-btn-wrapper {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: #111827 !important;
+    background: #FFBF43 !important;
+    border-radius: 50px !important;
+    padding: 8px 8px 8px 30px !important;
+    gap: 20px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    box-shadow: 0 10px 25px rgba(255, 191, 67, 0.3) !important;
+}
+.elementor-element-04e43db .flexitype-btn-wrapper i {
+    color: #FFFFFF !important;
+    background: #111827 !important;
+    font-size: 22px !important;
+    padding: 10px 11px !important;
+    border-radius: 50px !important;
+}
+
+/* 6. Rotating Badge Placement */
+.elementor-element-fbd2622 {
+    position: absolute !important;
+    bottom: 120px !important;
+    right: 15% !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    z-index: 10 !important;
+}
+.elementor-element-fbd2622 img {
+    width: 130px !important;
+    height: 130px !important;
+    border-radius: 50% !important;
+}
+
+/* 7. Client Logos Section */
+.elementor-element-efb592a {
+    background-color: transparent !important;
+    background-image: linear-gradient(90deg, rgba(255, 35, 35, 0) 20%, #F8F7F0 0%) !important;
+    margin-top: -108px !important;
+    margin-bottom: 0px !important;
+    position: relative !important;
+    z-index: 20 !important;
+    padding: 0px 12px !important;
+}
+.elementor-element-efb592a > .elementor-container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: stretch !important;
+}
+@media(min-width: 768px) {
+    .elementor-element-1246da9 { width: 20.498% !important; }
+    .elementor-element-4523119 { width: 79.502% !important; }
+}
+.elementor-element-1246da9 {
+    background-color: #F8F7F0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.elementor-element-1246da9 > .elementor-widget-wrap {
+    background-color: #F8F7F0 !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.elementor-element-1246da9 > .elementor-element-populated {
+    border-style: solid !important;
+    border-width: 0px 1px 0px 0px !important;
+    border-color: #D9D9D9 !important;
+    background-color: #F8F7F0 !important;
+    padding: 50px 0px 50px 50px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+.elementor-element-b4d5d18 { width: 190px !important; max-width: 190px !important; }
+.elementor-element-b4d5d18 .elementor-heading-title {
+    font-size: 28px !important;
+    line-height: 38px !important;
+    color: #222222 !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+.elementor-element-4523119 {
+    background-color: #F8F7F0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-self: stretch !important;
+}
+.elementor-element-4523119 > .elementor-widget-wrap,
+.elementor-element-4523119 > .elementor-element-populated {
+    background-color: #F8F7F0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 0px 0px 0px 50px !important;
+    box-sizing: border-box !important;
+}
+.elementor-element-b1c9e59 { width: 100% !important; margin: auto 0 !important; }
+.elementor-element-b1c9e59 > .elementor-widget-container { margin: 0px -250px 0px 0px !important; width: 100% !important; }
+.elementor-element-b1c9e59 .text__slider,
+.elementor-element-b1c9e59 .text-slide,
+.elementor-element-b1c9e59 .text_scroll { display: flex !important; align-items: center !important; }
+.elementor-element-b1c9e59 .text__slider ul { display: flex !important; align-items: center !important; margin: 0 !important; padding: 0 !important; list-style: none !important; }
+.elementor-element-b1c9e59 .text__slider ul li { margin-left: 45px !important; margin-right: 45px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; }
+.elementor-element-b1c9e59 .text__slider ul li a { display: inline-flex !important; align-items: center !important; justify-content: center !important; }
+.elementor-element-b1c9e59 .text__slider ul li img { max-height: 48px !important; width: auto !important; object-fit: contain !important; filter: none !important; opacity: 1 !important; vertical-align: middle !important; }
+
+/* 8. White Statement & Stats Section */
+.epc-statement-section { padding: 80px 20px; text-align: center; background: #ffffff; }
+.epc-statement-text { max-width: 920px; margin: 0 auto 60px; font-size: 22px; font-weight: 600; line-height: 1.6; color: #111827; font-family: "Instrument Sans", sans-serif; }
+.epc-statement-text span { color: #FFBF43; font-weight: 700; }
+.epc-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; max-width: 1100px; margin: 0 auto; }
+.epc-stat-box h2 { font-size: 44px; font-weight: 800; color: #111827; margin: 0 0 6px; letter-spacing: -0.5px; font-family: "Instrument Sans", sans-serif; }
+.epc-stat-box p { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #6B7280; margin: 0; }
+@media(max-width:768px) { .epc-stats-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* 9. Contact Main Section Modern Design */
+.gasco-contact-sec { background: #F9FAFB; padding: 90px 20px; font-family: "Instrument Sans", sans-serif; }
+.gasco-contact-container { max-width: 1340px; margin: 0 auto; }
+.gasco-contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 50px; align-items: start; }
+@media(max-width: 992px) { .gasco-contact-grid { grid-template-columns: 1fr; } }
+
+.gasco-contact-info-wrap { display: flex; flex-direction: column; gap: 24px; }
+.gasco-contact-card { background: #ffffff; border: 1px solid #E5E7EB; border-radius: 16px; padding: 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: all 0.3s ease; }
+.gasco-contact-card:hover { border-color: #FFBF43; transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+.gasco-contact-icon { width: 56px; height: 56px; min-width: 56px; border-radius: 12px; background: rgba(255, 191, 67, 0.15); display: flex; align-items: center; justify-content: center; color: #111827; font-size: 24px; }
+.gasco-contact-card-content h4 { margin: 0 0 6px; font-size: 20px; font-weight: 700; color: #111827; }
+.gasco-contact-card-content p, .gasco-contact-card-content a { font-size: 16px; color: #4B5563; line-height: 1.5; text-decoration: none; margin: 0; }
+.gasco-contact-card-content a:hover { color: #FFBF43; }
+
+.gasco-contact-form-card { background: #ffffff; border: 1px solid #E5E7EB; border-radius: 20px; padding: 40px; box-shadow: 0 10px 35px rgba(0,0,0,0.05); }
+.gasco-contact-form-card h3 { font-size: 32px; font-weight: 700; color: #111827; margin: 0 0 10px; }
+.gasco-contact-form-card p.form-desc { color: #6B7280; font-size: 15px; margin: 0 0 30px; }
+
+.gasco-form-group { margin-bottom: 20px; }
+.gasco-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media(max-width: 640px) { .gasco-form-row { grid-template-columns: 1fr; } }
+.gasco-form-input, .gasco-form-textarea { width: 100%; padding: 14px 18px; border: 1px solid #D1D5DB; border-radius: 10px; font-size: 15px; color: #111827; background: #F9FAFB; transition: border-color 0.3s ease, background 0.3s ease; box-sizing: border-box; }
+.gasco-form-input:focus, .gasco-form-textarea:focus { border-color: #FFBF43; background: #ffffff; outline: none; }
+.gasco-form-textarea { min-height: 140px; resize: vertical; }
+
+.gasco-form-submit-btn { background: #FFBF43; color: #111827; font-size: 16px; font-weight: 700; text-transform: uppercase; padding: 16px 36px; border: none; border-radius: 50px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 8px 20px rgba(255, 191, 67, 0.3); transition: all 0.3s ease; }
+.gasco-form-submit-btn:hover { background: #111827; color: #ffffff; transform: translateY(-2px); box-shadow: 0 12px 25px rgba(17, 24, 39, 0.2); }
+
+/* Map Section */
+.gasco-map-sec { background: #ffffff; padding: 0 0 80px; }
+.gasco-map-head { text-align: center; max-width: 700px; margin: 0 auto 40px; padding: 0 20px; }
+.gasco-map-head span { color: #FFBF43; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 8px; }
+.gasco-map-head h2 { font-size: 36px; font-weight: 700; color: #111827; margin: 0; }
+.gasco-map-iframe-wrap { max-width: 1340px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.08); border: 1px solid #E5E7EB; }
+.gasco-map-iframe-wrap iframe { width: 100%; height: 480px; border: 0; display: block; }
+
+.elementor-element.elementor-element-c182d0e,
+.elementor-element.elementor-element-c182d0e > .elementor-widget-wrap {
+    background-image: url('/about-us/footer.jpg') !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    border-radius: 20px !important;
+}
 </style>
-<div class="gasco-page-header">
-  <div class="meta"><ul><li class="home item"><a href="/">Home</a></li><li class="separator">/</li><li class="current item">Contact Us</li></ul></div>
-  <h1 class="elementor-heading-title elementor-size-default">Contact Us</h1>
-  <p>Get in touch with GASCO Engineering for your next Oil &amp; Gas project — our team is ready to help.</p>
+
+<!-- Hero Section (Services Style) -->
+<section class="elementor-section elementor-top-section elementor-element elementor-element-4d26541 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d26541" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;/banner.mp4&quot;,&quot;background_video_start&quot;:1,&quot;background_video_end&quot;:200,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+  <div class="elementor-background-video-container">
+    <video class="elementor-background-video-hosted" role="presentation" autoplay="" muted="" playsinline="" loop="" src="/banner.mp4"></video>
   </div>
-
-				</div>
-		
-    <div class="section-nopading">
-        <div class="full-width">
-            		<div data-elementor-type="wp-page" data-elementor-id="23" class="elementor elementor-23">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-f69cce4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f69cce4" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-003390c" data-id="003390c" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-6dc0f73 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="6dc0f73" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h6 class="elementor-heading-title elementor-size-default">Contact Us</h6>				</div>
-				</div>
-				<div class="elementor-element elementor-element-9239c55 elementor-widget elementor-widget-heading" data-id="9239c55" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Get In Touch</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-6747e13 elementor-widget elementor-widget-heading" data-id="6747e13" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default">We’re here to assist you! Please reach out with any questions, feedback, or project inquiries. </p>				</div>
-				</div>
-				<div class="elementor-element elementor-element-dc73104 elementor-widget elementor-widget-flexitype-icon-box" data-id="dc73104" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-phone"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Phone:                        </h5>
-                                                                <p><a href="tel:+92 21 34320635-36">+92 21 34320635-36</a></p>
-                                    </div>
-                            </div>
+  <div class="elementor-container elementor-column-gap-default">
+    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a9bfa31" data-id="a9bfa31" data-element_type="column" data-e-type="column">
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div class="elementor-element elementor-element-0aefbdb elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="0aefbdb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h6 class="elementor-heading-title elementor-size-default">24/7 Global &amp; Regional Support</h6>
+          </div>
         </div>
-
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-e239f71 elementor-widget elementor-widget-flexitype-icon-box" data-id="e239f71" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-email-3"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Email Address:                        </h5>
-                                                                <p><a href="mailto:info@gascoengineering.com.pk">info@gascoengineering.com.pk</a></p>
-                                    </div>
-                            </div>
+        <div class="elementor-element elementor-element-6482d61 elementor-widget elementor-widget-heading" data-id="6482d61" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">GET IN TOUCH</h2>
+          </div>
         </div>
-
-        				</div>
-				</div>
-				<div class="elementor-element elementor-element-80c2dfa elementor-widget elementor-widget-flexitype-icon-box" data-id="80c2dfa" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-icon-box.default">
-				<div class="elementor-widget-container">
-					
-        <div class="icon__box-item  ">
-                                                                        <div class="icon__box-item-icon">
-                        <i aria-hidden="true" class="flaticon flaticon-location-1"></i>                                            </div>
-                                        <div class="icon__box-item-content">
-                <div class="title">
-                                            <h5>
-                            Location:                        </h5>
-                                                                <p><a href="https://www.google.com/maps">501 Amber Estate, Shahra-e-Faisal, Karachi 75350, Pakistan</a></p>
-                                    </div>
-                            </div>
+        <div class="elementor-element elementor-element-e078d5f elementor-widget elementor-widget-heading" data-id="e078d5f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">With Gasco Engineering</h2>
+          </div>
         </div>
-
-        				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-54c55a0" data-id="54c55a0" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-b4d4a66 elementor-widget elementor-widget-heading" data-id="b4d4a66" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Send Message</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-d80e2e4 elementor-widget elementor-widget-flexitype-contact-form7" data-id="d80e2e4" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-contact-form7.default">
-				<div class="elementor-widget-container">
-					        <div class="flexitype-contact-form-wrapper">
-            
-<div class="wpcf7 no-js" id="wpcf7-f569-o1" lang="en-US" dir="ltr" data-wpcf7-id="569">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/contact-us/#wpcf7-f569-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="569"><input type="hidden" name="_wpcf7_version" value="6.1.6"><input type="hidden" name="_wpcf7_locale" value="en_US"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f569-o1"><input type="hidden" name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value="">
-</fieldset>
-<div class="row contact-form">
-	<div class="col-md-6">
-		<span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" value="" type="text" name="your-name"></span>
-	</div>
-	<div class="col-md-6 md-25">
-		<span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" value="" type="email" name="your-email"></span>
-	</div>
-       <div class="col-md-6">
-		<span class="wpcf7-form-control-wrap" data-name="your-phone"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone" value="" type="text" name="your-phone"></span>
-	</div>
-	<div class="col-md-6 md-25">
-		<span class="wpcf7-form-control-wrap" data-name="subject"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Subject" value="" type="text" name="subject"></span>
-	</div>
-	<div class="col-lg-12">
-		<span class="wpcf7-form-control-wrap" data-name="textarea"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message" name="textarea"></textarea></span>
-	</div>
-	<div class="col-lg-12">
-	<input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Submit Now">
-	</div>
-</div><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>
+        <div style="margin-top: 15px; margin-bottom: 25px; max-width: 680px;">
+          <p style="color: rgba(255, 255, 255, 0.85); font-size: 18px; line-height: 1.6; font-family: 'Instrument Sans', sans-serif;">Whether you need a custom EPCC proposal, field technical support, or facility maintenance, our expert engineering team in Karachi is here to assist you.</p>
         </div>
-
-        				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-5a9cfa3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5a9cfa3" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb0b1f2" data-id="fb0b1f2" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-831c2e9 elementor-widget elementor-widget-google_maps" data-id="831c2e9" data-element_type="widget" data-e-type="widget" data-widget_type="google_maps.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-custom-embed">
-			<iframe loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-		        </div>
+        <div class="elementor-element elementor-element-04e43db elementor-widget__width-auto elementor-widget elementor-widget-flexitype-creative-button" data-id="04e43db" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-creative-button.default">
+          <div class="elementor-widget-container">
+            <div class="flexitype-btn">
+              <a class="flexitype-btn-wrapper button-isi right" href="#contact-form-section" data-text="SEND MESSAGE">
+                <span>SEND MESSAGE</span>
+                <i class="flaticon flaticon-right-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="elementor-element elementor-element-fbd2622 elementor-widget__width-auto e-transform elementor-absolute elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="fbd2622" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:45,&quot;sizes&quot;:[]},&quot;_position&quot;:&quot;absolute&quot;}">
+    <div class="elementor-widget-container">
+      <a href="#contact-form-section">
+        <img decoding="async" width="140" height="140" src="/gasco/epc-badge.svg" class="attachment-full size-full wp-image-172" alt="Oil &amp; Gas EPC">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Valued Clients Marquee Ticker -->
+<section class="elementor-section elementor-top-section elementor-element elementor-element-efb592a overflow-hidden elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="efb592a" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+  <div class="elementor-container elementor-column-gap-no">
+    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1246da9" data-id="1246da9" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div class="elementor-element elementor-element-b4d5d18 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="b4d5d18" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+          <div class="elementor-widget-container">
+            <h5 class="elementor-heading-title elementor-size-default">Our Valued Clients</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4523119" data-id="4523119" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div class="elementor-element elementor-element-b1c9e59 elementor-widget elementor-widget-flexitype-image-slide" data-id="b1c9e59" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-image-slide.default">
+          <div class="elementor-widget-container">
+            <div class="text__slider">
+              <div class="text-slide">
+                <div class="sliders text_scroll">
+                  <ul>
+                    <li><a href=""><img decoding="async" src="/Client Logos/1.png" alt="Client Logo 1"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/2.png" alt="Client Logo 2"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/3.png" alt="Client Logo 3"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/4.png" alt="Client Logo 4"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/5.png" alt="Client Logo 5"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/6.png" alt="Client Logo 6"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/7.png" alt="Client Logo 7"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/8.png" alt="Client Logo 8"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/9.png" alt="Client Logo 9"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/10.png" alt="Client Logo 10"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/11.png" alt="Client Logo 11"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/12.png" alt="Client Logo 12"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/13.png" alt="Client Logo 13"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/14.png" alt="Client Logo 14"></a></li>
+                  </ul>
+                </div>
+                <div class="sliders text_scroll">
+                  <ul>
+                    <li><a href=""><img decoding="async" src="/Client Logos/1.png" alt="Client Logo 1"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/2.png" alt="Client Logo 2"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/3.png" alt="Client Logo 3"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/4.png" alt="Client Logo 4"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/5.png" alt="Client Logo 5"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/6.png" alt="Client Logo 6"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/7.png" alt="Client Logo 7"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/8.png" alt="Client Logo 8"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/9.png" alt="Client Logo 9"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/10.png" alt="Client Logo 10"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/11.png" alt="Client Logo 11"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/12.png" alt="Client Logo 12"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/13.png" alt="Client Logo 13"></a></li>
+                    <li><a href=""><img decoding="async" src="/Client Logos/14.png" alt="Client Logo 14"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- White Impact Statement & 4 Big Stats -->
+<section class="epc-statement-section">
+  <div class="epc-statement-text">
+    GASCO provides <span>24/7 dedicated support</span> and <span>technical consultancy</span> across Pakistan. Reach out to our engineering hubs in Karachi and field offices for <span>fast-track project inquiries</span>.
+  </div>
+  <div class="epc-stats-grid">
+    <div class="epc-stat-box">
+      <h2>30+</h2>
+      <p>Years Technical Track Record</p>
+    </div>
+    <div class="epc-stat-box">
+      <h2>24/7</h2>
+      <p>Emergency Field Response</p>
+    </div>
+    <div class="epc-stat-box">
+      <h2>100%</h2>
+      <p>HSE &amp; Code Compliance</p>
+    </div>
+    <div class="epc-stat-box">
+      <h2>4</h2>
+      <p>Regional Operations Hubs</p>
+    </div>
+  </div>
+</section>
+
+<!-- Main Contact Form & Info Cards Section -->
+<section id="contact-form-section" class="gasco-contact-sec">
+  <div class="gasco-contact-container">
+    <div class="gasco-contact-grid">
+      
+      <!-- Left: Info Cards -->
+      <div class="gasco-contact-info-wrap">
+        <div class="gasco-contact-card">
+          <div class="gasco-contact-icon">
+            <i class="flaticon flaticon-phone"></i>
+          </div>
+          <div class="gasco-contact-card-content">
+            <h4>Phone Inquiry</h4>
+            <p><a href="tel:+922134320635">+92 21 34320635-36</a></p>
+            <p style="font-size: 13.5px; color: #9CA3AF; margin-top: 4px;">Mon - Sat: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+
+        <div class="gasco-contact-card">
+          <div class="gasco-contact-icon">
+            <i class="flaticon flaticon-email-3"></i>
+          </div>
+          <div class="gasco-contact-card-content">
+            <h4>Official Email</h4>
+            <p><a href="mailto:info@gascoengineering.com.pk">info@gascoengineering.com.pk</a></p>
+            <p style="font-size: 13.5px; color: #9CA3AF; margin-top: 4px;">Fast response within 24 business hours</p>
+          </div>
+        </div>
+
+        <div class="gasco-contact-card">
+          <div class="gasco-contact-icon">
+            <i class="flaticon flaticon-location-1"></i>
+          </div>
+          <div class="gasco-contact-card-content">
+            <h4>Head Office Location</h4>
+            <p><a href="https://maps.app.goo.gl/RKvRodZG5vRKP8vY7" target="_blank">501 Amber Estate, Shahra-e-Faisal, Karachi 75350, Pakistan</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="gasco-contact-form-card">
+        <h3>Send Us A Message</h3>
+        <p class="form-desc">Fill in your inquiry details below and our technical sales division will contact you promptly.</p>
+        
+        <form action="/contact-us/#wpcf7-f569-o1" method="post" class="wpcf7-form init">
+          <div class="gasco-form-row gasco-form-group">
+            <div>
+              <input type="text" name="your-name" class="gasco-form-input" placeholder="Your Full Name *" required>
+            </div>
+            <div>
+              <input type="email" name="your-email" class="gasco-form-input" placeholder="Email Address *" required>
+            </div>
+          </div>
+          <div class="gasco-form-row gasco-form-group">
+            <div>
+              <input type="text" name="your-phone" class="gasco-form-input" placeholder="Phone Number *" required>
+            </div>
+            <div>
+              <input type="text" name="subject" class="gasco-form-input" placeholder="Project / Subject *" required>
+            </div>
+          </div>
+          <div class="gasco-form-group">
+            <textarea name="textarea" class="gasco-form-textarea" placeholder="Tell us about your project or technical inquiry *" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="gasco-form-submit-btn">
+              <span>Submit Inquiry</span>
+              <i class="flaticon flaticon-right-arrow"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Head Office Location Map Section -->
+<section class="gasco-map-sec">
+  <div class="gasco-map-head">
+    <span>Visit Our Offices</span>
+    <h2>GASCO Head Office Karachi</h2>
+  </div>
+  <div class="gasco-map-iframe-wrap">
+    <iframe loading="lazy" src="https://maps.google.com/maps?q=Gasco%20Head%20Office,%20Shahrah-e-Faisal,%20Karachi&amp;t=m&amp;z=16&amp;output=embed" title="GASCO Engineering Head Office Karachi" aria-label="GASCO Engineering Head Office Karachi"></iframe>
+  </div>
+</section>
+
+</div>
 </main><!-- #main -->
 
 
@@ -410,38 +854,116 @@
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b60838c" data-id="b60838c" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-f2f4ed2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f2f4ed2" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7a4afcf" data-id="7a4afcf" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-927c063 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="927c063" data-element_type="section" data-e-type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4a60e29" data-id="4a60e29" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-19d9b18 elementor-widget elementor-widget-heading" data-id="19d9b18" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Partner With GASCO for Your Next Project</h2>				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b67c27c" data-id="b67c27c" data-element_type="column" data-e-type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-fbe4cca elementor-view-stacked elementor-widget__width-auto e-transform e-transform elementor-shape-circle elementor-widget elementor-widget-icon" data-id="fbe4cca" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:45,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-3,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-wrapper">
-			<a class="elementor-icon" href="/request-quote">
-			<i aria-hidden="true" class="flaticon flaticon-right-up"></i>			</a>
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
+<div class="gasco-cta-banner-wrapper">
+  <style>
+  .gasco-cta-banner-wrapper {
+    width: 100%;
+    padding: 60px 20px 40px 20px;
+    box-sizing: border-box;
+    background: transparent;
+  }
+  .gasco-cta-banner-card {
+    max-width: 1340px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url('/about-us/footer.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 75px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  }
+  .gasco-cta-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.65);
+    z-index: 1;
+  }
+  .gasco-cta-banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  .gasco-cta-banner-title {
+    color: #FFFFFF !important;
+    font-family: "Instrument Sans", sans-serif !important;
+    font-size: 42px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    margin: 0 !important;
+    letter-spacing: -0.5px !important;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+  .gasco-cta-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    background-color: #FFBF43 !important;
+    color: #111827 !important;
+    font-family: "Instrument Sans", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding: 16px 38px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    box-shadow: 0 8px 24px rgba(255, 191, 67, 0.4) !important;
+    transition: all 0.3s ease !important;
+  }
+  .gasco-cta-btn:hover {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 30px rgba(255,255,255,0.3) !important;
+  }
+  .gasco-cta-btn i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+  .gasco-cta-btn:hover i {
+    transform: translate(2px, -2px);
+  }
+  @media (max-width: 768px) {
+    .gasco-cta-banner-card {
+      padding: 50px 20px;
+      border-radius: 14px;
+    }
+    .gasco-cta-banner-title {
+      font-size: 28px !important;
+    }
+    .gasco-cta-btn {
+      padding: 14px 28px !important;
+      font-size: 14px !important;
+    }
+  }
+  </style>
+
+  <div class="gasco-cta-banner-card">
+    <div class="gasco-cta-banner-overlay"></div>
+    <div class="gasco-cta-banner-content">
+      <h2 class="gasco-cta-banner-title">Partner With GASCO for Your Next Oil &amp; Gas Project</h2>
+      <a href="/contact-us/" class="gasco-cta-btn">
+        <span>CONTACT US</span>
+        <i class="flaticon flaticon-right-up"></i>
+      </a>
+    </div>
+  </div>
+</div>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c8f416a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c8f416a" data-element_type="section" data-e-type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-191e096" data-id="191e096" data-element_type="column" data-e-type="column">
