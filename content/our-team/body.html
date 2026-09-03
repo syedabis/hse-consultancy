@@ -260,86 +260,237 @@
 </style>
 <div class="gasco-page-header">
   <div class="meta"><ul><li class="home item"><a href="/">Home</a></li><li class="separator">/</li><li class="current item">Our Team</li></ul></div>
-  <h1 class="elementor-heading-title elementor-size-default">Our Team</h1>
-  <p>Meet the leadership team driving GASCO Engineering's projects across Pakistan's Oil &amp; Gas sector.</p>
-  </div>
+  <h1 class="elementor-heading-title elementor-size-default">HSE Advisory Leadership</h1>
+  <p>Our multidisciplinary team of NEBOSH, TÜV, and OSHA certified risk engineers, occupational hygienists, and environmental auditors lead industrial safety transformations across Pakistan.</p>
+</div>
 
-				</div>
-		
     <style>
-    .coming-soon-sec {
-        padding: 100px 20px 120px;
-        text-align: center;
-        background: #ffffff;
-        min-height: 55vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .gasco-team-section {
+        padding: 60px 20px 100px;
+        background: #F9FAFB;
     }
-    .coming-soon-card {
-        max-width: 680px;
+    .gasco-team-container {
+        max-width: 1240px;
         margin: 0 auto;
-        padding: 60px 40px;
-        background: #F8F7F0;
-        border: 1px solid #E5E7EB;
-        border-radius: 24px;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.05);
     }
-    .coming-soon-badge {
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .team-card {
+        background: #FFFFFF;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid #E5E5E5;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+        transition: all 0.35s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    .team-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        border-color: #FFBF43;
+    }
+    .team-card-header {
+        background: #0A0A0A;
+        padding: 35px 25px;
+        color: #FFFFFF;
+        text-align: center;
+        border-bottom: 3px solid #FFBF43;
+        position: relative;
+    }
+    .team-badge {
         display: inline-block;
-        padding: 6px 18px;
-        background: rgba(255,191,67,0.2);
+        background: rgba(255, 191, 67, 0.2);
         border: 1px solid #FFBF43;
-        border-radius: 50px;
-        color: #111827;
-        font-weight: 700;
-        font-size: 13px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-    .coming-soon-card h2 {
-        font-family: 'Instrument Sans', sans-serif;
-        font-size: 42px;
+        color: #FFBF43;
+        font-size: 11px;
         font-weight: 800;
-        color: #111827;
-        margin: 0 0 16px;
-        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 4px 12px;
+        border-radius: 15px;
+        margin-bottom: 12px;
     }
-    .coming-soon-card p {
-        font-size: 17px;
-        color: #4B5563;
+    .team-card-header h3 {
+        font-size: 22px;
+        font-weight: 800;
+        color: #FFFFFF;
+        margin: 0 0 6px;
+    }
+    .team-card-header span.role {
+        font-size: 13.5px;
+        color: #A3A3A3;
+        font-weight: 600;
+    }
+    .team-card-body {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    .team-bio {
+        font-size: 14px;
+        color: #525252;
         line-height: 1.6;
-        margin: 0 0 32px;
+        margin: 0 0 20px;
+        flex-grow: 1;
     }
-    .coming-soon-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 14px 28px;
-        background: #111827;
-        color: #ffffff;
+    .team-certs {
+        border-top: 1px solid #F5F5F5;
+        padding-top: 15px;
+    }
+    .team-certs h5 {
+        font-size: 12px;
+        font-weight: 800;
+        color: #B88014;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 8px;
+    }
+    .cert-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .cert-tag {
+        background: #F3F4F6;
+        color: #1F2937;
+        font-size: 11.5px;
         font-weight: 700;
-        font-size: 15px;
-        border-radius: 10px;
-        text-decoration: none;
-        transition: all 0.3s ease;
+        padding: 4px 10px;
+        border-radius: 6px;
     }
-    .coming-soon-btn:hover {
-        background: #FFBF43;
-        color: #111827;
+    @media(max-width: 992px) {
+        .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media(max-width: 640px) {
+        .team-grid { grid-template-columns: 1fr; }
     }
     </style>
 
-    <div class="coming-soon-sec">
-        <div class="coming-soon-card">
-            <span class="coming-soon-badge">Leadership Spotlight</span>
-            <h2>Our Team Page Coming Soon</h2>
-            <p>We are currently updating our executive leadership directory and project management profiles to reflect our expanding EPCC operations across Pakistan. Please check back soon.</p>
-            <a href="/" class="coming-soon-btn">
-                <span>Return to Homepage</span>
-                <i class="flaticon flaticon-right-up"></i>
-            </a>
+    <div class="gasco-team-section">
+        <div class="gasco-team-container">
+            <div class="team-grid">
+
+                <!-- Member 1 -->
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <span class="team-badge">Executive Advisory</span>
+                        <h3>Syed A. Hassan</h3>
+                        <span class="role">Executive Director - HSE Advisory &amp; Risk Governance</span>
+                    </div>
+                    <div class="team-card-body">
+                        <p class="team-bio">Over 25 years of strategic leadership directing safety management, industrial compliance, and risk frameworks for high-hazard oil &amp; gas and manufacturing facilities.</p>
+                        <div class="team-certs">
+                            <h5>Key Certifications</h5>
+                            <div class="cert-tags">
+                                <span class="cert-tag">ISO 45001 Lead Auditor</span>
+                                <span class="cert-tag">NEBOSH Diploma</span>
+                                <span class="cert-tag">PEC Registered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <span class="team-badge">Process Safety</span>
+                        <h3>Dr. Tariq Mahmood</h3>
+                        <span class="role">Head of Process Safety Engineering</span>
+                    </div>
+                    <div class="team-card-body">
+                        <p class="team-bio">Specialist in Quantitative Risk Assessment (QRA), HAZOP/HAZID facilitation, SIL determination, and major accident prevention modeling for refinery operations.</p>
+                        <div class="team-certs">
+                            <h5>Key Certifications</h5>
+                            <div class="cert-tags">
+                                <span class="cert-tag">TÜV Functional Safety Expert</span>
+                                <span class="cert-tag">HAZOP Chairman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <span class="team-badge">Occupational Health</span>
+                        <h3>Farhan Siddiqui</h3>
+                        <span class="role">Principal Occupational Hygienist</span>
+                    </div>
+                    <div class="team-card-body">
+                        <p class="team-bio">Expert in workplace exposure assessments, ergonomics, industrial toxic substance monitoring, and noise/vibration compliance audits across industrial sectors.</p>
+                        <div class="team-certs">
+                            <h5>Key Certifications</h5>
+                            <div class="cert-tags">
+                                <span class="cert-tag">CIH Certified</span>
+                                <span class="cert-tag">OSHA Master Trainer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <span class="team-badge">Environmental Advisory</span>
+                        <h3>Ayesha Rehman</h3>
+                        <span class="role">Lead Environmental &amp; Sustainability Consultant</span>
+                    </div>
+                    <div class="team-card-body">
+                        <p class="team-bio">Directs Environmental Impact Assessments (EIA), carbon footprint accounting, waste minimization strategies, and EPA regulatory clearance documentation.</p>
+                        <div class="team-certs">
+                            <h5>Key Certifications</h5>
+                            <div class="cert-tags">
+                                <span class="cert-tag">ISO 14001 Lead Auditor</span>
+                                <span class="cert-tag">IEMA Registered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <span class="team-badge">Competency &amp; Training</span>
+                        <h3>Zubair Khan</h3>
+                        <span class="role">Head of Safety Training &amp; Workforce Competency</span>
+                    </div>
+                    <div class="team-card-body">
+                        <p class="team-bio">Leads custom safety training programs, permit-to-work (PTW) certifications, defensive driving courses, and emergency response tactical exercises.</p>
+                        <div class="team-certs">
+                            <h5>Key Certifications</h5>
+                            <div class="cert-tags">
+                                <span class="cert-tag">NEBOSH IGC</span>
+                                <span class="cert-tag">IOSH Approved Trainer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 6 -->
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <span class="team-badge">Audit &amp; Compliance</span>
+                        <h3>Noman Ahmed</h3>
+                        <span class="role">Senior Risk &amp; Compliance Auditor</span>
+                    </div>
+                    <div class="team-card-body">
+                        <p class="team-bio">Specializes in third-party safety management audits, gap analyses, contractor safety evaluations, and incident investigation reporting.</p>
+                        <div class="team-certs">
+                            <h5>Key Certifications</h5>
+                            <div class="cert-tags">
+                                <span class="cert-tag">ISO 19011 Auditor</span>
+                                <span class="cert-tag">OSHA 30-Hour Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </main><!-- #main -->
