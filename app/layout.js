@@ -5,7 +5,7 @@ export async function generateMetadata() {
   const p = (await headers()).get("x-pathname") || "/";
   const slug = slugForPath(p) || slugForPath("/");
   const { meta } = loadPage(slug);
-  const title = (meta.title || "GASCO")
+  const title = (meta.title || "Kaizen HSE Advisory")
     .replace(/&#8211;|&#8212;/g, "–")
     .replace(/&amp;/g, "&");
   return { title };
