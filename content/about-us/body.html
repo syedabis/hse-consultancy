@@ -390,11 +390,69 @@ body, #page, .site {
     box-shadow: 0 4px 15px rgba(255, 191, 67, 0.3);
     margin-top: 15px;
 }
-.gasco-split-btn:hover {
-    background: #e6a935;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(255, 191, 67, 0.4);
+/* Impact Statistics Section */
+.gasco-impact-stats-section {
+    background: #FFFFFF;
+    padding: 20px 20px 75px;
     color: #1A1A1A;
+    border-bottom: 1px solid #EAEAEA;
+    font-family: inherit;
+}
+.gasco-impact-stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gasco-impact-statement {
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 45px 0;
+    max-width: 1080px;
+    list-style: none;
+}
+.gasco-impact-statement .muted-text {
+    color: #666666;
+    font-weight: 400;
+}
+.gasco-impact-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    border-top: 1px solid #EAEAEA;
+    padding-top: 40px;
+}
+.gasco-stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.gasco-stat-item .stat-number {
+    font-size: 44px;
+    font-weight: 800;
+    color: #D49B27;
+    line-height: 1;
+    letter-spacing: -0.5px;
+}
+.gasco-stat-item .stat-label {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #444444;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+@media (max-width: 768px) {
+    .gasco-impact-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gasco-impact-statement {
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    .gasco-impact-stats-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Vision & Values Refined Section */
@@ -954,30 +1012,111 @@ body, #page, .site {
 </section>
 
 <!-- Overview & Impact Statistics (Directly Below Founder Section) -->
-<section class="gasco-impact-stats-section">
-    <div class="gasco-impact-stats-container">
+<style>
+html body section.gasco-impact-stats-section {
+    background: #FFFFFF !important;
+    padding: 50px 20px 75px !important;
+    color: #1A1A1A !important;
+    border-bottom: 1px solid #EAEAEA !important;
+    font-family: inherit !important;
+    clear: both !important;
+    position: relative !important;
+    z-index: 10 !important;
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+html body div.gasco-impact-stats-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+html body p.gasco-impact-statement {
+    font-size: 22px !important;
+    line-height: 1.65 !important;
+    font-weight: 700 !important;
+    color: #1A1A1A !important;
+    margin: 0 0 45px 0 !important;
+    max-width: 1080px !important;
+    display: block !important;
+}
+html body p.gasco-impact-statement span.muted-text {
+    color: #666666 !important;
+    font-weight: 400 !important;
+}
+html body div.gasco-impact-stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 30px !important;
+    border-top: 1px solid #EAEAEA !important;
+    padding-top: 40px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+html body div.gasco-stat-item {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+}
+html body div.gasco-stat-item div.stat-number {
+    font-size: 44px !important;
+    font-weight: 800 !important;
+    color: #D49B27 !important;
+    line-height: 1 !important;
+    letter-spacing: -0.5px !important;
+}
+html body div.gasco-stat-item div.stat-label {
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    color: #444444 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.6px !important;
+}
+@media (max-width: 768px) {
+    html body div.gasco-impact-stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    html body p.gasco-impact-statement {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 480px) {
+    html body div.gasco-impact-stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+
+<section class="gasco-impact-stats-section" style="background: #FFFFFF !important; padding: 60px 20px 75px !important; color: #1A1A1A !important; border-bottom: 1px solid #EAEAEA !important; font-family: inherit !important; clear: both !important; display: block !important; width: 100% !important; box-sizing: border-box !important; position: relative !important; z-index: 10 !important;">
+    <div class="gasco-impact-stats-container" style="max-width: 1200px !important; margin: 0 auto !important; padding: 0 15px !important; display: block !important; box-sizing: border-box !important;">
         
-        <p class="gasco-impact-statement">
-            At Kaizen HSE Advisory, we are committed to revolutionizing workplace safety and environmental stewardship across the energy and industrial sectors. We combine <span class="muted-text">certified HAZOP chairpersons, ISO lead auditors, advanced dispersion modeling, and accredited training programs to achieve Target Zero Harm.</span>
+        <p class="gasco-impact-statement" style="font-size: 22px !important; line-height: 1.65 !important; font-weight: 700 !important; color: #1A1A1A !important; margin: 0 0 45px 0 !important; max-width: 1080px !important; display: block !important;">
+            At Kaizen HSE Advisory, we are committed to revolutionizing workplace safety and environmental stewardship across the energy and industrial sectors. We combine <span class="muted-text" style="color: #666666 !important; font-weight: 400 !important;">certified HAZOP chairpersons, ISO lead auditors, advanced dispersion modeling, and accredited training programs to achieve Target Zero Harm.</span>
         </p>
 
-        <div class="gasco-impact-stats-grid">
-            <div class="gasco-stat-item">
-                <div class="stat-number">35M+</div>
-                <div class="stat-label">Safe Man-Hours Guided</div>
+        <div class="gasco-impact-stats-grid" style="border-top: 1px solid #EAEAEA !important; padding-top: 40px !important; margin: 0 !important; width: 100% !important; box-sizing: border-box !important; clear: both !important; display: block !important;">
+            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding-right: 15px !important; text-align: left !important;">
+                <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">35M+</div>
+                <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">Safe Man-Hours Guided</div>
             </div>
-            <div class="gasco-stat-item">
-                <div class="stat-number">30+</div>
-                <div class="stat-label">Years HSE Experience</div>
+            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding: 0 10px !important; text-align: left !important;">
+                <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">30+</div>
+                <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">Years HSE Experience</div>
             </div>
-            <div class="gasco-stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">HAZOP &amp; Risk Audits</div>
+            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding: 0 10px !important; text-align: left !important;">
+                <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">500+</div>
+                <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">HAZOP &amp; Risk Audits</div>
             </div>
-            <div class="gasco-stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Regulatory Compliance</div>
+            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding-left: 15px !important; text-align: left !important;">
+                <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">100%</div>
+                <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">Regulatory Compliance</div>
             </div>
+            <div style="clear: both !important;"></div>
         </div>
 
     </div>
@@ -1103,7 +1242,7 @@ body, #page, .site {
 <section class="gasco-cta-banner-section">
     <div class="gasco-cta-banner-container">
         <div class="gasco-cta-banner-left">
-            <h2>Get Expert Oil &amp; Gas Engineering Support</h2>
+            <h2>Get Expert HSE Advisory &amp; Process Safety Support</h2>
         </div>
         <div class="gasco-cta-banner-right">
             <a href="/contact-us/" class="gasco-cta-banner-btn">
@@ -1115,40 +1254,40 @@ body, #page, .site {
 </section>
 
 
-<!-- Section 3: Business Strategy (Full-Width 4-Cards Layout) -->
+<!-- Section 3: Advisory Strategy & Risk Governance (Full-Width 4-Cards Layout) -->
 <section class="gasco-strategy-fullwidth-section">
     <div class="gasco-strategy-fullwidth-container">
         <div class="gasco-strategy-top-grid">
             <div class="gasco-strategy-top-left">
-                <img src="/pictures/SSGC_42_RLNG_80_Kms_Pipeline_Project_pg_37.jpg" alt="Kaizen Oil &amp; Gas Infrastructure Construction">
+                <img src="/pictures/SSGC_42_RLNG_80_Kms_Pipeline_Project_pg_37.jpg" alt="Kaizen HSE Advisory &amp; Risk Governance">
             </div>
             <div class="gasco-strategy-top-right">
-                <span class="pill-badge">BUSINESS STRATEGY</span>
-                <h2>Driving Sustainable Value Across Energy Infrastructure</h2>
-                <p>Kaizen aims to generate sustainable growth in value by leveraging its core competencies: the ability to engineer, build, and operate oil &amp; gas infrastructure, and the ability to create and deliver value-adding investments.</p>
-                <p>Our strategy is designed to anticipate customer requirements, provide a broad and competitive range of services, develop leading-edge concepts, and deliver beyond customer expectations.</p>
+                <span class="pill-badge">OUR ADVISORY STRATEGY</span>
+                <h2>Driving Safety Governance &amp; Sustainable Risk Mitigation</h2>
+                <p>Kaizen HSE Advisory aims to deliver sustainable industrial value by leveraging our core competencies: rigorous process safety assessments, HAZOP/HAZID studies, ISO management system audits, and environmental dispersion modeling across the energy and manufacturing sectors.</p>
+                <p>Our strategy empowers operating companies to systematically identify high-consequence hazards, streamline compliance with international regulatory frameworks, and embed a resilient zero-harm culture throughout their operational lifecycle.</p>
             </div>
         </div>
         <div class="gasco-strategy-4cards-grid">
             <div class="gasco-strategy-card-item">
                 <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
-                <h4>Client Focus</h4>
-                <p>Anticipating customer requirements with a broad, competitive range of products and services.</p>
+                <h4>Client Governance</h4>
+                <p>Tailoring HSE risk frameworks and compliance protocols to match complex client operating environments.</p>
             </div>
             <div class="gasco-strategy-card-item">
                 <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                <h4>Innovative Concepts</h4>
-                <p>Developing leading-edge field concepts &amp; delivering beyond customer expectations.</p>
+                <h4>Technical Innovation</h4>
+                <p>Deploying advanced dispersion modeling software and accredited assessment methodologies.</p>
             </div>
             <div class="gasco-strategy-card-item">
-                <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <h4>Core Competencies</h4>
-                <p>Engineering, constructing, and operating vital oil &amp; gas equipment &amp; facilities.</p>
+                <p>Delivering expert HAZOP facilitation, technical safety audits, and environmental impact studies.</p>
             </div>
             <div class="gasco-strategy-card-item">
                 <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h4>Portfolio Growth</h4>
-                <p>Investing in a balanced portfolio of rental processing fleets &amp; infrastructure assets.</p>
+                <h4>Sustainable Impact</h4>
+                <p>Empowering industrial leaders with scalable safety management systems and specialized workforce training.</p>
             </div>
         </div>
     </div>
@@ -1162,10 +1301,10 @@ body, #page, .site {
         <!-- Top 2-Column Grid: Text Left, Image Right -->
         <div class="gasco-strategy-top-grid">
             <div class="gasco-strategy-top-right">
-                <span class="pill-badge">OUR PEOPLE &amp; WORKFORCE</span>
-                <h2>Empowering Our People, Safeguarding Our Workforce</h2>
-                <p>Kaizen considers its employees to be its most important asset. We prioritize local recruitment and invest heavily in continuous training and career development. The health, safety, and security of our workforce are of paramount importance, with rigorous HSE protocols safeguarding their interests across all operations.</p>
-                <p>Our people represent the ultimate example of diversity, teamwork, and dedication. Kaizen fosters an inclusive environment that empowers individuals, encourages cross-cultural collaboration, and drives superior business results.</p>
+                <span class="pill-badge">OUR EXPERTS &amp; TECHNICAL LEADERSHIP</span>
+                <h2>Driven by Expert Insight, Committed to Operational Excellence</h2>
+                <p>At Kaizen HSE Advisory, our strength lies in our multidisciplinary team of certified HAZOP chairpersons, process safety engineers, ISO lead auditors, and environmental specialists. We combine decades of hands-on industrial field experience with rigorous technical governance to safeguard complex energy and manufacturing operations.</p>
+                <p>We foster a continuous learning culture where expert consultants collaborate seamlessly across global standards. By equipping our specialists with state-of-the-art consequence modeling tools and accredited auditing frameworks, we ensure our clients achieve Target Zero Harm, total compliance, and long-term operational resilience.</p>
             </div>
             <div class="gasco-strategy-top-left">
                 <img src="/staff/DSC_0024.JPG" alt="Kaizen Dedicated Workforce &amp; Staff">
