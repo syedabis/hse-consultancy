@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 /**
  * Renders a mirrored page's exact body markup and then replays its <script>
@@ -10,12 +10,8 @@ import { useEffect, useRef } from "react";
  * still initialize even though the DOM was injected client-side.
  */
 export default function RawContent({ html, scripts }) {
-  const done = useRef(false);
 
   useEffect(() => {
-    if (done.current) return;
-    done.current = true;
-
     let cancelled = false;
 
     const loadOne = (s) =>
@@ -59,10 +55,36 @@ export default function RawContent({ html, scripts }) {
       }
     })();
 
+    const handleMenuClick = (e) => {
+      const menuBtn = e.target.closest('.nav_menu_bar');
+      const closeBtn = e.target.closest('.nav_menu_bar-popup-close');
+      const linkClick = e.target.closest('.nav_menu_bar-popup a');
+      const popup = document.querySelector('.nav_menu_bar-popup');
+
+      if (menuBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (popup) {
+          popup.classList.toggle('show');
+        }
+        return;
+      }
+      if (closeBtn || linkClick) {
+        if (popup) popup.classList.remove('show');
+        return;
+      }
+      if (popup && popup.classList.contains('show') && !e.target.closest('.nav_menu_bar-popup')) {
+        popup.classList.remove('show');
+      }
+    };
+
+    document.addEventListener('click', handleMenuClick, true);
+
     return () => {
       cancelled = true;
+      document.removeEventListener('click', handleMenuClick, true);
     };
-  }, [scripts]);
+  }, [html, scripts]);
 
   // The injected theme HTML may not round-trip through the browser parser
   // (Elementor emits some non-standard nesting) and jQuery/Elementor mutate it

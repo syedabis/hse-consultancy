@@ -1,5 +1,6 @@
 import { headers } from "next/headers";
 import { slugForPath, loadPage, headHtml } from "../lib/pages";
+import "./custom.css";
 
 export async function generateMetadata() {
   const p = (await headers()).get("x-pathname") || "/";

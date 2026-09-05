@@ -9,15 +9,16 @@ body, #page, .site {
 }
 
 /* Force all animated/invisible elements to be 100% visible */
-*, *::before, *::after {
+*:not(.nav_menu_bar-popup):not(.nav_menu_bar-popup *),
+*::before, *::after {
     animation: none !important;
-    transition: none !important;
 }
 .elementor-invisible, [data-settings*="animation"], [class*="animated"] {
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
 }
+
 
 /* Header Fixes for Hero Section */
 .custom-header-builder.flexitype-transparent-header {
@@ -99,10 +100,6 @@ body, #page, .site {
 .site {
     position: relative;
     overflow-x: hidden;
-}
-.custom-header-builder {
-    position: relative;
-    z-index: 999;
 }
 </style>
 
@@ -1100,19 +1097,19 @@ html body div.gasco-stat-item div.stat-label {
         </p>
 
         <div class="gasco-impact-stats-grid" style="border-top: 1px solid #EAEAEA !important; padding-top: 40px !important; margin: 0 !important; width: 100% !important; box-sizing: border-box !important; clear: both !important; display: block !important;">
-            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding-right: 15px !important; text-align: left !important;">
+            <div style="width: 25%; float: left !important; box-sizing: border-box !important; padding-right: 15px !important; text-align: left !important;">
                 <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">35M+</div>
                 <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">Safe Man-Hours Guided</div>
             </div>
-            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding: 0 10px !important; text-align: left !important;">
+            <div style="width: 25%; float: left !important; box-sizing: border-box !important; padding: 0 10px !important; text-align: left !important;">
                 <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">30+</div>
                 <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">Years HSE Experience</div>
             </div>
-            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding: 0 10px !important; text-align: left !important;">
+            <div style="width: 25%; float: left !important; box-sizing: border-box !important; padding: 0 10px !important; text-align: left !important;">
                 <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">500+</div>
                 <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">HAZOP &amp; Risk Audits</div>
             </div>
-            <div style="width: 25% !important; float: left !important; box-sizing: border-box !important; padding-left: 15px !important; text-align: left !important;">
+            <div style="width: 25%; float: left !important; box-sizing: border-box !important; padding-left: 15px !important; text-align: left !important;">
                 <div style="font-size: 42px !important; font-weight: 800 !important; color: #D49B27 !important; line-height: 1 !important; margin-bottom: 8px !important;">100%</div>
                 <div style="font-size: 13.5px !important; font-weight: 700 !important; color: #444444 !important; text-transform: uppercase !important; letter-spacing: 0.6px !important;">Regulatory Compliance</div>
             </div>

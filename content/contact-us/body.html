@@ -21,9 +21,7 @@
 		
 	
 	
-	<div id="page" class="site &lt;br /&gt;
-&lt;b&gt;Warning&lt;/b&gt;:  Undefined variable $vertical_header in &lt;b&gt;/home/u827988815/domains/nextwpcook.com/public_html/buildgo/wp-content/plugins/flexitype-pro/modules/header-footer/themes/default/fhf-header.php&lt;/b&gt; on line &lt;b&gt;39&lt;/b&gt;&lt;br /&gt;
-">
+	<div id="page" class="site">
 		<div class="custom-header-builder flexitype-transparent-header">
 					<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
 					<div data-elementor-type="wp-post" data-elementor-id="42" class="elementor elementor-42">
@@ -616,6 +614,74 @@ header#masthead .elementor-element-e04460a .flexitype-btn-wrapper i {
     background-position: center center !important;
     background-size: cover !important;
     border-radius: 20px !important;
+}
+
+/* ===== MOBILE HEADER FIX FOR CONTACT PAGE ===== */
+@media (max-width: 1024px) {
+  /* Undo absolute centering on the nav column — make it flow normally */
+  header#masthead .elementor-element-9caab00 {
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    width: auto !important;
+    margin-left: auto !important;
+  }
+
+  /* Hide the desktop pill menu container */
+  header#masthead .header_mega-menu {
+    display: none !important;
+  }
+
+  /* Hide the desktop-only right column (search, Get Started, offcanvas) */
+  header#masthead .elementor-element-f779515 {
+    display: none !important;
+  }
+
+  /* Show the mobile hamburger container */
+  header#masthead .header_nav-menu-responsive {
+    display: block !important;
+    margin-left: auto !important;
+  }
+
+  /* Fix header container to a simple row: logo left, hamburger right */
+  header#masthead section.elementor-element-be1d27f .elementor-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    padding: 12px 15px !important;
+  }
+
+  /* Make columns shrink to content */
+  header#masthead section.elementor-element-be1d27f .elementor-column {
+    width: auto !important;
+  }
+
+  /* Shrink logo on mobile */
+  header#masthead .custom-logo-link img {
+    max-width: 135px !important;
+  }
+
+  /* Hamburger icon styling */
+  header#masthead .nav_menu_bar {
+    display: inline-block !important;
+    cursor: pointer !important;
+    z-index: 99999 !important;
+  }
+
+  header#masthead .nav_menu_bar i {
+    font-size: 22px !important;
+    color: #1A1A1A !important;
+    background: #FFFFFF !important;
+    width: 42px !important;
+    height: 42px !important;
+    line-height: 42px !important;
+    text-align: center !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+  }
 }
 </style>
 
