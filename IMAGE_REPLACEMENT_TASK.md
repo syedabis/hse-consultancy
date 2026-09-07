@@ -1,6 +1,6 @@
-# 🎨 Kaizen HSE Advisory – Graphic Designer Asset & Image Replacement Guide
+# 🎨 Kazain Ventures – Graphic Designer Asset & Image Replacement Guide
 
-This document specifies all visual assets, logos, headshots, project photographs, and certification scans required for **Kaizen HSE Advisory** (`hse-consultancy`), a **Canada-based** global Health, Safety, Environment (HSE) & Risk Engineering consultancy serving North American, European, and Gulf region energy majors.
+This document specifies all visual assets, logos, headshots, project photographs, and certification scans required for **Kazain Ventures** (`hse-consultancy`), a **Canada-based** global Health, Safety, Environment (HSE) & Risk Engineering consultancy serving North American, European, and Gulf region energy majors.
 
 ---
 
@@ -20,18 +20,18 @@ This document specifies all visual assets, logos, headshots, project photographs
 
 | Current File Path | Current Asset Description | Target Replacement Asset | Recommended Format & Dimensions |
 | :--- | :--- | :--- | :--- |
-| `/public/gasco/gepl-black.png` | Dark GASCO logo | **Kaizen HSE Advisory (Dark Logo)**<br>Emblem + "Kaizen HSE Advisory" text for light backgrounds. | PNG (Transparent)<br>400 × 120 px |
-| `/public/gasco/gepl-white.png` | Light GASCO logo | **Kaizen HSE Advisory (Light Logo)**<br>White emblem + text for transparent header & dark footers. | PNG (Transparent)<br>400 × 120 px |
-| `/public/gasco/favicon.png` | Gasco 'G' icon | **Kaizen Shield / Emblem Favicon**<br>Icon-only version of the Kaizen shield mark. | PNG & ICO<br>512 × 512 px |
-| `/public/gasco/epc-badge.svg` | Legacy EPC badge | **HSE Advisory Circular Badge**<br>Rotating text badge: `"KAIZEN HSE ADVISORY • GLOBAL SAFETY RISK •"`. | SVG (Vector)<br>140 × 140 px |
+| `/public/gasco/gepl-black.png` | Dark GASCO logo | **Kazain Ventures (Dark Logo)**<br>Emblem + "Kazain Ventures" text for light backgrounds. | PNG (Transparent)<br>400 × 120 px |
+| `/public/gasco/gepl-white.png` | Light GASCO logo | **Kazain Ventures (Light Logo)**<br>White emblem + text for transparent header & dark footers. | PNG (Transparent)<br>400 × 120 px |
+| `/public/gasco/favicon.png` | Gasco 'G' icon | **Kazain Shield / Emblem Favicon**<br>Icon-only version of the Kazain shield mark. | PNG & ICO<br>512 × 512 px |
+| `/public/gasco/epc-badge.svg` | Legacy EPC badge | **HSE Advisory Circular Badge**<br>Rotating text badge: `"KAZAIN VENTURES • GLOBAL SAFETY RISK •"`. | SVG (Vector)<br>140 × 140 px |
 
 ---
 
 ## 2. 📜 Regulatory & Safety Certification Scans (`/public/gasco/`)
 
-| Current File Path | Current Document | Target Kaizen Document | Recommended Format & Dimensions |
+| Current File Path | Current Document | Target Kazain Document | Recommended Format & Dimensions |
 | :--- | :--- | :--- | :--- |
-| `/public/gasco/cert-iso-45001.jpg` | ISO 45001 Certificate | **ISO 45001:2018 Certificate Scan**<br>Occupational Health & Safety Management System certificate for Kaizen Canada. | JPG / WebP<br>1200 × 1600 px (300 DPI) |
+| `/public/gasco/cert-iso-45001.jpg` | ISO 45001 Certificate | **ISO 45001:2018 Certificate Scan**<br>Occupational Health & Safety Management System certificate for Kazain Canada. | JPG / WebP<br>1200 × 1600 px (300 DPI) |
 | `/public/gasco/cert-iso-14001.jpg` | ISO 14001 Certificate | **ISO 14001:2015 Certificate Scan**<br>Environmental Management System certificate. | JPG / WebP<br>1200 × 1600 px (300 DPI) |
 | `/public/gasco/cert-iso-9001.jpg` | ISO 9001 Certificate | **ISO 9001:2015 Certificate Scan**<br>Quality Management System certificate. | JPG / WebP<br>1200 × 1600 px (300 DPI) |
 | `/public/gasco/cert-pec.jpg` | Legacy PEC License | **COR™ / Professional Engineers Ontario & Alberta (APEGA) Accreditation**<br>Canadian Safety Council & Engineering Body Registration. | JPG / WebP<br>1200 × 1600 px (300 DPI) |
@@ -43,7 +43,7 @@ This document specifies all visual assets, logos, headshots, project photographs
 | Current File Path | Current Subject | Target Replacement Photography | Recommended Format & Dimensions |
 | :--- | :--- | :--- | :--- |
 | `/public/about-us/Founders Updated Picture.png` | Legacy founder photo | **Syed A. Hassan (Executive Director)**<br>Professional executive portrait in a modern North American corporate setting (Calgary/Toronto backdrop). | PNG / WebP<br>1000 × 1200 px (Transparent or Dark Backdrop) |
-| `/public/about-us/Founders pic.png` | Alternate founder photo | **Global Executive Leadership Team Photo**<br>Group portrait of Kaizen's international HSE directors. | JPG / WebP<br>1400 × 900 px |
+| `/public/about-us/Founders pic.png` | Alternate founder photo | **Global Executive Leadership Team Photo**<br>Group portrait of Kazain's international HSE directors. | JPG / WebP<br>1400 × 900 px |
 
 ---
 
