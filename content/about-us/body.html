@@ -1,94 +1,5 @@
 
-<style id="gasco-bulletproof-overrides">
-/* Bulletproof Visibility & Reset Overrides for About Us Page */
-body, #page, .site {
-    background-color: #FFFFFF !important;
-    background-image: none !important;
-    color: #1A1A1A !important;
-    font-family: 'DM Sans', sans-serif !important;
-}
 
-/* Force all animated/invisible elements to be 100% visible */
-*:not(.nav_menu_bar-popup):not(.nav_menu_bar-popup *),
-*::before, *::after {
-    animation: none !important;
-}
-.elementor-invisible, [data-settings*="animation"], [class*="animated"] {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
-}
-
-
-/* Header Fixes for Hero Section */
-.custom-header-builder.flexitype-transparent-header {
-    background: transparent !important;
-    box-shadow: none !important;
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999 !important;
-}
-.custom-header-builder.flexitype-transparent-header .header_mega-menu .menu-link {
-    color: #1A1A1A !important;
-    font-weight: 600 !important;
-}
-.custom-header-builder.flexitype-transparent-header .header_mega-menu .menu-link:hover {
-    color: #FFBF43 !important;
-}
-.custom-header-builder.flexitype-transparent-header .flexitype-search-icon {
-    color: #FFFFFF !important;
-}
-.custom-header-builder.flexitype-transparent-header .flexitype-search-icon i {
-    color: #FFFFFF !important;
-}
-
-/* Strip unwanted Elementor background image leaks */
-.elementor-section, .elementor-top-section, .elementor-inner-section, .e-con {
-    background-image: none !important;
-}
-
-/* Ensure clean contrast for Vision & Values section */
-.gasco-vv-content-col {
-    background: #FFFFFF !important;
-    color: #1A1A1A !important;
-}
-.gasco-vv-content-col p, .gasco-vv-content-col li span {
-    color: #4A5568 !important;
-}
-
-/* Ensure CTA Banner is fully visible & crisp */
-.gasco-cta-banner-section {
-    background: #F7F5EE !important;
-    border-top: 1px solid #EAE6DC !important;
-    border-bottom: 1px solid #EAE6DC !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: block !important;
-}
-.gasco-cta-banner-left h2 {
-    color: #1A1A1A !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-.gasco-cta-banner-btn {
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: inline-flex !important;
-}
-
-/* Section Headings Contrast */
-.gasco-strategy-heading-row h2, .gasco-people-heading-row h2 {
-    color: #1A1A1A !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-.gasco-strategy-badge, .gasco-people-badge {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-</style>
 
 
 <style>
@@ -175,23 +86,7 @@ body, #page, .site {
 		</div>
 				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9f45500 elementor-hidden-tablet elementor-hidden-mobile" data-id="9f45500" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-211d39e elementor-widget__width-auto elementor-widget elementor-widget-flexitype-search" data-id="211d39e" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-search.default">
-				<div class="elementor-widget-container">
-					            <div class="flexitype-search">
-                <div class="search">
-                    <span class="flexitype-search-icon open"><i class="flaticon flaticon-search"></i></span>
-                </div>
-                <div class="flexitype-search-box">
-                    <form method="get" action="/">
-                        <input type="search" placeholder="Search..." value="" name="s">
-                        <button value="Search" type="submit">
-                            <i class="flaticon flaticon-search"></i>
-                        </button>
-                    </form>
-                    <span class="flexitype-search-box-icon"><i class="fa-solid fa-xmark"></i></span>
-                </div>
-            </div>
-        				</div>
+						
 				</div>
 				<div class="elementor-element elementor-element-e1f7b0b elementor-widget__width-auto xxl-display-n elementor-widget elementor-widget-flexitype-creative-button" data-id="e1f7b0b" data-element_type="widget" data-e-type="widget" data-widget_type="flexitype-creative-button.default">
 				<div class="elementor-widget-container">
@@ -217,7 +112,7 @@ body, #page, .site {
 /* Global Modern About Us Styles matching Homepage Light Aesthetic */
 .gasco-about-hero {
     position: relative;
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.78) 0%, rgba(17, 17, 17, 0.88) 100%), url('/pictures/Dhok%20Sultan%20-%20pg%2033.jpeg');
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.78) 0%, rgba(17, 17, 17, 0.88) 100%), url('/hse/dhok_sultan_hazop_audit%201.jpg');
     background-size: cover;
     background-position: center;
     padding: 160px 20px 80px;
@@ -1230,7 +1125,7 @@ html body div.gasco-stat-item div.stat-label {
     <div class="gasco-strategy-fullwidth-container">
         <div class="gasco-strategy-top-grid">
             <div class="gasco-strategy-top-left">
-                <img src="/pictures/SSGC_42_RLNG_80_Kms_Pipeline_Project_pg_37.jpg" alt="Kazain HSE Advisory &amp; Risk Governance">
+                <img src="/trenching-picture.jpg" alt="Kazain HSE Advisory &amp; Risk Governance">
             </div>
             <div class="gasco-strategy-top-right">
                 <span class="pill-badge">OUR ADVISORY STRATEGY</span>
@@ -1637,11 +1532,11 @@ function switchKazainTab(tabName, btnEl) {
     var imgEl = document.getElementById('gasco-tab-img');
     if(imgEl) {
         if(tabName === 'vision') {
-            imgEl.src = '/pictures/ASME Modular Skid%20Project%20pg%2031.jpeg';
+            imgEl.src = '/hse/asme_skid_hazop_review%202.jpg';
         } else if(tabName === 'mission') {
-            imgEl.src = '/pictures/Dhok%20Sultan%20-%20pg%2033.jpeg';
+            imgEl.src = '/hse/dhok_sultan_hazop_audit%201.jpg';
         } else if(tabName === 'values') {
-            imgEl.src = '/pictures/Pg%202.jpeg';
+            imgEl.src = '/hse/Construction%20site%20concrete%20pouring%201.png';
         }
     }
 }

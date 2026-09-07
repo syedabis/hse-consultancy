@@ -179,7 +179,7 @@ def generate_page(slug, d):
     html = html.replace("By unifying front-end engineering design (FEED), global supply chain procurement, heavy workshop skid fabrication, and field construction under a single project management entity, we eliminate client interface risks and guarantee single-point accountability.", d["showcase_p2"])
     html = html.replace("With over 35 million safe man-hours and three decades of proven turnkey delivery, GASCO delivers fast-track facilities that strictly adhere to international ASME, API 6D, and ISO 9001 quality and safety standards.", d["showcase_p3"])
     html = html.replace("Request EPC Proposal ↗", d["showcase_btn"])
-    html = html.replace("/pictures/Dhok Sultan - pg 33.jpeg", d["showcase_img"])
+    html = html.replace("/hse/dhok_sultan_hazop_audit%201.jpg", d["showcase_img"])
 
     # 3. Statement & Stats replacements
     old_stmt = 'At GASCO we are committed to revolutionizing the energy infrastructure sector with innovative, sustainable, and cost-effective EPCC solutions. With a proven track record of delivering exceptional projects across Pakistan, we combine <span>state-of-the-art technology</span>, <span>skilled expertise</span>, and <span>customer-centric approaches</span> to bring energy visions to life.'
@@ -215,19 +215,19 @@ def generate_page(slug, d):
     html = html.replace("Featured EPCC Projects", d["projects_head"])
 
     # Card 1
-    html = html.replace('<img src="/pictures/Pg 16.jpeg" alt="Makori Gas Facility">', f'<img src="{d["proj1"][0]}" alt="{d["proj1"][2]}">')
+    html = html.replace('<img src="/hse/compression_occupational_hygiene%201.jpg" alt="Makori Gas Facility">', f'<img src="{d["proj1"][0]}" alt="{d["proj1"][2]}">')
     html = html.replace('<span class="epc-proj-tag">MOL Pakistan</span>', f'<span class="epc-proj-tag">{d["proj1"][1]}</span>')
     html = html.replace('<h4>Central Front-End Compression Facility</h4>', f'<h4>{d["proj1"][2]}</h4>')
     html = html.replace('<p>Turnkey EPCC for high-pressure gas boosting compressors, gas coolers, and inlet manifolds at Makori Field.</p>', f'<p>{d["proj1"][3]}</p>')
 
     # Card 2
-    html = html.replace('<img src="/pictures/HTDC Project pg 31.jpeg" alt="Adhi Gas Sweetening Unit">', f'<img src="{d["proj2"][0]}" alt="{d["proj2"][2]}">')
+    html = html.replace('<img src="/hse/asme_skid_hazop_review%201.jpg" alt="Adhi Gas Sweetening Unit">', f'<img src="{d["proj2"][0]}" alt="{d["proj2"][2]}">')
     html = html.replace('<span class="epc-proj-tag">PPL (Pakistan Petroleum)</span>', f'<span class="epc-proj-tag">{d["proj2"][1]}</span>')
     html = html.replace('<h4>Gas Sweetening &amp; Turbo Compressor Package</h4>', f'<h4>{d["proj2"][2]}</h4>')
     html = html.replace('<p>Engineering and fabrication of amine sweetening absorbers and high-efficiency turbo compressor skids.</p>', f'<p>{d["proj2"][3]}</p>')
 
     # Card 3
-    html = html.replace('<img src="/pictures/Dhok Sultan - pg 33.jpeg" alt="Mari Gas Pressure Boosting Station">', f'<img src="{d["proj3"][0]}" alt="{d["proj3"][2]}">')
+    html = html.replace('<img src="/hse/dhok_sultan_hazop_audit%201.jpg" alt="Mari Gas Pressure Boosting Station">', f'<img src="{d["proj3"][0]}" alt="{d["proj3"][2]}">')
     html = html.replace('<span class="epc-proj-tag">Mari Petroleum (MPCL)</span>', f'<span class="epc-proj-tag">{d["proj3"][1]}</span>')
     html = html.replace('<h4>Gas Pressure Boosting Compressor Station</h4>', f'<h4>{d["proj3"][2]}</h4>')
     html = html.replace('<p>Fast-track EPCC of field booster station, dehydration units, and high-pressure transmission piping.</p>', f'<p>{d["proj3"][3]}</p>')
