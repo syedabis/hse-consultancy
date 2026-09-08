@@ -4,23 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import "./contact.css";
 
-const TICKER_LOGOS = [
-  "/Client Logos/1.png",
-  "/Client Logos/2.png",
-  "/Client Logos/3.png",
-  "/Client Logos/4.png",
-  "/Client Logos/5.png",
-  "/Client Logos/6.png",
-  "/Client Logos/7.png",
-  "/Client Logos/8.png",
-  "/Client Logos/9.png",
-  "/Client Logos/10.png",
-  "/Client Logos/11.png",
-  "/Client Logos/12.png",
-  "/Client Logos/13.png",
-  "/Client Logos/14.png",
-];
-
 export default function ContactUsPage() {
   const [formState, setFormState] = useState({
     name: "",
@@ -82,28 +65,7 @@ export default function ContactUsPage() {
         </div>
       </section>
 
-      {/* 2. Valued Clients Marquee Ticker */}
-      <section className="contact-ticker-section">
-        <div className="contact-ticker-container">
-          <div className="contact-ticker-label">
-            <h5>Trusted Partners</h5>
-          </div>
-          <div className="contact-ticker-marquee-wrap">
-            <div className="contact-ticker-track">
-              {TICKER_LOGOS.map((src, idx) => (
-                <img key={`logo1-${idx}`} src={src} alt={`Partner ${idx + 1}`} />
-              ))}
-            </div>
-            <div className="contact-ticker-track" aria-hidden="true">
-              {TICKER_LOGOS.map((src, idx) => (
-                <img key={`logo2-${idx}`} src={src} alt={`Partner duplicate ${idx + 1}`} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. White Impact Statement & 4 Big Stats */}
+      {/* 2. White Impact Statement & 4 Big Stats */}
       <section className="epc-statement-section">
         <div className="epc-statement-text">
           Kazain provides <span>24/7 specialized HSE consultancy</span> and{" "}

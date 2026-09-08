@@ -89,29 +89,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* 2. Key Metrics Strip */}
-      <section className="gasco-metrics-strip">
-        <div className="gasco-metrics-container">
-          <div className="gasco-metric-item">
-            <h3>35M+</h3>
-            <p>Safe Man-Hours (Zero LTI)</p>
-          </div>
-          <div className="gasco-metric-item">
-            <h3>500+</h3>
-            <p>HAZOP &amp; Risk Workshops</p>
-          </div>
-          <div className="gasco-metric-item">
-            <h3>100+</h3>
-            <p>ISO Management Systems</p>
-          </div>
-          <div className="gasco-metric-item">
-            <h3>100%</h3>
-            <p>HSE Compliance Rate</p>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Filterable Projects Showcase Section */}
+      {/* 2. Filterable Projects Showcase Section */}
       <section className="gasco-portfolio-section" id="projects-showcase">
         <div className="gasco-portfolio-container">
           <div className="gasco-portfolio-header">
