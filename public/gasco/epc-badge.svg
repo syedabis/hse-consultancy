@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
   <circle cx="70" cy="70" r="68" fill="#FFBF43"/>
   <path id="circlePath" d="M 70, 70 m -48, 0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0" fill="none"/>
-  <text fill="#1c1c1c" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="800" letter-spacing="2">
+  <text fill="#1c1c1c" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="800" letter-spacing="1.8">
     <textPath href="#circlePath" startOffset="0%">
-      OIL &amp; GAS EPC • OIL &amp; GAS EPC •
+      HSE RISK ADVISORY • ZERO HARM •
     </textPath>
   </text>
   <!-- Center Arrow -->

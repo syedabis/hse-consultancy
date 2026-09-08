@@ -223,3 +223,15 @@
     width: 100% !important;
   }
 }
+
+/* Footer Hover & Interactive Styling */
+.footer-social-btn:hover {
+  background: #FFBF43 !important;
+  color: #0F141C !important;
+  border-color: #FFBF43 !important;
+  transform: translateY(-3px) !important;
+}
+
+.footer-link:hover {
+  color: #FFBF43 !important;
+}

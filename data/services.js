@@ -1,14 +1,15 @@
 export const SERVICES = [
   {
-    id: "engineering-consultancy",
-    slug: "engineering-consultancy",
-    title: "Process Safety & Risk Assessment",
-    shortDesc: "Comprehensive process safety management (PSM), HAZOP, HAZID, QRA, and Safety Case studies led by certified risk engineers.",
+    id: "process-safety-management",
+    slug: "process-safety-management",
+    title: "Process Safety Management (PSM)",
+    shortDesc: "Certified HAZID & HAZOP workshops, SIL Assessment & LOPA, Bowtie barrier mapping, and Quantitative Risk Assessments (QRA) for high-hazard industrial assets.",
     image: "/hse/asme_skid_hazop_review%201.jpg",
     highlights: [
-      "HAZOP, HAZID & LOPA Workshops",
+      "HAZID & HAZOP Workshop Facilitation",
+      "SIL Assessment & LOPA (IEC 61511)",
+      "Bowtie Barrier & SCE Risk Mapping",
       "Quantitative Risk Assessment (QRA)",
-      "Major Accident Hazard (MAH) Modeling",
     ],
   },
   {
@@ -24,15 +25,15 @@ export const SERVICES = [
     ],
   },
   {
-    id: "pipeline-construction",
-    slug: "pipeline-construction",
-    title: "Occupational Health & Hygiene",
-    shortDesc: "Workplace exposure monitoring, noise mapping, chemical hazard evaluations, and indoor air quality assessments.",
-    image: "/trenching-picture.jpg",
+    id: "occupational-health-hygiene",
+    slug: "occupational-health-hygiene",
+    title: "Occupational Health & Industrial Hygiene",
+    shortDesc: "Comprehensive workplace exposure monitoring, noise mapping, heat stress compliance, chemical hazard evaluations, and medical surveillance programs.",
+    image: "/hse/compression_occupational_hygiene%201.jpg",
     highlights: [
-      "Air Monitoring & Noise Mapping",
-      "Ergonomic Risk Assessments",
-      "Hazardous Chemical Management",
+      "Noise, Air & Chemical Exposure Surveys",
+      "Saudi Labor Law Heat Stress Compliance",
+      "Health Risk Assessments & Ergonomics",
     ],
   },
   {

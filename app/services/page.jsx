@@ -150,8 +150,8 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                 </div>
-                <Link className="gasco-svc-more" href="/contact-us/">
-                  <span>Request Consultancy</span>
+                <Link className="gasco-svc-more" href={`/services/${svc.slug}/`}>
+                  <span>Explore Division</span>
                   <i className="flaticon flaticon-right-arrow"></i>
                 </Link>
               </div>

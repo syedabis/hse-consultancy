@@ -34,7 +34,7 @@ const COMMITMENT_CARDS = [
     desc: "Turnkey management system certification & audit support",
   },
   {
-    icon: "flaticon-water",
+    icon: "flaticon-exploration",
     title: "Environmental (EIA)",
     desc: "Impact assessments, dispersion modeling & EPA compliance",
   },
@@ -86,7 +86,7 @@ export default function HomeView() {
 
         <div className="home-rotating-badge">
           <Link href="/contact-us/">
-            <img src="/gasco/epc-badge.svg" alt="Oil &amp; Gas EPC" />
+            <img src="/gasco/epc-badge.svg" alt="HSE Risk Advisory" />
           </Link>
         </div>
       </section>
@@ -210,7 +210,7 @@ export default function HomeView() {
                     {svc.shortDesc}
                   </p>
                   <Link
-                    href="/contact-us/"
+                    href={`/services/${svc.slug}/`}
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
@@ -225,7 +225,7 @@ export default function HomeView() {
                       textDecoration: "none",
                     }}
                   >
-                    <span>Request Advisory</span>
+                    <span>Explore Division</span>
                     <i className="flaticon flaticon-right-arrow" style={{ color: "#FFBF43" }}></i>
                   </Link>
                 </div>
@@ -235,8 +235,8 @@ export default function HomeView() {
         </div>
       </section>
 
-      {/* 5. Our HSE Commitment & 4 Strategic Pillars */}
-      <section style={{ padding: "90px 20px", background: "#ffffff" }}>
+      {/* 5. Our HSE Commitment & 4 Strategic Pillars (Pure Black Theme) */}
+      <section style={{ padding: "90px 20px", background: "#000000" }}>
         <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
           <div
             style={{
@@ -251,7 +251,14 @@ export default function HomeView() {
               <img
                 src="/hse/water_eia_environmental_study%202.jpg"
                 alt="Kazain HSE Commitment"
-                style={{ width: "100%", height: "360px", objectFit: "cover", borderRadius: "16px" }}
+                style={{
+                  width: "100%",
+                  height: "360px",
+                  objectFit: "cover",
+                  borderRadius: "16px",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.4)",
+                }}
               />
             </div>
             <div>
@@ -261,20 +268,21 @@ export default function HomeView() {
                   fontWeight: "700",
                   textTransform: "uppercase",
                   letterSpacing: "1.2px",
-                  color: "#B88014",
-                  background: "rgba(255, 191, 67, 0.15)",
+                  color: "#FFBF43",
+                  background: "rgba(255, 191, 67, 0.12)",
+                  border: "1px solid rgba(255, 191, 67, 0.3)",
                   padding: "6px 16px",
                   borderRadius: "20px",
                   display: "inline-block",
-                  marginBottom: "12px",
+                  marginBottom: "16px",
                 }}
               >
                 Our HSE Commitment
               </span>
-              <h2 style={{ fontSize: "38px", fontWeight: "800", color: "#111827", margin: "0 0 16px", lineHeight: "1.2" }}>
+              <h2 style={{ fontSize: "38px", fontWeight: "800", color: "#FFFFFF", margin: "0 0 16px", lineHeight: "1.2" }}>
                 Driving Zero Harm &amp; Total Regulatory Compliance
               </h2>
-              <p style={{ fontSize: "15px", color: "#525252", lineHeight: "1.65", margin: "0 0 24px" }}>
+              <p style={{ fontSize: "15px", color: "#9CA3AF", lineHeight: "1.65", margin: "0 0 28px" }}>
                 At Kazain HSE Advisory, we empower organizations to build zero-incident workplaces, achieve global ISO compliance, and implement sustainable environmental strategies across high-hazard industrial sectors.
               </p>
               <Link href="/contact-us/" className="home-hero-btn">
@@ -295,8 +303,9 @@ export default function HomeView() {
               <div
                 key={idx}
                 style={{
-                  background: "#F8F7F0",
-                  border: "1px solid #E5E7EB",
+                  background: "rgba(255, 255, 255, 0.04)",
+                  border: "1px solid rgba(255, 255, 255, 0.08)",
+                  borderTop: "3px solid #FFBF43",
                   borderRadius: "16px",
                   padding: "32px 20px",
                   textAlign: "center",
@@ -305,16 +314,31 @@ export default function HomeView() {
                   alignItems: "center",
                   justifyContent: "center",
                   transition: "all 0.3s ease",
+                  backdropFilter: "blur(8px)",
                 }}
               >
-                <i
-                  className={`flaticon ${card.icon}`}
-                  style={{ fontSize: "40px", color: "#FFBF43", marginBottom: "16px" }}
-                ></i>
-                <h5 style={{ fontSize: "18px", fontWeight: "700", color: "#111827", margin: "0 0 8px" }}>
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "50%",
+                    background: "rgba(255, 191, 67, 0.12)",
+                    border: "1px solid rgba(255, 191, 67, 0.25)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: "18px",
+                  }}
+                >
+                  <i
+                    className={`flaticon ${card.icon}`}
+                    style={{ fontSize: "28px", color: "#FFBF43" }}
+                  ></i>
+                </div>
+                <h5 style={{ fontSize: "18px", fontWeight: "700", color: "#FFFFFF", margin: "0 0 8px" }}>
                   {card.title}
                 </h5>
-                <p style={{ fontSize: "13.5px", color: "#4B5563", lineHeight: "1.5", margin: "0" }}>
+                <p style={{ fontSize: "13.5px", color: "#9CA3AF", lineHeight: "1.55", margin: "0" }}>
                   {card.desc}
                 </p>
               </div>

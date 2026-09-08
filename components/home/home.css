@@ -140,44 +140,54 @@
 /* Home Valued Clients Ticker */
 .home-ticker-section {
   background: #F8F7F0 !important;
-  border-top: 1px solid #D9D9D9 !important;
-  border-bottom: 1px solid #D9D9D9 !important;
-  padding: 30px 0 !important;
+  border-top: 1px solid #EAE6DC !important;
+  border-bottom: 1px solid #EAE6DC !important;
+  padding: 24px 0 !important;
   overflow: hidden !important;
+  width: 100% !important;
 }
 
 .home-ticker-container {
-  max-width: 1340px !important;
-  margin: 0 auto !important;
-  padding: 0 20px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 .home-ticker-flex {
   display: flex !important;
   align-items: center !important;
-  gap: 60px !important;
+  gap: 70px !important;
   overflow: hidden !important;
   user-select: none !important;
+  width: 100% !important;
 }
 
 .home-ticker-track {
   display: flex !important;
   align-items: center !important;
-  gap: 60px !important;
-  animation: homeTicker 25s linear infinite !important;
+  gap: 70px !important;
+  animation: homeTicker 32s linear infinite !important;
   flex-shrink: 0 !important;
-  min-width: 100% !important;
 }
 
 .home-ticker-track img {
-  max-height: 42px !important;
+  max-height: 46px !important;
   width: auto !important;
   object-fit: contain !important;
+  transition: transform 0.3s ease, filter 0.3s ease !important;
+  opacity: 0.88 !important;
+}
+
+.home-ticker-track img:hover {
+  opacity: 1 !important;
+  transform: scale(1.08) !important;
 }
 
 @keyframes homeTicker {
   from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  to { transform: translateX(-50%); }
 }
 
 /* About Home Section */

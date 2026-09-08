@@ -3,8 +3,8 @@
 /* Hero Section */
 .about-hero-section {
   position: relative !important;
-  padding: 240px 12px 250px 12px !important;
-  min-height: 750px !important;
+  padding: 190px 12px 140px 12px !important;
+  min-height: 620px !important;
   background: #0F172A !important;
   overflow: hidden !important;
 }
@@ -37,16 +37,16 @@
   font-weight: 600 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
-  margin-bottom: 24px !important;
+  margin-bottom: 20px !important;
   background: rgba(255, 255, 255, 0.08) !important;
   backdrop-filter: blur(4px) !important;
 }
 
 .about-hero-title-solid {
-  font-size: 90px !important;
+  font-size: 72px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  line-height: 1.1 !important;
+  line-height: 1.08 !important;
   color: #FFFFFF !important;
   letter-spacing: -2px !important;
   margin: 0 0 6px 0 !important;
@@ -54,14 +54,14 @@
 }
 
 .about-hero-title-outlined {
-  font-size: 85px !important;
+  font-size: 72px !important;
   font-weight: 700 !important;
   text-transform: capitalize !important;
   line-height: 1.0 !important;
   -webkit-text-stroke-width: 1.5px !important;
   -webkit-text-stroke-color: #FFFFFF !important;
   color: transparent !important;
-  margin: 0 0 40px 0 !important;
+  margin: 0 0 32px 0 !important;
   font-family: 'Instrument Sans', sans-serif !important;
 }
 
@@ -98,7 +98,7 @@
 
 .about-rotating-badge {
   position: absolute !important;
-  bottom: 80px !important;
+  bottom: 50px !important;
   right: 12% !important;
   z-index: 10 !important;
 }

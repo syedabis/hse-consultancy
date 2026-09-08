@@ -7,7 +7,7 @@ export default function DetailHero({
   titlePart1,
   titlePart2,
   badgeImage = "/gasco/epc-badge.svg",
-  badgeAlt = "EPC Badge",
+  badgeAlt = "HSE Risk Advisory",
   ctaText = "Explore Services",
   ctaLink = "/contact-us/",
 }) {
@@ -15,37 +15,34 @@ export default function DetailHero({
     <section className="detail-hero-section">
       <video
         className="detail-hero-video-bg"
-        role="presentation"
         autoPlay
         muted
         playsInline
         loop
         src="/banner.mp4"
       />
-      <div className="detail-hero-overlay" />
-      <div className="detail-hero-inner">
-        <div className="detail-hero-content">
-          {eyebrow && <span className="detail-hero-eyebrow">{eyebrow}</span>}
-          <h1 className="detail-hero-title">
-            <span>{titlePart1}</span>
-            {titlePart2 && <span className="title-accent">{titlePart2}</span>}
-          </h1>
-          {ctaLink && ctaText && (
-            <Link href={ctaLink} className="detail-hero-cta">
+
+      <div className="detail-hero-content">
+        {eyebrow && <span className="detail-subtitle-pill">{eyebrow}</span>}
+        <h1 className="detail-hero-title-solid">{titlePart1}</h1>
+        {titlePart2 && <h2 className="detail-hero-title-outlined">{titlePart2}</h2>}
+        {ctaLink && ctaText && (
+          <div>
+            <Link href={ctaLink} className="detail-hero-btn">
               <span>{ctaText}</span>
               <i className="flaticon flaticon-right-up" />
-            </Link>
-          )}
-        </div>
-
-        {badgeImage && (
-          <div className="detail-hero-badge">
-            <Link href="/contact-us/" title="Contact Kazain">
-              <img src={badgeImage} alt={badgeAlt} width={140} height={140} />
             </Link>
           </div>
         )}
       </div>
+
+      {badgeImage && (
+        <div className="detail-rotating-badge">
+          <Link href="/contact-us/">
+            <img src={badgeImage} alt={badgeAlt} />
+          </Link>
+        </div>
+      )}
     </section>
   );
 }
