@@ -188,3 +188,38 @@
     margin-bottom: 30px !important;
   }
 }
+
+/* =========================================================
+   Header CTA Button & Creative Button Text Alignment Fix
+   ========================================================= */
+.custom-header-builder .flexitype-btn-wrapper,
+.elementor-widget-flexitype-creative-button .flexitype-btn-wrapper,
+.header-contact-btn {
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+.custom-header-builder .flexitype-btn-wrapper span,
+.elementor-widget-flexitype-creative-button .flexitype-btn-wrapper span,
+.header-contact-btn span {
+  white-space: nowrap !important;
+  word-break: normal !important;
+}
+
+/* Ensure desktop header right column properly wraps and right-aligns CTA */
+@media (min-width: 1025px) {
+  .custom-header-builder .elementor-element-9f45500,
+  .custom-header-builder .elementor-element-f779515 {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+
+  .custom-header-builder .elementor-element-9f45500 .elementor-widget-wrap,
+  .custom-header-builder .elementor-element-f779515 .elementor-widget-wrap {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+}
