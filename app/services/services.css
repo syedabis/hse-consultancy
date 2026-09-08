@@ -1,0 +1,403 @@
+/* Services Page Dedicated Styling - Exact 1:1 Parity */
+
+/* Hero Section */
+.services-hero-section {
+  position: relative !important;
+  padding: 240px 12px 250px 12px !important;
+  min-height: 750px !important;
+  background: #0F172A !important;
+  overflow: hidden !important;
+}
+
+.services-hero-video-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 0.65 !important;
+}
+
+.services-hero-content {
+  position: relative !important;
+  z-index: 5 !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+}
+
+.services-subtitle-pill {
+  display: inline-block !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 50px !important;
+  padding: 8px 24px !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 24px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.services-hero-title-solid {
+  font-size: 90px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1.1 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 6px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.services-hero-title-outlined {
+  font-size: 85px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  line-height: 1.0 !important;
+  -webkit-text-stroke-width: 1.5px !important;
+  -webkit-text-stroke-color: #FFFFFF !important;
+  color: transparent !important;
+  margin: 0 0 40px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.services-hero-btn {
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #111827 !important;
+  background: #FFBF43 !important;
+  border-radius: 50px !important;
+  padding: 8px 8px 8px 30px !important;
+  gap: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.services-hero-btn:hover {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  transform: translateY(-2px) !important;
+}
+
+.services-hero-btn i {
+  color: #FFFFFF !important;
+  background: #111827 !important;
+  font-size: 20px !important;
+  padding: 10px 11px !important;
+  border-radius: 50px !important;
+}
+
+.services-rotating-badge {
+  position: absolute !important;
+  bottom: 80px !important;
+  right: 12% !important;
+  z-index: 10 !important;
+}
+
+.services-rotating-badge img {
+  width: 130px !important;
+  height: 130px !important;
+  border-radius: 50% !important;
+  animation: rotateEpcBadge 18s linear infinite !important;
+}
+
+@media(max-width: 1024px) {
+  .services-hero-section {
+    padding: 180px 20px 140px !important;
+  }
+  .services-hero-title-solid {
+    font-size: 60px !important;
+  }
+  .services-hero-title-outlined {
+    font-size: 50px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .services-hero-section {
+    padding: 140px 15px 100px !important;
+  }
+  .services-hero-title-solid {
+    font-size: 40px !important;
+  }
+  .services-hero-title-outlined {
+    font-size: 34px !important;
+  }
+  .services-rotating-badge {
+    display: none !important;
+  }
+}
+
+/* Core Divisions Grid */
+.gasco-svc-header {
+  text-align: center !important;
+  max-width: 800px !important;
+  margin: 0 auto 30px !important;
+  padding: 40px 20px 0 !important;
+}
+
+.gasco-svc-header .badge-pill {
+  display: inline-block !important;
+  padding: 6px 16px !important;
+  background: rgba(255, 191, 67, 0.15) !important;
+  border: 1px solid #FFBF43 !important;
+  border-radius: 50px !important;
+  color: #111827 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+}
+
+.gasco-svc-header h2 {
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #111827 !important;
+  margin-bottom: 14px !important;
+}
+
+.gasco-svc-header p {
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  color: #4B5563 !important;
+  margin: 0 !important;
+}
+
+.gasco-svc-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 40px 32px !important;
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  padding: 40px 20px 80px !important;
+}
+
+.gasco-svc-card {
+  background: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.gasco-svc-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12) !important;
+  border-color: #FFBF43 !important;
+}
+
+.gasco-svc-card-img-wrap {
+  position: relative !important;
+  overflow: hidden !important;
+  aspect-ratio: 16/10 !important;
+}
+
+.gasco-svc-card-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.gasco-svc-card:hover .gasco-svc-card-img-wrap img {
+  transform: scale(1.06) !important;
+}
+
+.gasco-svc-card-body {
+  padding: 28px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+  justify-content: space-between !important;
+}
+
+.gasco-svc-card h3 {
+  margin: 0 0 10px !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+}
+
+.gasco-svc-card p {
+  margin: 0 0 18px !important;
+  color: #4B5563 !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+.gasco-svc-highlights {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 24px !important;
+  border-top: 1px dashed #E5E7EB !important;
+  padding-top: 14px !important;
+}
+
+.gasco-svc-highlights li {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 13.5px !important;
+  color: #374151 !important;
+  margin-bottom: 6px !important;
+  font-weight: 500 !important;
+}
+
+.gasco-svc-highlights li i {
+  color: #FFBF43 !important;
+  font-size: 14px !important;
+}
+
+.gasco-svc-card a.gasco-svc-more {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  color: #111827 !important;
+  background: #F9FAFB !important;
+  border: 1px solid #E5E7EB !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+}
+
+.gasco-svc-card:hover a.gasco-svc-more {
+  background: #111827 !important;
+  color: #ffffff !important;
+  border-color: #111827 !important;
+}
+
+.gasco-svc-card a.gasco-svc-more i {
+  color: #FFBF43 !important;
+  font-size: 14px !important;
+  transition: transform 0.3s ease !important;
+}
+
+.gasco-svc-card:hover a.gasco-svc-more i {
+  transform: translateX(4px) !important;
+}
+
+@media(max-width:1024px){
+  .gasco-svc-grid { grid-template-columns: repeat(2,1fr) !important; }
+  .gasco-svc-header h2 { font-size: 34px !important; }
+}
+
+@media(max-width:640px){
+  .gasco-svc-grid { grid-template-columns: 1fr !important; }
+  .gasco-svc-header h2 { font-size: 28px !important; }
+}
+
+/* 5-Stage Methodology */
+.gasco-process-sec {
+  background: #181818 !important;
+  color: #ffffff !important;
+  padding: 90px 0 !important;
+}
+
+.gasco-process-sec .sec-title {
+  text-align: center !important;
+  max-width: 760px !important;
+  margin: 0 auto 60px !important;
+  padding: 0 20px !important;
+}
+
+.gasco-process-sec .sec-title span {
+  color: #FFBF43 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  margin-bottom: 10px !important;
+}
+
+.gasco-process-sec .sec-title h2 {
+  color: #ffffff !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  margin-bottom: 12px !important;
+}
+
+.gasco-process-sec .sec-title p {
+  color: #9CA3AF !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+.gasco-process-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 20px !important;
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+.gasco-process-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 14px !important;
+  padding: 30px 20px !important;
+  transition: all 0.35s ease !important;
+}
+
+.gasco-process-card:hover {
+  background: rgba(255,191,67,0.08) !important;
+  border-color: #FFBF43 !important;
+  transform: translateY(-6px) !important;
+}
+
+.gasco-process-num {
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: #FFBF43 !important;
+  opacity: 0.8 !important;
+  margin-bottom: 16px !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.gasco-process-card h4 {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+  line-height: 1.3 !important;
+}
+
+.gasco-process-card p {
+  color: #9CA3AF !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+@media(max-width:1024px){
+  .gasco-process-grid { grid-template-columns: repeat(3, 1fr) !important; }
+}
+
+@media(max-width:768px){
+  .gasco-process-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .gasco-process-sec .sec-title h2 { font-size: 30px !important; }
+}
+
+@media(max-width:480px){
+  .gasco-process-grid { grid-template-columns: 1fr !important; }
+}

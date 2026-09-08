@@ -1,0 +1,630 @@
+/* Projects Page Styling - Exact 1:1 Visual Parity */
+
+/* Hero Section */
+.gasco-hero-homepage-match {
+  position: relative !important;
+  min-height: 85vh !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 240px 40px 100px !important;
+  background-color: #0F172A !important;
+  background-image: linear-gradient(180deg, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0.82) 100%), url('https://html.nextwpcook.com/buildgo/assets/img/banner/banner-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow: hidden !important;
+}
+
+.gasco-hero-video-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 0.65 !important;
+}
+
+.gasco-hero-content-wrapper {
+  position: relative !important;
+  z-index: 5 !important;
+  max-width: 1320px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.gasco-hero-subtitle-pill {
+  display: inline-block !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 30px !important;
+  padding: 7px 22px !important;
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.8px !important;
+  margin-bottom: 24px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.gasco-hero-title-solid {
+  font-size: 78px !important;
+  font-weight: 900 !important;
+  color: #FFFFFF !important;
+  line-height: 1.05 !important;
+  letter-spacing: -1.5px !important;
+  text-transform: uppercase !important;
+  margin: 0 0 6px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.gasco-hero-title-outlined {
+  font-size: 78px !important;
+  font-weight: 300 !important;
+  color: transparent !important;
+  -webkit-text-stroke: 1.8px #FFFFFF !important;
+  line-height: 1.05 !important;
+  letter-spacing: -1.5px !important;
+  text-transform: uppercase !important;
+  margin: 0 0 35px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.gasco-hero-yellow-btn {
+  background: #FFBF43 !important;
+  color: #0F172A !important;
+  font-size: 13.5px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 16px 36px !important;
+  border-radius: 40px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.35) !important;
+  transition: all 0.3s ease !important;
+}
+
+.gasco-hero-yellow-btn:hover {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  transform: translateY(-3px) !important;
+}
+
+.gasco-hero-yellow-btn i {
+  font-size: 14px !important;
+}
+
+.gasco-hero-badge-container {
+  position: absolute !important;
+  right: 60px !important;
+  bottom: 40px !important;
+  z-index: 10 !important;
+}
+
+.gasco-hero-badge-container img {
+  width: 130px !important;
+  height: 130px !important;
+  animation: rotateEpcBadge 18s linear infinite !important;
+}
+
+@keyframes rotateEpcBadge {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+  .gasco-hero-homepage-match {
+    padding: 180px 20px 80px !important;
+  }
+  .gasco-hero-title-solid,
+  .gasco-hero-title-outlined {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gasco-hero-homepage-match {
+    padding: 140px 15px 60px !important;
+  }
+  .gasco-hero-title-solid,
+  .gasco-hero-title-outlined {
+    font-size: 34px !important;
+  }
+  .gasco-hero-badge-container {
+    display: none !important;
+  }
+}
+
+/* Key Metrics Strip */
+.gasco-metrics-strip {
+  background: #0A0A0A !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding: 38px 20px !important;
+  color: #FFFFFF !important;
+}
+
+.gasco-metrics-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  text-align: center !important;
+}
+
+.gasco-metric-item {
+  position: relative !important;
+  padding: 10px !important;
+}
+
+.gasco-metric-item:not(:last-child)::after {
+  content: '' !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 20% !important;
+  bottom: 20% !important;
+  width: 1px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.gasco-metric-item h3 {
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  color: #FFBF43 !important;
+  margin: 0 0 6px 0 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.gasco-metric-item p {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #A3A3A3 !important;
+  margin: 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+}
+
+@media(max-width: 768px) {
+  .gasco-metrics-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+  }
+  .gasco-metric-item:not(:last-child)::after {
+    display: none !important;
+  }
+}
+
+/* Portfolio Section */
+.gasco-portfolio-section {
+  background: #F9FAFB !important;
+  padding: 90px 20px !important;
+}
+
+.gasco-portfolio-container {
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+}
+
+.gasco-portfolio-header {
+  text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 40px !important;
+}
+
+.gasco-portfolio-header .pill-badge {
+  display: inline-block !important;
+  background: rgba(255, 191, 67, 0.15) !important;
+  border: 1px solid #FFBF43 !important;
+  color: #B88014 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 5px 16px !important;
+  border-radius: 20px !important;
+  margin-bottom: 14px !important;
+}
+
+.gasco-portfolio-header h2 {
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  margin: 0 0 14px !important;
+}
+
+.gasco-portfolio-header p {
+  font-size: 15px !important;
+  color: #525252 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* Filter Controls */
+.portfolio-filter-bar {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-bottom: 45px !important;
+}
+
+.filter-btn {
+  background: #FFFFFF !important;
+  border: 1px solid #E5E5E5 !important;
+  color: #404040 !important;
+  padding: 10px 24px !important;
+  border-radius: 30px !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03) !important;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #000000 !important;
+  color: #FFBF43 !important;
+  border-color: #000000 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Projects Grid */
+.portfolio-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+}
+
+.project-card {
+  background: #FFFFFF !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  border: 1px solid #E5E5E5 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all 0.35s ease !important;
+  text-decoration: none !important;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+  border-color: #FFBF43 !important;
+}
+
+.project-img-wrapper {
+  position: relative !important;
+  height: 240px !important;
+  overflow: hidden !important;
+}
+
+.project-img-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.5s ease !important;
+}
+
+.project-card:hover .project-img-wrapper img {
+  transform: scale(1.08) !important;
+}
+
+.project-content {
+  padding: 25px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.project-client {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #B88014 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 8px !important;
+}
+
+.project-title {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  margin: 0 0 12px !important;
+  line-height: 1.35 !important;
+}
+
+.project-desc {
+  font-size: 14px !important;
+  color: #525252 !important;
+  line-height: 1.6 !important;
+  margin: 0 0 20px !important;
+  flex-grow: 1 !important;
+}
+
+.project-specs {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-top: 1px solid #F5F5F5 !important;
+  padding-top: 15px !important;
+  font-size: 13px !important;
+  color: #404040 !important;
+  font-weight: 600 !important;
+}
+
+.project-specs i {
+  color: #FFBF43 !important;
+  margin-right: 6px !important;
+}
+
+@media(max-width: 992px) {
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+@media(max-width: 640px) {
+  .portfolio-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Execution Excellence continuous marquee */
+.gasco-excellence-section {
+  background: #FFFFFF !important;
+  padding: 90px 0 !important;
+  overflow: hidden !important;
+}
+
+.gasco-excellence-header {
+  text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 45px !important;
+  padding: 0 20px !important;
+}
+
+.gasco-excellence-header .pill-badge {
+  display: inline-block !important;
+  background: rgba(255, 191, 67, 0.15) !important;
+  border: 1px solid #FFBF43 !important;
+  color: #B88014 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  padding: 5px 16px !important;
+  border-radius: 20px !important;
+  margin-bottom: 14px !important;
+}
+
+.gasco-excellence-header h2 {
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  margin: 0 0 14px !important;
+}
+
+.excellence-marquee-wrapper {
+  display: flex !important;
+  overflow: hidden !important;
+  user-select: none !important;
+  gap: 24px !important;
+  width: 100% !important;
+  padding: 10px 0 20px !important;
+}
+
+.excellence-marquee-track {
+  flex-shrink: 0 !important;
+  display: flex !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+  min-width: 100% !important;
+  animation: scroll-excellence 28s linear infinite !important;
+}
+
+.excellence-marquee-wrapper:hover .excellence-marquee-track {
+  animation-play-state: paused !important;
+}
+
+.excellence-card {
+  width: 290px !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  background: #F9FAFB !important;
+  border: 1px solid #E5E5E5 !important;
+  border-top: 4px solid #FFBF43 !important;
+  border-radius: 14px !important;
+  padding: 30px 22px !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.excellence-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important;
+  border-top-color: #000000 !important;
+}
+
+.excellence-card .icon-box {
+  width: 50px !important;
+  height: 50px !important;
+  background: rgba(255, 191, 67, 0.2) !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #B88014 !important;
+  font-size: 24px !important;
+  margin-bottom: 20px !important;
+}
+
+.excellence-card h4 {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  margin: 0 0 10px !important;
+  line-height: 1.3 !important;
+}
+
+.excellence-card p {
+  font-size: 13.5px !important;
+  color: #525252 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+@keyframes scroll-excellence {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - 24px)); }
+}
+
+/* Clients Section */
+.gasco-clients-section {
+  background: #050505 !important;
+  padding: 60px 0 !important;
+  overflow: hidden !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.gasco-clients-header {
+  text-align: center !important;
+  margin-bottom: 30px !important;
+}
+
+.gasco-clients-header h5 {
+  color: #A3A3A3 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  margin: 0 !important;
+}
+
+.gasco-clients-marquee {
+  display: flex !important;
+  overflow: hidden !important;
+  user-select: none !important;
+  gap: 40px !important;
+}
+
+.gasco-clients-track {
+  flex-shrink: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  gap: 40px !important;
+  min-width: 100% !important;
+  animation: clientMarquee 30s linear infinite !important;
+}
+
+.gasco-clients-track img {
+  height: 45px !important;
+  width: auto !important;
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.7 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.gasco-clients-track img:hover {
+  opacity: 1 !important;
+}
+
+@keyframes clientMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Homepage CTA Section */
+.gasco-homepage-cta-section {
+  background: #F9FAFB !important;
+  padding: 80px 20px !important;
+}
+
+.gasco-homepage-cta-card {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  background-image: url('/about-us/footer.jpg') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  padding: 85px 40px !important;
+  text-align: center !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.gasco-homepage-cta-card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(15, 20, 28, 0.65) !important;
+  z-index: 1 !important;
+}
+
+.gasco-homepage-cta-content {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 820px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.gasco-homepage-cta-content h2 {
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 32px !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.gasco-homepage-cta-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #FFBF43 !important;
+  color: #000000 !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 16px 36px !important;
+  border-radius: 30px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(255, 191, 67, 0.35) !important;
+}
+
+.gasco-homepage-cta-btn:hover {
+  background: #E6A935 !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(255, 191, 67, 0.5) !important;
+  color: #000000 !important;
+}
+
+.gasco-homepage-cta-btn i {
+  font-size: 14px !important;
+  transition: transform 0.3s ease !important;
+}
+
+.gasco-homepage-cta-btn:hover i {
+  transform: translate(2px, -2px) !important;
+}
+
+@media(max-width: 768px) {
+  .gasco-homepage-cta-card { padding: 50px 20px !important; }
+  .gasco-homepage-cta-content h2 { font-size: 28px !important; }
+}

@@ -1,0 +1,772 @@
+/* About Us Page Dedicated Styling - Exact 1:1 Parity */
+
+/* Hero Section */
+.about-hero-section {
+  position: relative !important;
+  padding: 240px 12px 250px 12px !important;
+  min-height: 750px !important;
+  background: #0F172A !important;
+  overflow: hidden !important;
+}
+
+.about-hero-video-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 0.65 !important;
+}
+
+.about-hero-content {
+  position: relative !important;
+  z-index: 5 !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+}
+
+.about-subtitle-pill {
+  display: inline-block !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 50px !important;
+  padding: 8px 24px !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 24px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.about-hero-title-solid {
+  font-size: 90px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1.1 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 6px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.about-hero-title-outlined {
+  font-size: 85px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  line-height: 1.0 !important;
+  -webkit-text-stroke-width: 1.5px !important;
+  -webkit-text-stroke-color: #FFFFFF !important;
+  color: transparent !important;
+  margin: 0 0 40px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.about-hero-btn {
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #111827 !important;
+  background: #FFBF43 !important;
+  border-radius: 50px !important;
+  padding: 8px 8px 8px 30px !important;
+  gap: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.about-hero-btn:hover {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  transform: translateY(-2px) !important;
+}
+
+.about-hero-btn i {
+  color: #FFFFFF !important;
+  background: #111827 !important;
+  font-size: 20px !important;
+  padding: 10px 11px !important;
+  border-radius: 50px !important;
+}
+
+.about-rotating-badge {
+  position: absolute !important;
+  bottom: 80px !important;
+  right: 12% !important;
+  z-index: 10 !important;
+}
+
+.about-rotating-badge img {
+  width: 130px !important;
+  height: 130px !important;
+  border-radius: 50% !important;
+  animation: rotateEpcBadge 18s linear infinite !important;
+}
+
+@media(max-width: 1024px) {
+  .about-hero-section {
+    padding: 180px 20px 140px !important;
+  }
+  .about-hero-title-solid {
+    font-size: 60px !important;
+  }
+  .about-hero-title-outlined {
+    font-size: 50px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .about-hero-section {
+    padding: 140px 15px 100px !important;
+  }
+  .about-hero-title-solid {
+    font-size: 40px !important;
+  }
+  .about-hero-title-outlined {
+    font-size: 34px !important;
+  }
+  .about-rotating-badge {
+    display: none !important;
+  }
+}
+
+/* Impact Statistics Section */
+.gasco-impact-stats-section {
+  background: #FFFFFF !important;
+  padding: 60px 20px 75px !important;
+  color: #1A1A1A !important;
+  border-bottom: 1px solid #EAEAEA !important;
+}
+
+.gasco-impact-stats-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+}
+
+.gasco-impact-statement {
+  font-size: 22px !important;
+  line-height: 1.65 !important;
+  font-weight: 700 !important;
+  color: #1A1A1A !important;
+  margin: 0 0 45px 0 !important;
+  max-width: 1080px !important;
+}
+
+.gasco-impact-statement span.muted-text {
+  color: #666666 !important;
+  font-weight: 400 !important;
+}
+
+.gasco-impact-stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 30px !important;
+  border-top: 1px solid #EAEAEA !important;
+  padding-top: 40px !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.gasco-stat-item {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  text-align: left !important;
+}
+
+.gasco-stat-item .stat-number {
+  font-size: 42px !important;
+  font-weight: 800 !important;
+  color: #D49B27 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.gasco-stat-item .stat-label {
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  color: #444444 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.6px !important;
+}
+
+@media (max-width: 768px) {
+  .gasco-impact-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .gasco-impact-statement {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gasco-impact-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Vision & Values Section */
+.gasco-vision-values-section {
+  background: #FAFAFA !important;
+  padding: 85px 20px !important;
+  color: #1A1A1A !important;
+  border-bottom: 1px solid #EAEAEA !important;
+}
+
+.gasco-vv-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.gasco-vv-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 30px !important;
+  margin-bottom: 50px !important;
+}
+
+.gasco-vv-header .line {
+  flex: 1 !important;
+  height: 1px !important;
+  background: #E0E0E0 !important;
+  max-width: 250px !important;
+}
+
+.gasco-vv-header h2 {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #1A1A1A !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  margin: 0 !important;
+}
+
+.gasco-vv-3cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  align-items: stretch !important;
+}
+
+.gasco-vv-card-item {
+  background: #FFFFFF !important;
+  border: 1px solid #EAEAEA !important;
+  border-top: 4px solid #FFBF43 !important;
+  border-radius: 16px !important;
+  padding: 36px 28px !important;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.04) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all 0.35s ease !important;
+}
+
+.gasco-vv-card-item:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08) !important;
+  border-top-color: #D49B27 !important;
+}
+
+.gasco-vv-card-item .vv-card-badge {
+  display: inline-block !important;
+  background: rgba(255, 191, 67, 0.15) !important;
+  border: 1px solid #FFBF43 !important;
+  color: #B88014 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+  padding: 4px 14px !important;
+  border-radius: 20px !important;
+  align-self: flex-start !important;
+  margin-bottom: 16px !important;
+}
+
+.gasco-vv-card-item h3 {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #1A1A1A !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.gasco-vv-card-item p.main-desc {
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+  color: #555555 !important;
+  margin: 0 0 20px 0 !important;
+  flex-grow: 1 !important;
+}
+
+.gasco-vv-card-item h4.sub-heading {
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  color: #1A1A1A !important;
+  margin: 0 0 14px 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.gasco-vv-card-item ul.vv-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.gasco-vv-card-item ul.vv-list li {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #444444 !important;
+  margin-bottom: 10px !important;
+}
+
+.gasco-vv-card-item ul.vv-list li .check-icon {
+  width: 20px !important;
+  height: 20px !important;
+  background: rgba(255, 191, 67, 0.2) !important;
+  border-radius: 50% !important;
+  color: #D49B27 !important;
+  font-size: 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  margin-top: 2px !important;
+  font-weight: 800 !important;
+}
+
+@media (max-width: 992px) {
+  .gasco-vv-3cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+  }
+}
+
+/* CTA Banner Section */
+.gasco-cta-banner-section {
+  background: #F7F5EE !important;
+  border-top: 1px solid #EAE6DC !important;
+  border-bottom: 1px solid #EAE6DC !important;
+  padding: 14px 20px !important;
+  color: #1A1A1A !important;
+}
+
+.gasco-cta-banner-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 30px !important;
+}
+
+.gasco-cta-banner-left h2 {
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  color: #1A1A1A !important;
+  margin: 0 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.gasco-cta-banner-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: #FFBF43 !important;
+  color: #1A1A1A !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  padding: 16px 36px !important;
+  border-radius: 35px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(255, 191, 67, 0.3) !important;
+  flex-shrink: 0 !important;
+}
+
+.gasco-cta-banner-btn:hover {
+  background: #e6a935 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(255, 191, 67, 0.4) !important;
+  color: #1A1A1A !important;
+}
+
+@media(max-width: 768px) {
+  .gasco-cta-banner-container {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}
+
+/* Strategy Full-Width Section */
+.gasco-strategy-fullwidth-section {
+  background: #F9F9F9 !important;
+  padding: 30px 20px 90px !important;
+  color: #1A1A1A !important;
+}
+
+.gasco-strategy-fullwidth-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.gasco-strategy-top-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 50px !important;
+  align-items: center !important;
+  margin-bottom: 50px !important;
+}
+
+.gasco-strategy-top-left img {
+  width: 100% !important;
+  height: 380px !important;
+  object-fit: cover !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+.gasco-strategy-top-right .pill-badge {
+  display: inline-block !important;
+  border: 1px solid #D0D0D0 !important;
+  border-radius: 20px !important;
+  padding: 5px 16px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  color: #555555 !important;
+  margin-bottom: 18px !important;
+  background: #FFFFFF !important;
+}
+
+.gasco-strategy-top-right h2 {
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  line-height: 1.22 !important;
+  color: #1A1A1A !important;
+  margin: 0 0 20px 0 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.gasco-strategy-top-right p {
+  font-size: 15px !important;
+  line-height: 1.68 !important;
+  color: #555555 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.gasco-strategy-4cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 0 !important;
+  background: #111111 !important;
+  border: 1px solid #2B2B2B !important;
+  border-radius: 18px !important;
+  padding: 35px 15px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+}
+
+.gasco-strategy-card-item {
+  text-align: center !important;
+  padding: 15px 20px !important;
+  position: relative !important;
+}
+
+.gasco-strategy-card-item:not(:last-child)::after {
+  content: '' !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 15% !important;
+  bottom: 15% !important;
+  width: 1px !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+.gasco-strategy-card-item .card-icon {
+  width: 52px !important;
+  height: 52px !important;
+  margin: 0 auto 16px !important;
+  background: rgba(255, 191, 67, 0.18) !important;
+  border: 1px solid rgba(255, 191, 67, 0.3) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #FFBF43 !important;
+  font-size: 22px !important;
+}
+
+.gasco-strategy-card-item h4 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 10px 0 !important;
+  letter-spacing: 0.2px !important;
+}
+
+.gasco-strategy-card-item p {
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #D1D5DB !important;
+  margin: 0 !important;
+}
+
+/* Staff 4-Cards Image Grid */
+.gasco-staff-4cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  background: #2B2D31 !important;
+  border: 1px solid #3E4147 !important;
+  border-radius: 18px !important;
+  padding: 24px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25) !important;
+}
+
+.gasco-staff-card-item {
+  overflow: hidden !important;
+  border-radius: 12px !important;
+  background: #1F2125 !important;
+  border: 1px solid #3A3D44 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.gasco-staff-card-item:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.25) !important;
+  border-color: #FFBF43 !important;
+}
+
+.gasco-staff-card-item .staff-img-box {
+  width: 100% !important;
+  height: 250px !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.gasco-staff-card-item .staff-img-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.4s ease !important;
+}
+
+.gasco-staff-card-item:hover .staff-img-box img {
+  transform: scale(1.06) !important;
+}
+
+/* History Animated Timeline */
+.gasco-history-animated-section {
+  background: #FFFFFF !important;
+  padding: 95px 0 105px !important;
+  color: #1A1A1A !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.gasco-history-container {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+.gasco-history-header {
+  text-align: center !important;
+  max-width: 800px !important;
+  margin: 0 auto 55px !important;
+  padding: 0 20px !important;
+}
+
+.gasco-history-header .pill-badge {
+  display: inline-block !important;
+  border: 1px solid #D0D0D0 !important;
+  border-radius: 20px !important;
+  padding: 6px 18px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  color: #555555 !important;
+  margin-bottom: 18px !important;
+  background: #FFFFFF !important;
+}
+
+.gasco-history-header h2 {
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  color: #1A1A1A !important;
+  margin: 0 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.gasco-horizontal-timeline-viewport {
+  position: relative !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  padding: 35px 0 25px !important;
+}
+
+.gasco-horizontal-timeline-viewport::before,
+.gasco-horizontal-timeline-viewport::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 160px !important;
+  z-index: 10 !important;
+  pointer-events: none !important;
+}
+
+.gasco-horizontal-timeline-viewport::before {
+  left: 0 !important;
+  background: linear-gradient(to right, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) !important;
+}
+
+.gasco-horizontal-timeline-viewport::after {
+  right: 0 !important;
+  background: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) !important;
+}
+
+.timeline-horizontal-axis {
+  position: absolute !important;
+  top: 104px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 4px !important;
+  background: #EAEAEA !important;
+  z-index: 1 !important;
+}
+
+.timeline-horizontal-axis::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(90deg, rgba(255, 191, 67, 0) 0%, #FFBF43 50%, rgba(255, 191, 67, 0) 100%) !important;
+  filter: drop-shadow(0 0 8px #FFBF43) !important;
+}
+
+.gasco-horizontal-marquee-track {
+  display: flex !important;
+  width: max-content !important;
+  will-change: transform !important;
+  animation: gascoHorizontalMarquee 40s linear infinite !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+
+.gasco-horizontal-marquee-track:hover {
+  animation-play-state: paused !important;
+}
+
+@keyframes gascoHorizontalMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.gasco-horizontal-timeline-list {
+  display: flex !important;
+  gap: 36px !important;
+  padding: 0 18px !important;
+  flex-shrink: 0 !important;
+}
+
+.gasco-h-timeline-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 380px !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+}
+
+.h-timeline-year {
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  color: #FFBF43 !important;
+  background: linear-gradient(135deg, #FFBF43 0%, #D49B27 100%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  margin-bottom: 14px !important;
+  letter-spacing: -0.5px !important;
+}
+
+.h-timeline-dot {
+  width: 22px !important;
+  height: 22px !important;
+  background: #FFBF43 !important;
+  border: 5px solid #FFFFFF !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 0 4px rgba(255, 191, 67, 0.35) !important;
+  z-index: 3 !important;
+  margin-bottom: 20px !important;
+  transition: all 0.3s ease !important;
+}
+
+.gasco-h-timeline-item:hover .h-timeline-dot {
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 0 7px rgba(255, 191, 67, 0.55) !important;
+  background: #D49B27 !important;
+}
+
+.h-timeline-card {
+  background: #FFFFFF !important;
+  border: 1px solid #EAEAEA !important;
+  border-top: 4px solid #FFBF43 !important;
+  border-radius: 16px !important;
+  padding: 26px 28px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important;
+  width: 100% !important;
+  min-height: 200px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all 0.35s ease !important;
+  text-align: left !important;
+}
+
+.gasco-h-timeline-item:hover .h-timeline-card {
+  transform: translateY(-8px) !important;
+  border-color: #FFBF43 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important;
+}
+
+.h-timeline-card h4 {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #1A1A1A !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.35 !important;
+}
+
+.h-timeline-card p {
+  font-size: 14.5px !important;
+  line-height: 1.6 !important;
+  color: #555855 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .gasco-strategy-top-grid { grid-template-columns: 1fr !important; gap: 35px !important; }
+  .gasco-strategy-4cards-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px !important; padding: 20px !important; }
+  .gasco-strategy-card-item:not(:last-child)::after { display: none !important; }
+}
+
+@media (max-width: 576px) {
+  .gasco-strategy-4cards-grid { grid-template-columns: 1fr !important; }
+  .gasco-h-timeline-item { width: 300px !important; }
+}

@@ -1,7 +1,10 @@
-import { loadPage } from "../lib/pages";
-import RawContent from "../components/RawContent";
+import HomeView from "../components/home/HomeView";
+
+export const metadata = {
+  title: "Kazain Ventures – Industrial HSE Advisory & Risk Management",
+  description: "Leading Health, Safety & Environment Advisory, targeting Zero Harm & Total Risk Compliance across industrial and energy sectors.",
+};
 
 export default function HomePage() {
-  const { meta, body } = loadPage("home-04");
-  return <RawContent html={body} scripts={meta.scripts} />;
+  return <HomeView />;
 }

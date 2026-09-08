@@ -1,0 +1,68 @@
+/* =========================================================
+   Universal 3-Dot Theme Preloader
+   ========================================================= */
+
+.theme-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: #191c1e;
+  z-index: 9999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  pointer-events: all;
+}
+
+.theme-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.theme-loader .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-loader .spinner-bounce {
+  will-change: transform;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: #FFBF43;
+  display: inline-block;
+  animation: themeLoaderBounce 0.9s ease-in-out infinite alternate;
+  transform-origin: 50% 50%;
+}
+
+.theme-loader .spinner-bounce.one {
+  margin-right: 14px;
+}
+
+.theme-loader .spinner-bounce.two {
+  margin-right: 14px;
+  animation-delay: 0.3s;
+}
+
+.theme-loader .spinner-bounce.three {
+  animation-delay: 0.6s;
+}
+
+@keyframes themeLoaderBounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}

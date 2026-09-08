@@ -9,6 +9,9 @@ import { useEffect } from "react";
  * bind to those events (Swiper, counterup/waypoints, progressbar, Elementor)
  * still initialize even though the DOM was injected client-side.
  */
+// Track loaded external script URLs across the client session so we never re-fetch or re-inject them.
+const loadedExternalScripts = new Set();
+
 export default function RawContent({ html, scripts }) {
 
   useEffect(() => {
@@ -16,17 +19,29 @@ export default function RawContent({ html, scripts }) {
 
     const loadOne = (s) =>
       new Promise((resolve) => {
-        const el = document.createElement("script");
-        if (s.id) el.id = s.id;
-        if (s.type) el.type = s.type;
         if (s.src) {
+          if (loadedExternalScripts.has(s.src) || (s.id && document.getElementById(s.id))) {
+            return resolve();
+          }
+          const el = document.createElement("script");
+          if (s.id) el.id = s.id;
+          if (s.type) el.type = s.type;
           el.src = s.src;
           el.async = false;
-          el.onload = () => resolve();
-          el.onerror = () => resolve();
+          el.onload = () => {
+            loadedExternalScripts.add(s.src);
+            resolve();
+          };
+          el.onerror = () => {
+            loadedExternalScripts.add(s.src);
+            resolve();
+          };
           document.body.appendChild(el);
         } else {
           try {
+            const el = document.createElement("script");
+            if (s.id) el.id = s.id;
+            if (s.type) el.type = s.type;
             el.text = s.code;
             document.body.appendChild(el);
           } catch (e) {

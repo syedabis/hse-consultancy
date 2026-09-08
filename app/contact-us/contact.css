@@ -1,0 +1,494 @@
+/* Contact Us Page Dedicated Styling - Exact 1:1 Parity */
+
+.contact-hero-section {
+  position: relative !important;
+  padding: 240px 20px 220px !important;
+  min-height: 750px !important;
+  background: #0F172A !important;
+  overflow: hidden !important;
+}
+
+.contact-hero-video-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 0.65 !important;
+}
+
+.contact-hero-content {
+  position: relative !important;
+  z-index: 5 !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+}
+
+.contact-subtitle-pill {
+  display: inline-block !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 50px !important;
+  padding: 8px 24px !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 24px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.contact-hero-title-solid {
+  font-size: 110px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1.1 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 6px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.contact-hero-title-outlined {
+  font-size: 85px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  line-height: 1.0 !important;
+  -webkit-text-stroke-width: 1.5px !important;
+  -webkit-text-stroke-color: #FFFFFF !important;
+  color: transparent !important;
+  margin: 0 0 40px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.contact-hero-btn {
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #111827 !important;
+  background: #FFBF43 !important;
+  border-radius: 50px !important;
+  padding: 8px 8px 8px 30px !important;
+  gap: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-hero-btn:hover {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  transform: translateY(-2px) !important;
+}
+
+.contact-hero-btn i {
+  color: #FFFFFF !important;
+  background: #111827 !important;
+  font-size: 20px !important;
+  padding: 10px 11px !important;
+  border-radius: 50px !important;
+}
+
+.contact-rotating-badge {
+  position: absolute !important;
+  bottom: 80px !important;
+  right: 12% !important;
+  z-index: 10 !important;
+}
+
+.contact-rotating-badge img {
+  width: 130px !important;
+  height: 130px !important;
+  border-radius: 50% !important;
+  animation: rotateEpcBadge 18s linear infinite !important;
+}
+
+@keyframes rotateEpcBadge {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media(max-width: 1024px) {
+  .contact-hero-section {
+    padding: 180px 20px 140px !important;
+  }
+  .contact-hero-title-solid {
+    font-size: 70px !important;
+  }
+  .contact-hero-title-outlined {
+    font-size: 55px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .contact-hero-section {
+    padding: 140px 15px 100px !important;
+  }
+  .contact-hero-title-solid {
+    font-size: 48px !important;
+  }
+  .contact-hero-title-outlined {
+    font-size: 38px !important;
+  }
+  .contact-rotating-badge {
+    display: none !important;
+  }
+}
+
+/* Valued Clients Marquee Ticker */
+.contact-ticker-section {
+  background-color: transparent !important;
+  background-image: linear-gradient(90deg, rgba(255, 35, 35, 0) 20%, #F8F7F0 0%) !important;
+  margin-top: -108px !important;
+  margin-bottom: 0px !important;
+  position: relative !important;
+  z-index: 20 !important;
+  padding: 0px 12px !important;
+}
+
+.contact-ticker-container {
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.contact-ticker-label {
+  width: 20.5% !important;
+  background-color: #F8F7F0 !important;
+  display: flex !important;
+  align-items: center !important;
+  border-right: 1px solid #D9D9D9 !important;
+  padding: 50px 0px 50px 50px !important;
+  box-sizing: border-box !important;
+}
+
+.contact-ticker-label h5 {
+  font-size: 28px !important;
+  line-height: 38px !important;
+  color: #222222 !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+}
+
+.contact-ticker-marquee-wrap {
+  width: 79.5% !important;
+  background-color: #F8F7F0 !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 50px !important;
+  box-sizing: border-box !important;
+}
+
+.contact-ticker-track {
+  display: flex !important;
+  align-items: center !important;
+  gap: 80px !important;
+  animation: tickerSlide 25s linear infinite !important;
+  flex-shrink: 0 !important;
+  min-width: 100% !important;
+}
+
+.contact-ticker-track img {
+  max-height: 48px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+@keyframes tickerSlide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@media(max-width: 900px) {
+  .contact-ticker-container {
+    flex-direction: column !important;
+  }
+  .contact-ticker-label {
+    width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #D9D9D9 !important;
+    padding: 25px !important;
+    justify-content: center !important;
+  }
+  .contact-ticker-marquee-wrap {
+    width: 100% !important;
+    padding: 25px 0 !important;
+  }
+}
+
+/* White Statement & Stats Section */
+.epc-statement-section {
+  padding: 80px 20px !important;
+  text-align: center !important;
+  background: #ffffff !important;
+}
+
+.epc-statement-text {
+  max-width: 920px !important;
+  margin: 0 auto 60px !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+  color: #111827 !important;
+  font-family: "Instrument Sans", sans-serif !important;
+}
+
+.epc-statement-text span {
+  color: #FFBF43 !important;
+  font-weight: 700 !important;
+}
+
+.epc-stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 30px !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+.epc-stat-box h2 {
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  color: #111827 !important;
+  margin: 0 0 6px !important;
+  letter-spacing: -0.5px !important;
+  font-family: "Instrument Sans", sans-serif !important;
+}
+
+.epc-stat-box p {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: #6B7280 !important;
+  margin: 0 !important;
+}
+
+@media(max-width: 768px) {
+  .epc-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Main Contact Section */
+.gasco-contact-sec {
+  background: #F9FAFB !important;
+  padding: 90px 20px !important;
+  font-family: "Instrument Sans", sans-serif !important;
+}
+
+.gasco-contact-container {
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+}
+
+.gasco-contact-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1.3fr !important;
+  gap: 50px !important;
+  align-items: start !important;
+}
+
+@media(max-width: 992px) {
+  .gasco-contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.gasco-contact-info-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}
+
+.gasco-contact-card {
+  background: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 16px !important;
+  padding: 28px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03) !important;
+  transition: all 0.3s ease !important;
+}
+
+.gasco-contact-card:hover {
+  border-color: #FFBF43 !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+.gasco-contact-icon {
+  width: 56px !important;
+  height: 56px !important;
+  min-width: 56px !important;
+  border-radius: 12px !important;
+  background: rgba(255, 191, 67, 0.15) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #111827 !important;
+  font-size: 24px !important;
+}
+
+.gasco-contact-card-content h4 {
+  margin: 0 0 6px !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+}
+
+.gasco-contact-card-content p,
+.gasco-contact-card-content a {
+  font-size: 16px !important;
+  color: #4B5563 !important;
+  line-height: 1.5 !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+}
+
+.gasco-contact-card-content a:hover {
+  color: #FFBF43 !important;
+}
+
+.gasco-contact-form-card {
+  background: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 20px !important;
+  padding: 40px !important;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.05) !important;
+}
+
+.gasco-contact-form-card h3 {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  margin: 0 0 10px !important;
+}
+
+.gasco-contact-form-card p.form-desc {
+  color: #6B7280 !important;
+  font-size: 15px !important;
+  margin: 0 0 30px !important;
+}
+
+.gasco-form-group {
+  margin-bottom: 20px !important;
+}
+
+.gasco-form-row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+}
+
+@media(max-width: 640px) {
+  .gasco-form-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.gasco-form-input,
+.gasco-form-textarea {
+  width: 100% !important;
+  padding: 14px 18px !important;
+  border: 1px solid #D1D5DB !important;
+  border-radius: 10px !important;
+  font-size: 15px !important;
+  color: #111827 !important;
+  background: #F9FAFB !important;
+  transition: border-color 0.3s ease, background 0.3s ease !important;
+  box-sizing: border-box !important;
+  font-family: inherit !important;
+}
+
+.gasco-form-input:focus,
+.gasco-form-textarea:focus {
+  border-color: #FFBF43 !important;
+  background: #ffffff !important;
+  outline: none !important;
+}
+
+.gasco-form-textarea {
+  min-height: 140px !important;
+  resize: vertical !important;
+}
+
+.gasco-form-submit-btn {
+  background: #FFBF43 !important;
+  color: #111827 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  padding: 16px 36px !important;
+  border: none !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  box-shadow: 0 8px 20px rgba(255, 191, 67, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.gasco-form-submit-btn:hover {
+  background: #111827 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 25px rgba(17, 24, 39, 0.2) !important;
+}
+
+/* Map Section */
+.gasco-map-sec {
+  background: #ffffff !important;
+  padding: 0 0 80px !important;
+}
+
+.gasco-map-head {
+  text-align: center !important;
+  max-width: 700px !important;
+  margin: 0 auto 40px !important;
+  padding: 0 20px !important;
+}
+
+.gasco-map-head span {
+  color: #FFBF43 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  margin-bottom: 8px !important;
+}
+
+.gasco-map-head h2 {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  margin: 0 !important;
+}
+
+.gasco-map-iframe-wrap {
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08) !important;
+  border: 1px solid #E5E7EB !important;
+}
+
+.gasco-map-iframe-wrap iframe {
+  width: 100% !important;
+  height: 480px !important;
+  border: 0 !important;
+  display: block !important;
+}

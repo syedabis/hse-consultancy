@@ -1,0 +1,410 @@
+/* Home Page Dedicated Styling - Exact 1:1 Parity */
+
+/* Hero Section */
+.home-hero-section {
+  position: relative !important;
+  padding: 240px 12px 250px 12px !important;
+  min-height: 750px !important;
+  background: #0F172A !important;
+  overflow: hidden !important;
+}
+
+.home-hero-video-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 0.65 !important;
+}
+
+.home-hero-content {
+  position: relative !important;
+  z-index: 5 !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+}
+
+.home-subtitle-pill {
+  display: inline-block !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 50px !important;
+  padding: 8px 24px !important;
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 24px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.home-hero-title-solid {
+  font-size: 90px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1.1 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 6px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.home-hero-title-outlined {
+  font-size: 85px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  line-height: 1.0 !important;
+  -webkit-text-stroke-width: 1.5px !important;
+  -webkit-text-stroke-color: #FFFFFF !important;
+  color: transparent !important;
+  margin: 0 0 40px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.home-hero-btn {
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #111827 !important;
+  background: #FFBF43 !important;
+  border-radius: 50px !important;
+  padding: 8px 8px 8px 30px !important;
+  gap: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.home-hero-btn:hover {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  transform: translateY(-2px) !important;
+}
+
+.home-hero-btn i {
+  color: #FFFFFF !important;
+  background: #111827 !important;
+  font-size: 20px !important;
+  padding: 10px 11px !important;
+  border-radius: 50px !important;
+}
+
+.home-rotating-badge {
+  position: absolute !important;
+  bottom: 80px !important;
+  right: 12% !important;
+  z-index: 10 !important;
+}
+
+.home-rotating-badge img {
+  width: 130px !important;
+  height: 130px !important;
+  border-radius: 50% !important;
+  animation: rotateEpcBadge 18s linear infinite !important;
+}
+
+@media(max-width: 1024px) {
+  .home-hero-section {
+    padding: 180px 20px 140px !important;
+  }
+  .home-hero-title-solid {
+    font-size: 60px !important;
+  }
+  .home-hero-title-outlined {
+    font-size: 50px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .home-hero-section {
+    padding: 140px 15px 100px !important;
+  }
+  .home-hero-title-solid {
+    font-size: 40px !important;
+  }
+  .home-hero-title-outlined {
+    font-size: 34px !important;
+  }
+  .home-rotating-badge {
+    display: none !important;
+  }
+}
+
+/* Home Valued Clients Ticker */
+.home-ticker-section {
+  background: #F8F7F0 !important;
+  border-top: 1px solid #D9D9D9 !important;
+  border-bottom: 1px solid #D9D9D9 !important;
+  padding: 30px 0 !important;
+  overflow: hidden !important;
+}
+
+.home-ticker-container {
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+.home-ticker-flex {
+  display: flex !important;
+  align-items: center !important;
+  gap: 60px !important;
+  overflow: hidden !important;
+  user-select: none !important;
+}
+
+.home-ticker-track {
+  display: flex !important;
+  align-items: center !important;
+  gap: 60px !important;
+  animation: homeTicker 25s linear infinite !important;
+  flex-shrink: 0 !important;
+  min-width: 100% !important;
+}
+
+.home-ticker-track img {
+  max-height: 42px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+@keyframes homeTicker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* About Home Section */
+.home-about-section {
+  padding: 90px 20px !important;
+  background: #ffffff !important;
+}
+
+.home-about-container {
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1.2fr !important;
+  gap: 60px !important;
+  align-items: center !important;
+}
+
+.home-about-img img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 16px !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08) !important;
+}
+
+.home-about-text h6 {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #B88014 !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 10px !important;
+}
+
+.home-about-text h2 {
+  font-size: 40px !important;
+  font-weight: 800 !important;
+  color: #111827 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 18px !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.home-about-text p {
+  font-size: 16px !important;
+  color: #4B5563 !important;
+  line-height: 1.65 !important;
+  margin-bottom: 30px !important;
+}
+
+.home-about-counters {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  border-top: 1px solid #E5E7EB !important;
+  padding-top: 25px !important;
+  margin-top: 25px !important;
+}
+
+.home-counter-item h3 {
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: #111827 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.home-counter-item h3 span.suffix {
+  color: #FFBF43 !important;
+}
+
+.home-counter-item p {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #6B7280 !important;
+  margin: 0 !important;
+}
+
+@media(max-width: 992px) {
+  .home-about-container { grid-template-columns: 1fr !important; }
+}
+
+/* Certifications Section */
+.gasco-cert-section {
+  position: relative !important;
+  overflow: hidden !important;
+  background: #181818 !important;
+  padding: 90px 0 60px 0 !important;
+}
+
+.gasco-cert-container {
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 40px !important;
+  align-items: center !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.gasco-cert-text {
+  flex: 1 1 360px !important;
+}
+
+.gasco-cert-eyebrow {
+  color: #FFBF43 !important;
+  font-weight: 600 !important;
+  letter-spacing: .05em !important;
+  margin: 0 0 10px 0 !important;
+  text-transform: uppercase !important;
+  font-size: 14px !important;
+}
+
+.gasco-cert-title {
+  color: #ffffff !important;
+  font-size: 42px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.gasco-cert-desc {
+  margin: 16px 0 28px 0 !important;
+  max-width: 440px !important;
+  color: #d1d5db !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+.gasco-cert-right-wrap {
+  flex: 1 1 580px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 35px !important;
+  padding: 20px 0 !important;
+}
+
+.gasco-cert-photos {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.gasco-cert-card {
+  width: 220px !important;
+  height: 310px !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.85) !important;
+  border: 3px solid #374151 !important;
+  background: #ffffff !important;
+  transition: transform 0.4s ease, border-color 0.4s ease, z-index 0.4s ease !important;
+}
+
+.gasco-cert-card:hover {
+  transform: translateY(-12px) scale(1.05) !important;
+  z-index: 10 !important;
+  border-color: #FFBF43 !important;
+}
+
+.gasco-cert-card:nth-child(1) {
+  z-index: 1 !important;
+  margin-right: -40px !important;
+  transform: translateY(18px) rotate(-6deg) !important;
+}
+
+.gasco-cert-card:nth-child(2) {
+  z-index: 3 !important;
+  transform: translateY(-10px) !important;
+}
+
+.gasco-cert-card:nth-child(3) {
+  z-index: 2 !important;
+  margin-left: -40px !important;
+  transform: translateY(18px) rotate(6deg) !important;
+}
+
+.gasco-cert-card .gasco-cert-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 15px !important;
+  background: #ffffff !important;
+  padding: 4px !important;
+}
+
+.gasco-cert-slider-wrap {
+  width: 100% !important;
+  margin-top: 60px !important;
+  position: relative !important;
+  z-index: 1 !important;
+  overflow: hidden !important;
+}
+
+.gasco-cert-slogans-track {
+  display: flex !important;
+  align-items: center !important;
+  gap: 50px !important;
+  animation: certSlogans 30s linear infinite !important;
+  width: max-content !important;
+}
+
+.gasco-cert-slogan-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+  white-space: nowrap !important;
+}
+
+.gasco-cert-slogan-item.outlined {
+  color: transparent !important;
+  -webkit-text-stroke: 1.5px #ffffff !important;
+}
+
+@keyframes certSlogans {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media(max-width:991px){
+  .gasco-cert-right-wrap { flex-direction: column !important; }
+  .gasco-cert-card { width: 150px !important; height: 210px !important; border-radius: 12px !important; }
+  .gasco-cert-card:nth-child(1) { margin-right: -25px !important; }
+  .gasco-cert-card:nth-child(3) { margin-left: -25px !important; }
+}

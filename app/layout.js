@@ -1,5 +1,8 @@
 import { headers } from "next/headers";
 import { slugForPath, loadPage, headHtml } from "../lib/pages";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import ThemeLoader from "../components/layout/ThemeLoader";
 import "./custom.css";
 
 export async function generateMetadata() {
@@ -27,7 +30,14 @@ export default async function RootLayout({ children }) {
         dangerouslySetInnerHTML={{ __html: headHtml(meta.headAssets) }}
       />
       <body className={meta.bodyClass} suppressHydrationWarning>
-        {children}
+        <ThemeLoader />
+        <div id="page" className="site">
+          <Header />
+          <div className="site-content-wrapper">
+            {children}
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
