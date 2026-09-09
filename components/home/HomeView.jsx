@@ -149,7 +149,7 @@ export default function HomeView() {
       {/* 4. Core Divisions Overview */}
       <section style={{ padding: "80px 20px", background: "#F9FAFB" }}>
         <div style={{ maxWidth: "1340px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 45px" }}>
+          <div style={{ textAlign: "center", maxWidth: "1000px", margin: "0 auto 45px" }}>
             <span
               style={{
                 fontSize: "12px",
@@ -166,7 +166,7 @@ export default function HomeView() {
             >
               HSE Advisory Services
             </span>
-            <h2 style={{ fontSize: "38px", fontWeight: "800", color: "#111827", margin: "0 0 14px" }}>
+            <h2 style={{ fontSize: "36px", fontWeight: "800", color: "#111827", margin: "0 0 14px", whiteSpace: "nowrap" }}>
               Comprehensive Safety &amp; Risk Solutions
             </h2>
             <p style={{ fontSize: "15px", color: "#6B7280", lineHeight: "1.6", margin: "0" }}>
@@ -203,7 +203,17 @@ export default function HomeView() {
                   />
                 </div>
                 <div style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
-                  <h3 style={{ fontSize: "20px", fontWeight: "700", color: "#111827", margin: "0 0 10px" }}>
+                  <h3
+                    style={{
+                      fontSize: "18px",
+                      fontWeight: "700",
+                      color: "#111827",
+                      margin: "0 0 10px",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
                     {svc.title}
                   </h3>
                   <p style={{ fontSize: "14px", color: "#525252", lineHeight: "1.6", margin: "0 0 16px", flexGrow: 1 }}>

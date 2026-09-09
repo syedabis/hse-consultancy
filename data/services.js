@@ -2,7 +2,7 @@ export const SERVICES = [
   {
     id: "process-safety-management",
     slug: "process-safety-management",
-    title: "Process Safety Management & Oil & Gas Advisory",
+    title: "Process Safety & Risk Advisory",
     shortDesc: "Certified HAZID & HAZOP workshops, SIL Assessment & LOPA, Bowtie risk mapping, QRA Phast modeling, Offshore SIMOPS/DROPS audits, and Saudi Aramco CSMS / GI compliance.",
     image: "/hse/asme_skid_hazop_review%201.jpg",
     highlights: [
@@ -15,7 +15,7 @@ export const SERVICES = [
   {
     id: "construction-epc-safety",
     slug: "construction-epc-safety",
-    title: "Construction, Infrastructure & EPC Safety Advisory",
+    title: "Construction & EPC Safety Advisory",
     shortDesc: "Crane lifting operations, excavation safety, temporary works, Traffic Management Plans (TMP), LOTO/PTW systems, and CEMP compliance.",
     image: "/hse/lifting-picture.jpeg",
     highlights: [
@@ -28,7 +28,7 @@ export const SERVICES = [
   {
     id: "occupational-health-hygiene",
     slug: "occupational-health-hygiene",
-    title: "Occupational Health & Industrial Hygiene",
+    title: "Occupational Health & Hygiene",
     shortDesc: "Comprehensive workplace exposure monitoring, noise mapping, heat stress compliance, chemical hazard evaluations, and medical surveillance programs.",
     image: "/hse/compression_occupational_hygiene%201.jpg",
     highlights: [
@@ -41,7 +41,7 @@ export const SERVICES = [
   {
     id: "environmental-impact-assessment",
     slug: "environmental-impact-assessment",
-    title: "Environmental Advisory, ESG & Sustainability",
+    title: "Environmental & ESG Advisory",
     shortDesc: "Category A, B & C EIA studies, environmental baseline surveys, Saudi NCEC permitting, Scope 1-3 carbon footprinting, GRI/TCFD ESG reporting, and site assessments.",
     image: "/hse/water_eia_environmental_study%201.jpg",
     highlights: [
@@ -54,7 +54,7 @@ export const SERVICES = [
   {
     id: "rental-compression-production",
     slug: "rental-compression-production",
-    title: "Safety Audits, Incident RCA & Risk Governance",
+    title: "Safety Audits & Risk Governance",
     shortDesc: "Independent site safety audits, root cause analysis (RCA), emergency response planning, and safety culture evaluations across operating assets.",
     image: "/hse/gas_processing_fera_simulation%202.jpg",
     highlights: [
@@ -67,7 +67,7 @@ export const SERVICES = [
   {
     id: "outsource-warehousing",
     slug: "outsource-warehousing",
-    title: "Dedicated HSE Training & Workforce Competency",
+    title: "HSE Training & Workforce Competency",
     shortDesc: "Accredited NEBOSH & IOSH preparation, Saudi Aramco H2S awareness, ISO 14001 lead auditor, Industrial Hygiene, Heat Stress, and PTW issuer training.",
     image: "/hse-training.jpg",
     highlights: [
