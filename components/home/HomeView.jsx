@@ -249,7 +249,7 @@ export default function HomeView() {
           >
             <div>
               <img
-                src="/hse/water_eia_environmental_study%202.jpg"
+                src="/hse-commitment.jpg"
                 alt="Kazain HSE Commitment"
                 style={{
                   width: "100%",
