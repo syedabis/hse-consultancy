@@ -52,8 +52,8 @@ export const SERVICES = [
     ],
   },
   {
-    id: "rental-compression-production",
-    slug: "rental-compression-production",
+    id: "safety-audits-risk-governance",
+    slug: "safety-audits-risk-governance",
     title: "Safety Audits & Risk Governance",
     shortDesc: "Independent site safety audits, root cause analysis (RCA), emergency response planning, and safety culture evaluations across operating assets.",
     image: "/hse/gas_processing_fera_simulation%202.jpg",
@@ -65,8 +65,8 @@ export const SERVICES = [
     ],
   },
   {
-    id: "outsource-warehousing",
-    slug: "outsource-warehousing",
+    id: "hse-training-workforce-competency",
+    slug: "hse-training-workforce-competency",
     title: "HSE Training & Workforce Competency",
     shortDesc: "Accredited NEBOSH & IOSH preparation, Saudi Aramco H2S awareness, ISO 14001 lead auditor, Industrial Hygiene, Heat Stress, and PTW issuer training.",
     image: "/hse-training.jpg",

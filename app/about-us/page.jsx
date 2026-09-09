@@ -293,11 +293,11 @@ export default function AboutUsPage() {
         <div className="gasco-strategy-fullwidth-container">
           <div className="gasco-strategy-top-grid">
             <div className="gasco-strategy-top-left">
-              <img src="/trenching-picture.jpg" alt="Kazain HSE Advisory &amp; Risk Governance" />
+              <img src="/construction-worker-at-a-building-site.jpeg" alt="Kazain HSE Advisory &amp; Risk Governance" />
             </div>
             <div className="gasco-strategy-top-right">
               <span className="pill-badge">OUR ADVISORY STRATEGY</span>
-              <h2>Driving Safety Governance &amp; Sustainable Risk Mitigation</h2>
+              <h2>Driving Governance &amp; Risk Mitigation</h2>
               <p>
                 Kazain HSE Advisory aims to deliver sustainable industrial value by leveraging our core competencies: rigorous process safety assessments, HAZOP/HAZID studies, ISO management system audits, and environmental dispersion modeling across the energy and manufacturing sectors.
               </p>

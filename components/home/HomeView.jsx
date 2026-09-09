@@ -30,13 +30,13 @@ const COMMITMENT_CARDS = [
   },
   {
     icon: "flaticon-ux-design",
-    title: "ISO 45001 & 14001",
-    desc: "Turnkey management system certification & audit support",
+    title: "ISO & HSE Standards",
+    desc: "ISO 45001, 14001, 9001, OSHA & global audit compliance",
   },
   {
     icon: "flaticon-exploration",
-    title: "Environmental (EIA)",
-    desc: "Impact assessments, dispersion modeling & EPA compliance",
+    title: "Regulatory Permits",
+    desc: "EIA environmental clearances, EPA & NCEC regulatory permits",
   },
   {
     icon: "flaticon-technical-support",
