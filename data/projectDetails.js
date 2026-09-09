@@ -76,7 +76,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "TotalEnergies / Shell",
     showcaseTitle: "Cross-Country Pipeline Integrity & Risk Governance Audit",
-    showcaseImage: "/trenching-picture.jpg",
+    showcaseImage: "/engineers-inspecting.jpeg",
     showcaseImageAlt: "42 Inch High-Pressure Gas Pipeline High Pressure Pipeline",
     showcaseParagraphs: [
       "Kazain conducted a multi-disciplinary Safety & Integrity Audit for TotalEnergies and Shell across an 80 KM, 42-inch high-pressure gas transmission asset network.",
@@ -204,7 +204,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "BHP / Rio Tinto",
     showcaseTitle: "Mining Water Supply Infrastructure EIA & Operational Safety Governance",
-    showcaseImage: "/hse/water_eia_environmental_study%202.jpg",
+    showcaseImage: "/industrial-water-treatment-plant.jpeg",
     showcaseImageAlt: "Industrial Water Infrastructure Water Supply Pipeline",
     showcaseParagraphs: [
       "Kazain Advisory delivered the complete Environmental Impact Assessment (EIA) and Occupational Safety Risk Governance for high-capacity industrial water supply networks serving major mining operations.",
@@ -524,7 +524,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "OGDCL / NATIONAL ENERGY",
     showcaseTitle: "Regional Cross-Country Pipeline Network Integrity & Incident RCA Audit",
-    showcaseImage: "/hse/pipeline_integrity_audit.jpg",
+    showcaseImage: "/wellhead-equipment-in-grassy-rural-setting.jpeg",
     showcaseImageAlt: "Regional Cross-Country Pipeline Network Integrity & Incident RCA",
     showcaseParagraphs: [
       "Kazain executed the full safety integrity audit and Root Cause Analysis (RCA) of over 120 KM of interconnected cross-country gas gathering lines connecting multiple wellheads to main processing facilities for OGDCL.",
@@ -588,7 +588,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "Global FMCG & Logistics Conglomerate",
     showcaseTitle: "High-Bay Warehouse Fire Safety & Worker Ergonomics Assessment",
-    showcaseImage: "/hse/asme_skid_hazop_review%201.jpg",
+    showcaseImage: "/men-inspecting-shipping-containers-at-a-shipping.jpeg",
     showcaseImageAlt: "Automated Logistics Hub Fire Risk & Worker Ergonomics Assessment",
     showcaseParagraphs: [
       "Kazain HSE Advisory conducted a comprehensive safety audit for a 120,000 sq. ft. automated high-bay fulfillment center serving global FMCG retail operations.",
@@ -652,7 +652,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "BioPharma Healthcare Group",
     showcaseTitle: "API Exposure Hygiene & Cleanroom ISO 45001 Audit",
-    showcaseImage: "/hse/compression_occupational_hygiene%202.jpg",
+    showcaseImage: "/industrial-workers-inspecting-.jpeg",
     showcaseImageAlt: "Pharma Cleanroom ISO 45001 & Occupational Exposure Hygiene Audit",
     showcaseParagraphs: [
       "Kazain delivered an advanced occupational hygiene and safety audit for a bio-pharmaceutical manufacturing complex producing active pharmaceutical ingredients (APIs).",
@@ -780,7 +780,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "Renewable Energy Utility Developer",
     showcaseTitle: "Utility-Scale Solar & Wind Park EIA Study & Construction Safety Audit",
-    showcaseImage: "/hse/water_eia_environmental_study%202.jpg",
+    showcaseImage: "/two-professional-technicians-installing-solar.jpeg",
     showcaseImageAlt: "500 MW Solar & Wind Energy Park Environmental & Safety Governance",
     showcaseParagraphs: [
       "Kazain delivered comprehensive environmental and construction safety advisory for a flagship 500 MW hybrid solar PV and wind turbine park.",
