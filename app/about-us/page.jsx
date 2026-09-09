@@ -35,12 +35,7 @@ const STRATEGY_CARDS = [
   },
 ];
 
-const STAFF_IMAGES = [
-  "/staff/1.jpeg",
-  "/staff/2.jpeg",
-  "/staff/3.jpeg",
-  "/staff/DSC_0027.JPG",
-];
+
 
 const TIMELINE_MILESTONES = [
   {
@@ -194,7 +189,7 @@ export default function AboutUsPage() {
             {/* Vision Card */}
             <div className="gasco-vv-card-item">
               <div className="vv-card-badge">VISION</div>
-              <h3>Premier HSE Advisory Leadership</h3>
+              <h3>HSE Advisory Leadership</h3>
               <p className="main-desc">
                 To be the industrial sector's premier Health, Safety &amp; Environmental risk consultancy, recognized globally for empowering organizations to operate with zero harm and complete compliance.
               </p>
@@ -326,36 +321,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* 6. Our People & Workforce */}
-      <section className="gasco-strategy-fullwidth-section" style={{ background: "#FFFFFF" }}>
-        <div className="gasco-strategy-fullwidth-container">
-          <div className="gasco-strategy-top-grid">
-            <div className="gasco-strategy-top-right">
-              <span className="pill-badge">OUR EXPERTS &amp; TECHNICAL LEADERSHIP</span>
-              <h2>Driven by Expert Insight, Committed to Operational Excellence</h2>
-              <p>
-                At Kazain HSE Advisory, our strength lies in our multidisciplinary team of certified HAZOP chairpersons, process safety engineers, ISO lead auditors, and environmental specialists. We combine decades of hands-on industrial field experience with rigorous technical governance to safeguard complex energy and manufacturing operations.
-              </p>
-              <p>
-                We foster a continuous learning culture where expert consultants collaborate seamlessly across global standards. By equipping our specialists with state-of-the-art consequence modeling tools and accredited auditing frameworks, we ensure our clients achieve Target Zero Harm, total compliance, and long-term operational resilience.
-              </p>
-            </div>
-            <div className="gasco-strategy-top-left">
-              <img src="/staff/DSC_0024.JPG" alt="Kazain Dedicated Workforce &amp; Staff" />
-            </div>
-          </div>
 
-          <div className="gasco-staff-4cards-grid">
-            {STAFF_IMAGES.map((src, idx) => (
-              <div className="gasco-staff-card-item" key={idx}>
-                <div className="staff-img-box">
-                  <img src={src} alt={`Kazain Team Member ${idx + 1}`} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 7. History & Milestones Horizontal Continuous Timeline */}
       <section className="gasco-history-animated-section">
@@ -396,6 +362,81 @@ export default function AboutUsPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. Bottom CTA Banner Section */}
+      <section style={{ background: "#F9FAFB", padding: "80px 20px" }}>
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            position: "relative",
+            backgroundImage: "url('/about-us/footer.jpg')",
+            backgroundPosition: "center center",
+            backgroundSize: "cover",
+            borderRadius: "20px",
+            overflow: "hidden",
+            padding: "85px 40px",
+            textAlign: "center",
+            boxShadow: "0 20px 40px rgba(0, 0, 0, 0.12)",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: "rgba(15, 20, 28, 0.65)",
+              zIndex: 1,
+            }}
+          />
+          <div
+            style={{
+              position: "relative",
+              zIndex: 2,
+              maxWidth: "820px",
+              margin: "0 auto",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "42px",
+                fontWeight: "700",
+                color: "#FFFFFF",
+                margin: "0 0 32px",
+                lineHeight: "1.25",
+              }}
+            >
+              Partner With Kazain for Complete HSE &amp; Risk Management Solutions
+            </h2>
+            <Link
+              href="/contact-us/"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "10px",
+                background: "#FFBF43",
+                color: "#000000",
+                fontSize: "13px",
+                fontWeight: "800",
+                textTransform: "uppercase",
+                letterSpacing: "1px",
+                padding: "16px 36px",
+                borderRadius: "30px",
+                textDecoration: "none",
+                boxShadow: "0 4px 15px rgba(255, 191, 67, 0.35)",
+              }}
+            >
+              <span>CONTACT US</span>
+              <i className="flaticon flaticon-right-up"></i>
+            </Link>
           </div>
         </div>
       </section>

@@ -156,8 +156,9 @@
   line-height: 1.65 !important;
   font-weight: 700 !important;
   color: #1A1A1A !important;
-  margin: 0 0 45px 0 !important;
+  margin: 0 auto 45px auto !important;
   max-width: 1080px !important;
+  text-align: center !important;
 }
 
 .gasco-impact-statement span.muted-text {
