@@ -158,7 +158,6 @@
 .home-ticker-flex {
   display: flex !important;
   align-items: center !important;
-  gap: 70px !important;
   overflow: hidden !important;
   user-select: none !important;
   width: 100% !important;
@@ -167,16 +166,17 @@
 .home-ticker-track {
   display: flex !important;
   align-items: center !important;
-  gap: 70px !important;
-  animation: homeTicker 32s linear infinite !important;
+  gap: 60px !important;
+  padding-right: 60px !important;
+  animation: homeTicker 28s linear infinite !important;
   flex-shrink: 0 !important;
 }
 
 .home-ticker-track img {
-  max-height: 46px !important;
+  max-height: 44px !important;
   width: auto !important;
   object-fit: contain !important;
-  transition: transform 0.3s ease, filter 0.3s ease !important;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease !important;
   opacity: 0.88 !important;
 }
 
@@ -186,8 +186,8 @@
 }
 
 @keyframes homeTicker {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 /* About Home Section */

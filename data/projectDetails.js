@@ -149,7 +149,7 @@ export const PROJECT_DETAILS = {
     ],
     showcaseCtaText: "Request Advisory Proposal ↗",
     showcaseCtaLink: "/contact-us/",
-    statementHtml: `At the Offshore & Onshore Compression Station, Kazain operates heavy reciprocating booster compressor packages. By leveraging <span class="highlight">predictive maintenance</span>, <span class="highlight">24/7 technical field support</span>, and <span class="highlight">precision gas cooling systems</span>, we ensure uninterrupted field production for ENI & UEPL.`,
+    statementHtml: `At the Compression Station, Kazain operates heavy reciprocating booster compressor packages. By leveraging <span class="highlight">predictive maintenance</span>, <span class="highlight">24/7 technical field support</span>, and <span class="highlight">precision gas cooling systems</span>, we ensure uninterrupted field production for ENI & UEPL.`,
     stats: [
       { number: "75 MMSCFD", label: "Boosting Capacity" },
       { number: "98.5%+", label: "Operational Availability" },

@@ -3,24 +3,8 @@
 import Link from "next/link";
 import { SERVICES, METHODOLOGY_STEPS } from "../../data/services";
 import { PROJECTS } from "../../data/projects";
+import ClientMarquee from "../../components/detail/ClientMarquee";
 import "./services.css";
-
-const TICKER_LOGOS = [
-  "/Client Logos/1.png",
-  "/Client Logos/2.png",
-  "/Client Logos/3.png",
-  "/Client Logos/4.png",
-  "/Client Logos/5.png",
-  "/Client Logos/6.png",
-  "/Client Logos/7.png",
-  "/Client Logos/8.png",
-  "/Client Logos/9.png",
-  "/Client Logos/10.png",
-  "/Client Logos/11.png",
-  "/Client Logos/12.png",
-  "/Client Logos/13.png",
-  "/Client Logos/14.png",
-];
 
 export default function ServicesPage() {
   const flagshipProjects = PROJECTS.slice(0, 3);
@@ -58,67 +42,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 2. Valued Clients Marquee Ticker */}
-      <div
-        style={{
-          background: "#F8F7F0",
-          borderTop: "1px solid #D9D9D9",
-          borderBottom: "1px solid #D9D9D9",
-          padding: "30px 0",
-          overflow: "hidden",
-        }}
-      >
-        <div style={{ maxWidth: "1340px", margin: "0 auto", padding: "0 20px" }}>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "60px",
-              overflow: "hidden",
-              userSelect: "none",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "60px",
-                animation: "serviceTicker 25s linear infinite",
-                flexShrink: 0,
-                minWidth: "100%",
-              }}
-            >
-              {TICKER_LOGOS.map((src, idx) => (
-                <img
-                  key={`srv-logo1-${idx}`}
-                  src={src}
-                  alt={`Client Logo ${idx + 1}`}
-                  style={{ maxHeight: "42px", width: "auto", objectFit: "contain" }}
-                />
-              ))}
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "60px",
-                animation: "serviceTicker 25s linear infinite",
-                flexShrink: 0,
-                minWidth: "100%",
-              }}
-              aria-hidden="true"
-            >
-              {TICKER_LOGOS.map((src, idx) => (
-                <img
-                  key={`srv-logo2-${idx}`}
-                  src={src}
-                  alt={`Client Logo ${idx + 1}`}
-                  style={{ maxHeight: "42px", width: "auto", objectFit: "contain" }}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      <ClientMarquee />
 
       {/* 3. Six Core Divisions Section */}
       <div id="core-services-grid" style={{ background: "#ffffff", paddingTop: "40px" }}>

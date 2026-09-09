@@ -3,6 +3,7 @@ import { SERVICE_DETAILS } from "../../../data/serviceDetails";
 import DetailHero from "../../../components/detail/DetailHero";
 import ClientMarquee from "../../../components/detail/ClientMarquee";
 import ShowcaseSection from "../../../components/detail/ShowcaseSection";
+import PillarsSection from "../../../components/detail/PillarsSection";
 import StatsSection from "../../../components/detail/StatsSection";
 import MethodologyCarousel from "../../../components/detail/MethodologyCarousel";
 import FeaturedProjects from "../../../components/detail/FeaturedProjects";
@@ -58,6 +59,13 @@ export default async function ServiceDetailPage({ params }) {
         imageAlt={service.showcaseImageAlt}
         ctaText={service.showcaseCtaText}
         ctaLink={service.showcaseCtaLink}
+      />
+
+      {/* 3.5 Technical Pillars Grid */}
+      <PillarsSection
+        eyebrow={service.pillarsEyebrow}
+        title={service.pillarsTitle}
+        pillars={service.pillars}
       />
 
       {/* 4. High-Impact Statement & 4 Big Stats */}

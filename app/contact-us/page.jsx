@@ -218,27 +218,35 @@ export default function ContactUsPage() {
                       style={{ cursor: "pointer" }}
                     >
                       <option value="" disabled>
-                        Select HSE Service Category *
+                        Select Sector / Specialized Service *
                       </option>
-                      <option value="Process Safety & HAZOP">
-                        Process Safety &amp; HAZOP / QRA
+                      <option value="Process Safety & Oil Gas">
+                        Oil &amp; Gas Process Safety (HAZOP / QRA / SIL)
                       </option>
-                      <option value="ISO 45001 / 14001 Certification">
-                        ISO 45001 / 14001 Certification
+                      <option value="Construction & EPC Safety">
+                        Construction &amp; EPC High-Risk Safety (Crane / TMP / CEMP)
+                      </option>
+                      <option value="Renewable Energy Safety">
+                        Renewable Energy Safety (Solar PV / Wind / Green Hydrogen)
                       </option>
                       <option value="Occupational Health & Hygiene">
-                        Occupational Health &amp; Hygiene
+                        Occupational Health &amp; Hygiene (WBGT / Dust / Noise)
                       </option>
-                      <option value="Environmental Impact Assessment">
-                        Environmental Impact (EIA / IEE)
+                      <option value="Environmental Advisory & EIA">
+                        Environmental Advisory, EIA &amp; NCEC Permitting
                       </option>
-                      <option value="Safety Audits & Incident RCA">
-                        Safety Audits &amp; Incident RCA
+                      <option value="Sustainability & ESG Strategy">
+                        Sustainability &amp; ESG Advisory (GRI / Net-Zero)
                       </option>
-                      <option value="HSE Training Academy">
-                        HSE Training &amp; Workshops
+                      <option value="Digital HSE & Power BI">
+                        Digital HSE, Power BI &amp; AI Computer Vision
                       </option>
-                      <option value="General HSE Advisory">General HSE Advisory</option>
+                      <option value="HSE Training & Certifications">
+                        HSE Training &amp; Certifications (NEBOSH / Aramco H2S)
+                      </option>
+                      <option value="ISO 45001 / 14001 Certification">
+                        ISO 45001 / 14001 Safety Management Systems
+                      </option>
                     </select>
                   </div>
                 </div>

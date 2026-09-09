@@ -3,50 +3,40 @@
 import { useState } from "react";
 import Link from "next/link";
 import { PROJECTS, PROJECT_CATEGORIES } from "../../data/projects";
+import ClientMarquee from "../../components/detail/ClientMarquee";
 import "./projects.css";
 
 const EXCELLENCE_ITEMS = [
   {
     icon: "flaticon-project-management",
     title: "ISO & OSHA Certified",
-    desc: "Operating under ISO 9001, 14001, and 45001 standards with full C-A Category licensing for unlimited scale contracts.",
-  },
-  {
-    icon: "flaticon-wrench",
-    title: "Heavy Equipment Fleet",
-    desc: "Ownership of specialized trenchers, sidebooms, pipe layers, bending machines, and high-capacity mobile crane fleets.",
-  },
-  {
-    icon: "flaticon-design-thinking",
-    title: "Turnkey Capability",
-    desc: "Complete single-source execution from front-end engineering design (FEED) through procurement, fabrication, and final testing.",
-  },
-  {
-    icon: "flaticon-technical-support",
-    title: "Long-Term O&M Support",
-    desc: "Post-commissioning operational maintenance, field management, and emergency response teams standing by across all asset sites.",
+    desc: "Operating under certified ISO 9001, 14001, and 45001 management systems aligned with global OSHA standards.",
   },
   {
     icon: "flaticon-consultation",
-    title: "HSE & Safety Leadership",
-    desc: "Rigorous Health, Safety & Environment policies logging over 35 Million safe man-hours with a zero Lost Time Injury record.",
+    title: "Process Safety & HAZOP",
+    desc: "TÜV-certified Functional Safety experts facilitating HAZOP, LOPA, FERA, and 3D Phast consequence modeling.",
+  },
+  {
+    icon: "flaticon-design-thinking",
+    title: "Aramco CSMS Compliance",
+    desc: "Turnkey alignment with Saudi Aramco Contractor Safety Management Systems and NCEC environmental regulations.",
+  },
+  {
+    icon: "flaticon-technical-support",
+    title: "Industrial Hygiene Survey",
+    desc: "Quantitative personal noise dosimetry, thermal heat stress (WBGT), and workplace indoor air quality evaluations.",
   },
   {
     icon: "flaticon-server",
-    title: "ASME Stamped Skids",
-    desc: "State-of-the-art heavy fabrication facilities equipped for ASME Sec VIII pressure vessels and modular process skids.",
+    title: "HSE Leadership & Audits",
+    desc: "Comprehensive safety culture auditing and site risk governance logging over 35 Million safe man-hours.",
   },
-];
-
-const CLIENT_LOGOS = [
-  "/Client Logos/1.png",
-  "/Client Logos/2.png",
-  "/Client Logos/3.png",
-  "/Client Logos/4.png",
-  "/Client Logos/5.png",
-  "/Client Logos/6.png",
-  "/Client Logos/7.png",
-  "/Client Logos/8.png",
+  {
+    icon: "flaticon-wrench",
+    title: "Digital HSE Analytics",
+    desc: "Real-time Power BI risk dashboards, digital Permit-to-Work tracking, and incident root cause analysis.",
+  },
 ];
 
 export default function ProjectsPage() {
@@ -89,7 +79,10 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* 2. Filterable Projects Showcase Section */}
+      {/* 2. Valued Clients Marquee Section */}
+      <ClientMarquee />
+
+      {/* 3. Filterable Projects Showcase Section */}
       <section className="gasco-portfolio-section" id="projects-showcase">
         <div className="gasco-portfolio-container">
           <div className="gasco-portfolio-header">
@@ -125,16 +118,23 @@ export default function ProjectsPage() {
                 <div className="project-img-wrapper">
                   <img src={project.image} alt={project.title} />
                 </div>
+
                 <div className="project-content">
-                  <span className="project-client">{project.client}</span>
-                  <h3 className="project-title">{project.title}</h3>
+                  <div className="project-card-header">
+                    <span className="project-client">{project.client}</span>
+                    <h3 className="project-title">{project.title}</h3>
+                  </div>
+
                   <p className="project-desc">{project.desc}</p>
-                  <div className="project-specs">
-                    <span>
-                      <i className="flaticon flaticon-location-1"></i> {project.location}
-                    </span>
-                    <span>
-                      <i className="flaticon flaticon-project-management"></i> {project.contractType}
+
+                  <div className="project-card-footer">
+                    <div className="project-specs">
+                      <span>
+                        <i className="flaticon flaticon-location-1"></i> {project.location}
+                      </span>
+                    </div>
+                    <span className="view-case-link">
+                      View Case Study <i className="flaticon flaticon-right-up"></i>
                     </span>
                   </div>
                 </div>
@@ -147,10 +147,10 @@ export default function ProjectsPage() {
       {/* 4. Execution Excellence Continuous Marquee */}
       <section className="gasco-excellence-section">
         <div className="gasco-excellence-header">
-          <span className="pill-badge">Execution Pillars</span>
-          <h2>Our Engineering Standards</h2>
+          <span className="pill-badge">Advisory Excellence</span>
+          <h2>Our HSE &amp; Governance Standards</h2>
           <p>
-            Every Kazain project is built upon rigorous international standards, certified safety management systems, and specialized heavy machinery fleets.
+            Every Kazain engagement is built upon certified safety management frameworks, international ISO standards, and expert risk governance.
           </p>
         </div>
 
@@ -181,26 +181,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* 5. Valued Clients Marquee Section */}
-      <section className="gasco-clients-section">
-        <div className="gasco-clients-header">
-          <h5>Trusted By Global Energy Majors</h5>
-        </div>
-        <div className="gasco-clients-marquee">
-          <div className="gasco-clients-track">
-            {CLIENT_LOGOS.map((src, idx) => (
-              <img key={`logo1-${idx}`} src={src} alt={`Client Logo ${idx + 1}`} />
-            ))}
-          </div>
-          <div className="gasco-clients-track" aria-hidden="true">
-            {CLIENT_LOGOS.map((src, idx) => (
-              <img key={`logo2-${idx}`} src={src} alt={`Client Logo ${idx + 1}`} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. Homepage Parity CTA Section */}
+      {/* 5. Homepage Parity CTA Section */}
       <section className="gasco-homepage-cta-section">
         <div className="gasco-homepage-cta-card">
           <div className="gasco-homepage-cta-content">
