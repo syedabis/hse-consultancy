@@ -17,7 +17,7 @@ export const SERVICES = [
     slug: "construction-epc-safety",
     title: "Construction, Infrastructure & EPC Safety Advisory",
     shortDesc: "Crane lifting operations, excavation safety, temporary works, Traffic Management Plans (TMP), LOTO/PTW systems, and CEMP compliance.",
-    image: "/hse/compression_occupational_hygiene%201.jpg",
+    image: "/hse/lifting-picture.jpeg",
     highlights: [
       "Crane Safety, Lifting & Rigging Audits",
       "Excavation, Trenching & Temporary Works",
@@ -43,7 +43,7 @@ export const SERVICES = [
     slug: "environmental-impact-assessment",
     title: "Environmental Advisory, ESG & Sustainability",
     shortDesc: "Category A, B & C EIA studies, environmental baseline surveys, Saudi NCEC permitting, Scope 1-3 carbon footprinting, GRI/TCFD ESG reporting, and site assessments.",
-    image: "/hse/water_eia_environmental_study%202.jpg",
+    image: "/hse/water_eia_environmental_study%201.jpg",
     highlights: [
       "Category A, B & C EIA & NCEC Permitting",
       "Environmental Baseline Surveys & Monitoring",

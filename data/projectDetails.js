@@ -140,7 +140,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "BP International / Saudi Aramco",
     showcaseTitle: "Wellhead Compression ISO 45001 & 14001 Management Framework",
-    showcaseImage: "/hse/asme_skid_hazop_review%202.jpg",
+    showcaseImage: "/hse/compression_occupational_hygiene%202.jpg",
     showcaseImageAlt: "Compression Station Gas Compression Package",
     showcaseParagraphs: [
       "Kazain designed and implemented a unified ISO 45001 (Occupational Health & Safety) and ISO 14001 (Environmental) management system for BP International and Saudi Aramco's wellhead gas compression stations.",
@@ -268,7 +268,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "PGNiG / ORLEN Upstream",
     showcaseTitle: "Upstream Gas Gathering Facilities Workplace Safety & Operational Audit",
-    showcaseImage: "/trenching-picture.jpg",
+    showcaseImage: "/hse/upstream_workplace_safety.jpg",
     showcaseImageAlt: "Gas Field and Rehman Field Facilities",
     showcaseParagraphs: [
       "Kazain Advisory performed complete Workplace Safety & Operational Hygiene Audits for PGNiG / ORLEN across upstream high-pressure gas gathering networks and wellhead tie-in sites.",
@@ -524,7 +524,7 @@ export const PROJECT_DETAILS = {
     heroCtaLink: "#project-details",
     showcasePill: "OGDCL / NATIONAL ENERGY",
     showcaseTitle: "Regional Cross-Country Pipeline Network Integrity & Incident RCA EPC",
-    showcaseImage: "/hse/asme_skid_hazop_review%201.jpg",
+    showcaseImage: "/hse/pipeline_integrity_audit.jpg",
     showcaseImageAlt: "Regional Cross-Country Pipeline Network Integrity & Incident RCA",
     showcaseParagraphs: [
       "Kazain executed the full engineering, procurement, and construction (EPC) of over 120 KM of interconnected cross-country gas gathering lines connecting multiple wellheads to main processing facilities for OGDCL.",
