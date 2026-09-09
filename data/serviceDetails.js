@@ -668,7 +668,7 @@ export const SERVICE_DETAILS = {
     heroCtaLink: "/contact-us/",
     showcasePill: "PROFESSIONALLY MANAGED STORAGE",
     showcaseTitle: "Dedicated Industrial Storage & Supply Chain Logistics",
-    showcaseImage: "/hse/compression_iso_audit.jpg",
+    showcaseImage: "/hse-training.jpg",
     showcaseImageAlt: "Kazain Warehousing Facility",
     showcaseParagraphs: [
       "Kazain offers dedicated outsource warehousing services trusted by multinational energy and industrial companies operating globally.",

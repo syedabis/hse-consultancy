@@ -69,7 +69,7 @@ export const SERVICES = [
     slug: "outsource-warehousing",
     title: "Dedicated HSE Training & Workforce Competency",
     shortDesc: "Accredited NEBOSH & IOSH preparation, Saudi Aramco H2S awareness, ISO 14001 lead auditor, Industrial Hygiene, Heat Stress, and PTW issuer training.",
-    image: "/hse/compression_iso_audit.jpg",
+    image: "/hse-training.jpg",
     highlights: [
       "NEBOSH Prep & IOSH Managing Safely®",
       "Saudi Aramco H2S Awareness & SCBA",
