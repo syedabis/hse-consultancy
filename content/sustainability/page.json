@@ -1,0 +1,13 @@
+{
+  "slug": "sustainability",
+  "lang": "en-US",
+  "title": "Sustainability, ESG & Net-Zero Advisory – Kazain Ventures",
+  "bodyClass": "wp-singular page-template elementor-default",
+  "headAssets": [
+    {
+      "type": "icon",
+      "href": "/updated_favicon.png",
+      "sizes": "32x32"
+    }
+  ]
+}
