@@ -4,7 +4,7 @@
   position: relative !important;
   padding: 190px 12px 140px 12px !important;
   min-height: 620px !important;
-  background: #0B1912 !important;
+  background: #0F172A !important;
   overflow: hidden !important;
 }
 
@@ -16,7 +16,7 @@
   height: 100% !important;
   object-fit: cover !important;
   z-index: 1 !important;
-  opacity: 0.55 !important;
+  opacity: 0.65 !important;
 }
 
 .sustainability-hero-content {
@@ -28,16 +28,16 @@
 
 .sustainability-subtitle-pill {
   display: inline-block !important;
-  border: 1px solid rgba(16, 185, 129, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
   border-radius: 50px !important;
   padding: 8px 24px !important;
-  color: #34D399 !important;
+  color: #FFFFFF !important;
   font-size: 14px !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   margin-bottom: 20px !important;
-  background: rgba(16, 185, 129, 0.12) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
   backdrop-filter: blur(4px) !important;
 }
 
@@ -58,7 +58,7 @@
   text-transform: capitalize !important;
   line-height: 1.0 !important;
   -webkit-text-stroke-width: 1.5px !important;
-  -webkit-text-stroke-color: #34D399 !important;
+  -webkit-text-stroke-color: #FFFFFF !important;
   color: transparent !important;
   margin: 0 0 32px 0 !important;
   font-family: 'Instrument Sans', sans-serif !important;
@@ -69,27 +69,27 @@
   font-size: 16px !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  color: #064E3B !important;
-  background: #34D399 !important;
+  color: #111827 !important;
+  background: #FFBF43 !important;
   border-radius: 50px !important;
   padding: 8px 8px 8px 30px !important;
   gap: 20px !important;
   display: inline-flex !important;
   align-items: center !important;
   text-decoration: none !important;
-  box-shadow: 0 10px 25px rgba(52, 211, 153, 0.3) !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.3) !important;
   transition: all 0.3s ease !important;
 }
 
 .sustainability-hero-btn:hover {
   background: #FFFFFF !important;
-  color: #064E3B !important;
+  color: #111827 !important;
   transform: translateY(-2px) !important;
 }
 
 .sustainability-hero-btn i {
   color: #FFFFFF !important;
-  background: #064E3B !important;
+  background: #111827 !important;
   font-size: 20px !important;
   padding: 10px 11px !important;
   border-radius: 50px !important;
