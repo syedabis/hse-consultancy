@@ -7,6 +7,7 @@ export default function Footer() {
       itemScope
       id="colophon"
       role="contentinfo"
+      className="site-footer"
       style={{
         background: "#0F141C",
         color: "#9CA3AF",
@@ -15,14 +16,16 @@ export default function Footer() {
       }}
     >
       <div
+        className="footer-inner-container"
         style={{
           maxWidth: "1340px",
           margin: "0 auto",
           padding: "70px 24px 35px",
         }}
       >
-        {/* Main 4 Columns Grid - Top Baseline Aligned */}
+        {/* Main 4 Columns Grid */}
         <div
+          className="footer-main-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
@@ -32,8 +35,8 @@ export default function Footer() {
           }}
         >
           {/* Column 1: Logo & About Text */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <div style={{ height: "42px", display: "flex", alignItems: "center" }}>
+          <div className="footer-col footer-col-about" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <div className="footer-logo-wrap" style={{ height: "42px", display: "flex", alignItems: "center" }}>
               <Link href="/" style={{ display: "inline-block" }}>
                 <img
                   src="/kazain_ventures_Logo.png"
@@ -42,22 +45,21 @@ export default function Footer() {
                 />
               </Link>
             </div>
-            <p style={{ fontSize: "14.5px", color: "#9CA3AF", lineHeight: "1.65", margin: 0, maxWidth: "290px" }}>
+            <p className="footer-about-text" style={{ fontSize: "14.5px", color: "#9CA3AF", lineHeight: "1.65", margin: 0, maxWidth: "290px" }}>
               We’re your trusted HSE &amp; Environmental Risk Advisory partner across industrial and energy sectors.
             </p>
           </div>
 
           {/* Column 2: Address & Phone */}
-          <div>
+          <div className="footer-col footer-col-address">
             <h4
+              className="footer-col-head"
               style={{
                 fontSize: "17px",
                 fontWeight: "700",
                 color: "#FFFFFF",
                 margin: "0 0 20px 0",
-                height: "42px",
-                display: "flex",
-                alignItems: "center",
+                lineHeight: "1.3",
                 letterSpacing: "0.2px",
               }}
             >
@@ -82,16 +84,15 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Quick Links */}
-          <div>
+          <div className="footer-col footer-col-links">
             <h4
+              className="footer-col-head"
               style={{
                 fontSize: "17px",
                 fontWeight: "700",
                 color: "#FFFFFF",
                 margin: "0 0 20px 0",
-                height: "42px",
-                display: "flex",
-                alignItems: "center",
+                lineHeight: "1.3",
                 letterSpacing: "0.2px",
               }}
             >
@@ -122,16 +123,15 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Support */}
-          <div>
+          <div className="footer-col footer-col-support">
             <h4
+              className="footer-col-head"
               style={{
                 fontSize: "17px",
                 fontWeight: "700",
                 color: "#FFFFFF",
                 margin: "0 0 20px 0",
-                height: "42px",
-                display: "flex",
-                alignItems: "center",
+                lineHeight: "1.3",
                 letterSpacing: "0.2px",
               }}
             >
@@ -154,6 +154,7 @@ export default function Footer() {
 
         {/* Bottom Divider & Social Icons Row */}
         <div
+          className="footer-bottom-row"
           style={{
             borderTop: "1px solid #1F2937",
             paddingTop: "28px",
@@ -168,7 +169,7 @@ export default function Footer() {
             Copyright 2026 – All Rights Reserved By Kazain
           </p>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div className="footer-social-row" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             {[
               { icon: "fab fa-facebook-f", href: "https://www.facebook.com/", label: "Facebook" },
               { icon: "fab fa-x-twitter", href: "https://x.com/", label: "Twitter" },
@@ -194,7 +195,7 @@ export default function Footer() {
                   justifyContent: "center",
                   fontSize: "15px",
                   textDecoration: "none",
-                  transition: "all 0.3s ease",
+                  transition: "all 0.35s ease",
                 }}
               >
                 <i className={s.icon}></i>

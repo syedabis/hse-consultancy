@@ -126,8 +126,9 @@ export default function ServicesPage() {
               Flagship Projects
             </span>
             <h2
+              className="services-flagship-h2"
               style={{
-                fontSize: "42px",
+                fontSize: "clamp(24px, 5.5vw, 42px)",
                 fontWeight: "700",
                 color: "#111827",
                 fontFamily: "'Instrument Sans', sans-serif",
@@ -139,9 +140,10 @@ export default function ServicesPage() {
           </div>
 
           <div
+            className="services-flagship-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               gap: "30px",
             }}
           >
@@ -149,6 +151,7 @@ export default function ServicesPage() {
               <Link
                 key={p.id}
                 href={p.link}
+                className="services-flagship-card"
                 style={{
                   background: "#ffffff",
                   borderRadius: "16px",
@@ -168,7 +171,7 @@ export default function ServicesPage() {
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />
                 </div>
-                <div style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
+                <div className="services-flagship-card-body" style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
                   <span
                     style={{
                       fontSize: "12px",
@@ -204,6 +207,7 @@ export default function ServicesPage() {
                     {p.desc}
                   </p>
                   <div
+                    className="services-flagship-card-meta"
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
@@ -231,8 +235,9 @@ export default function ServicesPage() {
       </section>
 
       {/* 6. Homepage CTA Parity Section */}
-      <section style={{ background: "#F9FAFB", padding: "80px 20px" }}>
+      <section style={{ background: "#F9FAFB", padding: "50px 16px" }}>
         <div
+          className="services-cta-banner-container"
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
@@ -242,7 +247,7 @@ export default function ServicesPage() {
             backgroundSize: "cover",
             borderRadius: "20px",
             overflow: "hidden",
-            padding: "85px 40px",
+            padding: "60px 24px",
             textAlign: "center",
             boxShadow: "0 20px 40px rgba(0, 0, 0, 0.12)",
           }}
@@ -270,8 +275,9 @@ export default function ServicesPage() {
             }}
           >
             <h2
+              className="services-cta-banner-h2"
               style={{
-                fontSize: "42px",
+                fontSize: "clamp(22px, 5.5vw, 42px)",
                 fontWeight: "700",
                 color: "#FFFFFF",
                 margin: "0 0 32px",

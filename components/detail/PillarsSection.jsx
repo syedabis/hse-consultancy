@@ -42,9 +42,10 @@ export default function PillarsSection({ eyebrow, title, pillars }) {
         </div>
 
         <div
+          className="detail-pillars-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
             gap: "30px",
           }}
         >

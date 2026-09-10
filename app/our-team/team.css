@@ -124,13 +124,36 @@
 
 @media(max-width: 768px) {
   .team-hero-section {
-    padding: 140px 15px 100px !important;
+    padding: 110px 15px 45px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  .team-hero-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .team-subtitle-pill {
+    display: none !important;
   }
   .team-hero-title-solid {
-    font-size: 40px !important;
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+    margin-bottom: 4px !important;
   }
   .team-hero-title-outlined {
-    font-size: 34px !important;
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+  }
+  .team-hero-btn {
+    margin: 0 auto !important;
   }
   .team-rotating-badge {
     display: none !important;
@@ -483,4 +506,97 @@
 @media(max-width: 992px) {
   .philosophy-grid { grid-template-columns: 1fr !important; gap: 35px !important; }
   .testimonials-grid { grid-template-columns: 1fr !important; }
+}
+
+@media(max-width: 768px) {
+  /* Team Grid Mobile Center Alignment */
+  .gasco-team-section {
+    padding: 40px 16px 60px !important;
+  }
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .team-card-body {
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .team-bio {
+    text-align: center !important;
+  }
+  .team-certs {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .cert-tags {
+    justify-content: center !important;
+  }
+
+  /* Leadership Philosophy Mobile Alignment */
+  .kazain-philosophy-section {
+    padding: 50px 16px !important;
+  }
+  .philosophy-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .philosophy-content h2 {
+    font-size: clamp(22px, 5.5vw, 34px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+  .philosophy-content p {
+    text-align: center !important;
+  }
+  .philosophy-quote-card {
+    padding: 30px 20px !important;
+    text-align: center !important;
+  }
+  .quote-icon {
+    font-size: 50px !important;
+    top: 10px !important;
+    right: 15px !important;
+    opacity: 0.15 !important;
+  }
+  .quote-text-inner {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+  .quote-author {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Client Endorsements Mobile Rules */
+  .kazain-testimonials-section {
+    padding: 50px 16px !important;
+  }
+  .testimonials-header h2 {
+    font-size: clamp(22px, 5.5vw, 34px) !important;
+    line-height: 1.25 !important;
+  }
+  .testimonial-card {
+    text-align: center !important;
+    align-items: center !important;
+    padding: 26px 20px !important;
+  }
+  .testimonial-badge {
+    align-self: center !important;
+  }
+  .testimonial-quote {
+    text-align: center !important;
+  }
+  .testimonial-client {
+    justify-content: center !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 8px !important;
+  }
+  .client-details {
+    text-align: center !important;
+  }
 }

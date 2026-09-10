@@ -185,7 +185,7 @@ export default function ProjectsPage() {
       <section className="gasco-homepage-cta-section">
         <div className="gasco-homepage-cta-card">
           <div className="gasco-homepage-cta-content">
-            <h2>Partner With Kazain for Your Next Oil &amp; Gas Project</h2>
+            <h2>Partner With Kazain for Your Next HSE &amp; Risk Advisory Project</h2>
             <Link href="/contact-us/" className="gasco-homepage-cta-btn">
               <span>CONTACT US</span>
               <i className="flaticon flaticon-right-up"></i>

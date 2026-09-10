@@ -367,7 +367,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* 8. Bottom CTA Banner Section */}
-      <section style={{ background: "#F9FAFB", padding: "80px 20px" }}>
+      <section style={{ background: "#F9FAFB", padding: "50px 16px" }}>
         <div
           style={{
             maxWidth: "1200px",
@@ -378,7 +378,7 @@ export default function AboutUsPage() {
             backgroundSize: "cover",
             borderRadius: "20px",
             overflow: "hidden",
-            padding: "85px 40px",
+            padding: "50px 20px",
             textAlign: "center",
             boxShadow: "0 20px 40px rgba(0, 0, 0, 0.12)",
           }}
@@ -407,11 +407,13 @@ export default function AboutUsPage() {
           >
             <h2
               style={{
-                fontSize: "42px",
+                fontSize: "clamp(20px, 5vw, 38px)",
                 fontWeight: "700",
                 color: "#FFFFFF",
-                margin: "0 0 32px",
+                margin: "0 0 24px",
                 lineHeight: "1.25",
+                wordBreak: "break-word",
+                overflowWrap: "break-word",
               }}
             >
               Partner With Kazain for Complete HSE &amp; Risk Management Solutions

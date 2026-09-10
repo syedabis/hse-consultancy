@@ -128,13 +128,36 @@
 
 @media(max-width: 768px) {
   .contact-hero-section {
-    padding: 140px 15px 100px !important;
+    padding: 110px 15px 45px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  .contact-hero-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .contact-subtitle-pill {
+    display: none !important;
   }
   .contact-hero-title-solid {
-    font-size: 48px !important;
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+    margin-bottom: 4px !important;
   }
   .contact-hero-title-outlined {
-    font-size: 38px !important;
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+  }
+  .contact-hero-btn {
+    margin: 0 auto !important;
   }
   .contact-rotating-badge {
     display: none !important;
@@ -491,4 +514,72 @@
   height: 480px !important;
   border: 0 !important;
   display: block !important;
+}
+
+@media(max-width: 768px) {
+  /* White Statement & Stats Section */
+  .epc-statement-section {
+    padding: 48px 16px !important;
+  }
+  .epc-statement-text {
+    font-size: clamp(16px, 4.5vw, 20px) !important;
+    margin-bottom: 35px !important;
+    text-align: center !important;
+  }
+  .epc-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+  .epc-stat-box {
+    text-align: center !important;
+  }
+  .epc-stat-box h2 {
+    font-size: clamp(28px, 6vw, 38px) !important;
+  }
+
+  /* Main Contact Form & Info Cards Section */
+  .gasco-contact-sec {
+    padding: 50px 16px !important;
+  }
+  .gasco-contact-info-wrap {
+    gap: 16px !important;
+  }
+  .gasco-contact-card {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 24px 18px !important;
+  }
+  .gasco-contact-card-content {
+    text-align: center !important;
+  }
+  .gasco-contact-form-card {
+    padding: 28px 18px !important;
+    text-align: center !important;
+  }
+  .gasco-contact-form-card h3 {
+    font-size: clamp(22px, 5.5vw, 30px) !important;
+    text-align: center !important;
+  }
+  .gasco-contact-form-card p.form-desc {
+    text-align: center !important;
+    margin-bottom: 24px !important;
+  }
+  .gasco-form-submit-btn {
+    width: 100% !important;
+    max-width: 280px !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+  /* Map Section */
+  .gasco-map-sec {
+    padding: 0 16px 50px !important;
+  }
+  .gasco-map-head h2 {
+    font-size: clamp(22px, 5.5vw, 32px) !important;
+  }
+  .gasco-map-iframe-wrap iframe {
+    height: 320px !important;
+  }
 }

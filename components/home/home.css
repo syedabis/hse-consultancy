@@ -80,6 +80,8 @@
   text-decoration: none !important;
   box-shadow: 0 10px 25px rgba(255, 191, 67, 0.3) !important;
   transition: all 0.3s ease !important;
+  white-space: nowrap !important;
+  max-width: 100% !important;
 }
 
 .home-hero-btn:hover {
@@ -124,13 +126,33 @@
 
 @media(max-width: 768px) {
   .home-hero-section {
-    padding: 140px 15px 100px !important;
+    padding: 110px 15px 45px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  .home-hero-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .home-subtitle-pill {
+    display: none !important;
   }
   .home-hero-title-solid {
-    font-size: 40px !important;
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+    margin-bottom: 4px !important;
   }
   .home-hero-title-outlined {
-    font-size: 34px !important;
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
   }
   .home-rotating-badge {
     display: none !important;
@@ -417,4 +439,266 @@
   .gasco-cert-card { width: 150px !important; height: 210px !important; border-radius: 12px !important; }
   .gasco-cert-card:nth-child(1) { margin-right: -25px !important; }
   .gasco-cert-card:nth-child(3) { margin-left: -25px !important; }
+}
+
+/* HSE Commitment Section - Mobile & Desktop Responsive Styles */
+.home-commitment-section {
+  padding: 90px 20px !important;
+  background: #000000 !important;
+}
+
+.home-commitment-top-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 50px !important;
+  align-items: center !important;
+  margin-bottom: 50px !important;
+}
+
+.home-commitment-img-wrap {
+  width: 100% !important;
+}
+
+.home-commitment-img {
+  width: 100% !important;
+  height: 360px !important;
+  object-fit: cover !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.home-commitment-pill {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  color: #FFBF43 !important;
+  background: rgba(255, 191, 67, 0.12) !important;
+  border: 1px solid rgba(255, 191, 67, 0.3) !important;
+  padding: 6px 16px !important;
+  border-radius: 20px !important;
+  display: inline-block !important;
+  margin-bottom: 16px !important;
+}
+
+.home-commitment-title {
+  font-size: clamp(22px, 4vw, 38px) !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 16px !important;
+  line-height: 1.25 !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  hyphens: none !important;
+}
+
+.home-commitment-desc {
+  font-size: 15px !important;
+  color: #9CA3AF !important;
+  line-height: 1.65 !important;
+  margin: 0 0 28px !important;
+}
+
+.home-commitment-cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+}
+
+.home-commitment-card {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-top: 3px solid #FFBF43 !important;
+  border-radius: 16px !important;
+  padding: 32px 20px !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+@media (max-width: 991px) {
+  .home-about-container {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .home-about-text {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .home-about-text h6,
+  .home-about-text h2,
+  .home-about-text p {
+    text-align: center !important;
+  }
+  .home-about-text .home-hero-btn {
+    margin: 0 auto 30px !important;
+  }
+  .home-about-counters {
+    width: 100% !important;
+  }
+  .gasco-cert-text {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .gasco-cert-desc {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .gasco-cert-text .home-hero-btn {
+    margin: 0 auto !important;
+  }
+  .home-commitment-section {
+    padding: 60px 20px !important;
+  }
+  .home-commitment-top-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    margin-bottom: 40px !important;
+  }
+  .home-commitment-text-wrap {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .home-commitment-img {
+    height: 260px !important;
+  }
+  .home-commitment-cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-about-section {
+    padding: 48px 16px !important;
+  }
+  .home-about-text h6 {
+    margin-bottom: 6px !important;
+  }
+  .home-about-text h2 {
+    font-size: clamp(24px, 5vw, 32px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+  }
+  .home-about-text p {
+    font-size: 14.5px !important;
+    margin-bottom: 20px !important;
+  }
+  .gasco-cert-section {
+    padding: 48px 16px 35px 16px !important;
+    overflow: hidden !important;
+  }
+  .gasco-cert-container {
+    padding: 0 8px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .gasco-cert-title {
+    font-size: clamp(20px, 5.5vw, 30px) !important;
+    line-height: 1.25 !important;
+    margin: 0 0 10px 0 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+  .gasco-cert-desc {
+    margin: 10px 0 20px 0 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  .gasco-cert-right-wrap {
+    flex: 1 1 100% !important;
+    padding: 10px 0 !important;
+    gap: 15px !important;
+  }
+  .gasco-cert-card {
+    width: 120px !important;
+    height: 170px !important;
+    border-radius: 12px !important;
+  }
+  .gasco-cert-card:nth-child(1) {
+    margin-right: -25px !important;
+    transform: translateY(10px) rotate(-5deg) !important;
+  }
+  .gasco-cert-card:nth-child(2) {
+    transform: translateY(-5px) !important;
+  }
+  .gasco-cert-card:nth-child(3) {
+    margin-left: -25px !important;
+    transform: translateY(10px) rotate(5deg) !important;
+  }
+  .home-commitment-section {
+    padding: 48px 16px !important;
+  }
+  .home-commitment-img {
+    height: 220px !important;
+  }
+  .home-commitment-title {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 10px !important;
+  }
+  .home-commitment-desc {
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
+  }
+  .home-commitment-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .home-commitment-card {
+    padding: 24px 16px !important;
+  }
+  .home-service-card-body {
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .home-service-card-body h3,
+  .home-service-card-body p {
+    text-align: center !important;
+  }
+  .home-service-card-btn {
+    width: 100% !important;
+    max-width: 260px !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+  .home-projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .home-project-card-body {
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .home-project-card-body span,
+  .home-project-card-body h3,
+  .home-project-card-body p {
+    text-align: center !important;
+  }
+  .home-project-card-meta {
+    justify-content: center !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .home-hero-btn {
+    font-size: 14px !important;
+    padding: 6px 6px 6px 20px !important;
+    gap: 12px !important;
+    margin: 0 auto !important;
+  }
 }

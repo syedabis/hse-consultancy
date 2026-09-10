@@ -17,6 +17,15 @@
     display: none !important;
   }
 
+  /* Remove header bottom border line on mobile view */
+  .custom-header-builder .elementor-element-1bff562,
+  .custom-header-builder header,
+  .custom-header-builder section,
+  .flexitype-transparent-header section {
+    border-bottom: none !important;
+    border: none !important;
+  }
+
   /* Hide desktop horizontal menu pill */
   #page .custom-header-builder .header_mega-menu {
     display: none !important;
@@ -176,16 +185,107 @@
     hyphens: none !important;
   }
 
-  /* Keep "Our Certifications" title on one line and prevent breaking */
+  /* Ensure Certifications title wraps cleanly without truncation on mobile */
   .gasco-cert-title {
-    white-space: nowrap !important;
-    font-size: clamp(24px, 8vw, 42px) !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    font-size: clamp(22px, 5.5vw, 36px) !important;
+    line-height: 1.25 !important;
   }
 
-  /* Fix 4-column impact stats grid on About Us page */
-  .gasco-impact-stats-grid>div {
-    width: 50% !important;
-    margin-bottom: 30px !important;
+  /* Fix impact stats grid center alignment on About Us page for mobile */
+  .gasco-impact-stats-grid {
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .gasco-impact-stats-grid > div,
+  .gasco-stat-item {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto 24px auto !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .gasco-stat-item .stat-number,
+  .gasco-stat-item .stat-label {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+/* =========================================================
+   Mobile Site Footer Center Alignment (< 991px)
+   ========================================================= */
+@media (max-width: 991px) {
+  .site-footer {
+    text-align: center !important;
+  }
+  .footer-main-grid {
+    text-align: center !important;
+    justify-items: center !important;
+  }
+  .footer-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .footer-col h4,
+  .footer-col-head {
+    text-align: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  .footer-col p,
+  .footer-col a,
+  .footer-about-text {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .footer-col ul {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .footer-col li {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .footer-logo-wrap {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .footer-bottom-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+  }
+  .footer-bottom-row p {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .footer-social-row {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
   }
 }
 

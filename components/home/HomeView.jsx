@@ -147,9 +147,9 @@ export default function HomeView() {
       </section>
 
       {/* 4. Core Divisions Overview */}
-      <section style={{ padding: "80px 20px", background: "#F9FAFB" }}>
+      <section style={{ padding: "60px 20px", background: "#F9FAFB" }}>
         <div style={{ maxWidth: "1340px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", maxWidth: "1000px", margin: "0 auto 45px" }}>
+          <div style={{ textAlign: "center", maxWidth: "1000px", margin: "0 auto 35px" }}>
             <span
               style={{
                 fontSize: "12px",
@@ -161,15 +161,15 @@ export default function HomeView() {
                 padding: "6px 16px",
                 borderRadius: "20px",
                 display: "inline-block",
-                marginBottom: "12px",
+                marginBottom: "10px",
               }}
             >
               HSE Advisory Services
             </span>
-            <h2 style={{ fontSize: "36px", fontWeight: "800", color: "#111827", margin: "0 0 14px", whiteSpace: "nowrap" }}>
+            <h2 style={{ fontSize: "clamp(22px, 5vw, 36px)", fontWeight: "800", color: "#111827", margin: "0 0 10px", lineHeight: "1.25", wordBreak: "break-word", overflowWrap: "break-word" }}>
               Comprehensive Safety &amp; Risk Solutions
             </h2>
-            <p style={{ fontSize: "15px", color: "#6B7280", lineHeight: "1.6", margin: "0" }}>
+            <p style={{ fontSize: "15px", color: "#6B7280", lineHeight: "1.6", margin: "0 auto", maxWidth: "700px" }}>
               Explore our core specialized divisions engineered to help operating companies uphold gold-standard safety and regulatory compliance.
             </p>
           </div>
@@ -177,7 +177,7 @@ export default function HomeView() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               gap: "30px",
             }}
           >
@@ -202,16 +202,14 @@ export default function HomeView() {
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />
                 </div>
-                <div style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
+                <div className="home-service-card-body" style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
                   <h3
                     style={{
                       fontSize: "18px",
                       fontWeight: "700",
                       color: "#111827",
                       margin: "0 0 10px",
-                      whiteSpace: "nowrap",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
+                      lineHeight: "1.3",
                     }}
                   >
                     {svc.title}
@@ -221,6 +219,7 @@ export default function HomeView() {
                   </p>
                   <Link
                     href={`/services/${svc.slug}/`}
+                    className="home-service-card-btn"
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
@@ -246,53 +245,24 @@ export default function HomeView() {
       </section>
 
       {/* 5. Our HSE Commitment & 4 Strategic Pillars (Pure Black Theme) */}
-      <section style={{ padding: "90px 20px", background: "#000000" }}>
+      <section className="home-commitment-section">
         <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "50px",
-              alignItems: "center",
-              marginBottom: "50px",
-            }}
-          >
-            <div>
+          <div className="home-commitment-top-grid">
+            <div className="home-commitment-img-wrap">
               <img
                 src="/hse-commitment.jpg"
                 alt="Kazain HSE Commitment"
-                style={{
-                  width: "100%",
-                  height: "360px",
-                  objectFit: "cover",
-                  borderRadius: "16px",
-                  border: "1px solid rgba(255, 255, 255, 0.12)",
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.4)",
-                }}
+                className="home-commitment-img"
               />
             </div>
-            <div>
-              <span
-                style={{
-                  fontSize: "12px",
-                  fontWeight: "700",
-                  textTransform: "uppercase",
-                  letterSpacing: "1.2px",
-                  color: "#FFBF43",
-                  background: "rgba(255, 191, 67, 0.12)",
-                  border: "1px solid rgba(255, 191, 67, 0.3)",
-                  padding: "6px 16px",
-                  borderRadius: "20px",
-                  display: "inline-block",
-                  marginBottom: "16px",
-                }}
-              >
+            <div className="home-commitment-text-wrap">
+              <span className="home-commitment-pill">
                 Our HSE Commitment
               </span>
-              <h2 style={{ fontSize: "38px", fontWeight: "800", color: "#FFFFFF", margin: "0 0 16px", lineHeight: "1.2" }}>
+              <h2 className="home-commitment-title">
                 Driving Zero Harm &amp; Total Regulatory Compliance
               </h2>
-              <p style={{ fontSize: "15px", color: "#9CA3AF", lineHeight: "1.65", margin: "0 0 28px" }}>
+              <p className="home-commitment-desc">
                 At Kazain HSE Advisory, we empower organizations to build zero-incident workplaces, achieve global ISO compliance, and implement sustainable environmental strategies across high-hazard industrial sectors.
               </p>
               <Link href="/contact-us/" className="home-hero-btn">
@@ -302,30 +272,11 @@ export default function HomeView() {
             </div>
           </div>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-              gap: "24px",
-            }}
-          >
+          <div className="home-commitment-cards-grid">
             {COMMITMENT_CARDS.map((card, idx) => (
               <div
                 key={idx}
-                style={{
-                  background: "rgba(255, 255, 255, 0.04)",
-                  border: "1px solid rgba(255, 255, 255, 0.08)",
-                  borderTop: "3px solid #FFBF43",
-                  borderRadius: "16px",
-                  padding: "32px 20px",
-                  textAlign: "center",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  transition: "all 0.3s ease",
-                  backdropFilter: "blur(8px)",
-                }}
+                className="home-commitment-card"
               >
                 <div
                   style={{
@@ -358,9 +309,9 @@ export default function HomeView() {
       </section>
 
       {/* 6. Featured Case Studies & Audits */}
-      <section style={{ padding: "90px 20px", background: "#F9FAFB" }}>
+      <section style={{ padding: "60px 20px", background: "#F9FAFB" }}>
         <div style={{ maxWidth: "1340px", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 45px" }}>
+          <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 35px" }}>
             <span
               style={{
                 fontSize: "12px",
@@ -372,12 +323,12 @@ export default function HomeView() {
                 padding: "6px 16px",
                 borderRadius: "20px",
                 display: "inline-block",
-                marginBottom: "12px",
+                marginBottom: "10px",
               }}
             >
               Proven Track Record
             </span>
-            <h2 style={{ fontSize: "38px", fontWeight: "800", color: "#111827", margin: "0 0 14px" }}>
+            <h2 style={{ fontSize: "clamp(22px, 5vw, 36px)", fontWeight: "800", color: "#111827", margin: "0 0 10px", lineHeight: "1.25", wordBreak: "break-word", overflowWrap: "break-word" }}>
               Featured HSE Case Studies &amp; Audits
             </h2>
             <p style={{ fontSize: "15px", color: "#6B7280", lineHeight: "1.6", margin: "0" }}>
@@ -386,9 +337,10 @@ export default function HomeView() {
           </div>
 
           <div
+            className="home-projects-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               gap: "30px",
             }}
           >
@@ -396,6 +348,7 @@ export default function HomeView() {
               <Link
                 key={p.id}
                 href={p.link}
+                className="home-project-card"
                 style={{
                   background: "#ffffff",
                   borderRadius: "16px",
@@ -415,7 +368,7 @@ export default function HomeView() {
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />
                 </div>
-                <div style={{ padding: "25px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
+                <div className="home-project-card-body" style={{ padding: "25px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
                   <span
                     style={{
                       fontSize: "12px",
@@ -451,6 +404,7 @@ export default function HomeView() {
                     {p.desc}
                   </p>
                   <div
+                    className="home-project-card-meta"
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
@@ -533,7 +487,7 @@ export default function HomeView() {
       </section>
 
       {/* 8. Homepage CTA Parity Section */}
-      <section style={{ background: "#F9FAFB", padding: "80px 20px" }}>
+      <section style={{ background: "#F9FAFB", padding: "60px 20px" }}>
         <div
           style={{
             maxWidth: "1200px",
@@ -544,7 +498,7 @@ export default function HomeView() {
             backgroundSize: "cover",
             borderRadius: "20px",
             overflow: "hidden",
-            padding: "85px 40px",
+            padding: "60px 24px",
             textAlign: "center",
             boxShadow: "0 20px 40px rgba(0, 0, 0, 0.12)",
           }}
@@ -573,11 +527,13 @@ export default function HomeView() {
           >
             <h2
               style={{
-                fontSize: "42px",
+                fontSize: "clamp(20px, 5vw, 38px)",
                 fontWeight: "700",
                 color: "#FFFFFF",
-                margin: "0 0 32px",
+                margin: "0 0 24px",
                 lineHeight: "1.25",
+                wordBreak: "break-word",
+                overflowWrap: "break-word",
               }}
             >
               Partner With Kazain for Complete HSE &amp; Risk Management Solutions
