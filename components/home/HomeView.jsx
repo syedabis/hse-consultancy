@@ -218,7 +218,7 @@ export default function HomeView() {
                     {svc.shortDesc}
                   </p>
                   <Link
-                    href={`/services/${svc.slug}/`}
+                    href={svc.link || `/services/${svc.slug}/`}
                     className="home-service-card-btn"
                     style={{
                       display: "inline-flex",

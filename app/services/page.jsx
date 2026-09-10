@@ -47,7 +47,7 @@ export default function ServicesPage() {
       {/* 3. Six Core Divisions Section */}
       <div id="core-services-grid" style={{ background: "#ffffff", paddingTop: "40px" }}>
         <div className="gasco-svc-header">
-          <span className="badge-pill">Six Strategic Pillars</span>
+          <span className="badge-pill">Strategic Divisions</span>
           <h2>Our Core HSE Consultancy Divisions</h2>
           <p>
             Providing expert Health, Safety &amp; Environmental risk management, ISO management system implementation, workplace hygiene, and compliance auditing for industrial and energy clients.
@@ -58,7 +58,7 @@ export default function ServicesPage() {
           {SERVICES.map((svc) => (
             <div className="gasco-svc-card" key={svc.id}>
               <div className="gasco-svc-card-img-wrap">
-                <Link href={`/services/${svc.slug}/`}>
+                <Link href={svc.link || `/services/${svc.slug}/`}>
                   <img src={svc.image} alt={svc.title} loading="lazy" />
                 </Link>
               </div>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                 </div>
-                <Link className="gasco-svc-more" href={`/services/${svc.slug}/`}>
+                <Link className="gasco-svc-more" href={svc.link || `/services/${svc.slug}/`}>
                   <span>Explore Division</span>
                   <i className="flaticon flaticon-right-arrow"></i>
                 </Link>
