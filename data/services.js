@@ -57,7 +57,7 @@ export const SERVICES = [
     link: "/sustainability/",
     title: "Sustainability, ESG & Net-Zero Advisory",
     shortDesc: "Comprehensive Scope 1-3 GHG carbon accounting, Category A/B/C EIA, Saudi NCEC environmental permitting, GRI/TCFD ESG disclosures, and Net-Zero transition roadmaps.",
-    image: "/hse/water_eia_environmental_study%201.jpg",
+    image: "/power-plant-surrounded-by-city.jpeg",
     highlights: [
       "Scope 1, 2 & 3 GHG Carbon Accounting & Net-Zero",
       "Category A, B & C EIA & NCEC Permitting",
@@ -71,7 +71,7 @@ export const SERVICES = [
     link: "/digitalization/",
     title: "Digital HSE & AI Risk Analytics",
     shortDesc: "Real-time AI computer vision PPE & exclusion zone monitoring, executive Power BI risk dashboards, cloud-based e-PTW portals, and 24/7 IoT H2S gas telemetry.",
-    image: "/engineers-inspecting.jpeg",
+    image: "/teamwork-in-modern-industrial-facility.jpeg",
     highlights: [
       "AI Computer Vision PPE & Exclusion Zone Alerts",
       "Executive Power BI Risk & Incident Dashboards",
