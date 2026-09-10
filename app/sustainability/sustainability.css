@@ -1,0 +1,148 @@
+/* Sustainability Page Dedicated CSS */
+
+.sustainability-hero-section {
+  position: relative !important;
+  padding: 190px 12px 140px 12px !important;
+  min-height: 620px !important;
+  background: #0B1912 !important;
+  overflow: hidden !important;
+}
+
+.sustainability-hero-video-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 0.55 !important;
+}
+
+.sustainability-hero-content {
+  position: relative !important;
+  z-index: 5 !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+}
+
+.sustainability-subtitle-pill {
+  display: inline-block !important;
+  border: 1px solid rgba(16, 185, 129, 0.5) !important;
+  border-radius: 50px !important;
+  padding: 8px 24px !important;
+  color: #34D399 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 20px !important;
+  background: rgba(16, 185, 129, 0.12) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.sustainability-hero-title-solid {
+  font-size: 72px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1.08 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 6px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.sustainability-hero-title-outlined {
+  font-size: 72px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  line-height: 1.0 !important;
+  -webkit-text-stroke-width: 1.5px !important;
+  -webkit-text-stroke-color: #34D399 !important;
+  color: transparent !important;
+  margin: 0 0 32px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.sustainability-hero-btn {
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #064E3B !important;
+  background: #34D399 !important;
+  border-radius: 50px !important;
+  padding: 8px 8px 8px 30px !important;
+  gap: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px rgba(52, 211, 153, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.sustainability-hero-btn:hover {
+  background: #FFFFFF !important;
+  color: #064E3B !important;
+  transform: translateY(-2px) !important;
+}
+
+.sustainability-hero-btn i {
+  color: #FFFFFF !important;
+  background: #064E3B !important;
+  font-size: 20px !important;
+  padding: 10px 11px !important;
+  border-radius: 50px !important;
+}
+
+.sustainability-rotating-badge {
+  position: absolute !important;
+  bottom: 50px !important;
+  right: 12% !important;
+  z-index: 10 !important;
+}
+
+.sustainability-rotating-badge img {
+  width: 130px !important;
+  height: 130px !important;
+  border-radius: 50% !important;
+  animation: rotateEpcBadge 18s linear infinite !important;
+}
+
+@media (max-width: 768px) {
+  .sustainability-hero-section {
+    padding: 110px 15px 45px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  .sustainability-hero-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .sustainability-subtitle-pill {
+    display: none !important;
+  }
+  .sustainability-hero-title-solid {
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+    margin-bottom: 4px !important;
+  }
+  .sustainability-hero-title-outlined {
+    font-size: clamp(24px, 6.5vw, 42px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+  }
+  .sustainability-hero-btn {
+    margin: 0 auto !important;
+  }
+  .sustainability-rotating-badge {
+    display: none !important;
+  }
+}

@@ -110,6 +110,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/sustainability/" className="footer-link" style={{ fontSize: "14.5px", color: "#9CA3AF", textDecoration: "none" }}>
+                  Sustainability
+                </Link>
+              </li>
+              <li>
+                <Link href="/digitalization/" className="footer-link" style={{ fontSize: "14.5px", color: "#9CA3AF", textDecoration: "none" }}>
+                  Digitalization
+                </Link>
+              </li>
+              <li>
                 <Link href="/projects/" className="footer-link" style={{ fontSize: "14.5px", color: "#9CA3AF", textDecoration: "none" }}>
                   Projects
                 </Link>
