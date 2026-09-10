@@ -129,7 +129,7 @@ export default function DigitalizationPage() {
           "Our digital risk engineers transform CCTV feeds into real-time safety monitors—automatically detecting PPE non-compliance, exclusion zone intrusions, and dropped object hazards before incidents occur.",
           "We empower executive leadership with cloud-based safety portals, electronic Permit-to-Work (e-PTW) systems, 24/7 wireless H2S telemetry, and predictive risk heatmaps aligned with Saudi Aramco and global standards.",
         ]}
-        image="/engineers-inspecting.jpeg"
+        image="/teamwork-in-modern-industrial-facility.jpeg"
         imageAlt="Kazain Digital HSE & Power BI Executive Dashboard"
         ctaText="Request Digital HSE Demo ↗"
         ctaLink="/contact-us/"

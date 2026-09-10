@@ -129,7 +129,7 @@ export default function SustainabilityPage() {
           "Our certified environmental engineers and ESG specialists formulate robust Net-Zero transition roadmaps, execute Category A, B & C Environmental Impact Assessments (EIA), and build ISO 14001 Environmental Management Systems.",
           "We empower organizations to fulfill Saudi Vision 2030 and international climate goals through investor-ready GRI, SASB, and TCFD sustainability disclosures, carbon footprint verification, and circular economy governance.",
         ]}
-        image="/hse/water_eia_environmental_study%201.jpg"
+        image="/power-plant-surrounded-by-city.jpeg"
         imageAlt="Kazain Environmental EIA & Sustainability Governance"
         ctaText="Request ESG Proposal ↗"
         ctaLink="/contact-us/"
