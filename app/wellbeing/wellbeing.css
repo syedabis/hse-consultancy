@@ -1,0 +1,428 @@
+/* Solace Wellbeing Landing Page Dedicated CSS */
+
+.wellbeing-hero-section {
+  position: relative !important;
+  padding: 200px 12px 140px 12px !important;
+  min-height: 680px !important;
+  background: #090F1E !important;
+  overflow: hidden !important;
+}
+
+.wellbeing-hero-video-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  opacity: 0.55 !important;
+  filter: brightness(0.85) contrast(1.1) !important;
+}
+
+.wellbeing-hero-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(180deg, rgba(9, 15, 30, 0.4) 0%, rgba(9, 15, 30, 0.85) 100%) !important;
+  z-index: 2 !important;
+}
+
+.wellbeing-hero-content {
+  position: relative !important;
+  z-index: 5 !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+}
+
+.wellbeing-subtitle-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 50px !important;
+  padding: 8px 24px !important;
+  color: #FFFFFF !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 24px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(8px) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.wellbeing-hero-title-solid {
+  font-size: 70px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  line-height: 1.05 !important;
+  color: #FFFFFF !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 8px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.wellbeing-hero-title-outlined {
+  font-size: 68px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  line-height: 1.05 !important;
+  -webkit-text-stroke-width: 1.5px !important;
+  -webkit-text-stroke-color: #FFFFFF !important;
+  color: transparent !important;
+  margin: 0 0 24px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.wellbeing-hero-description {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  max-width: 780px !important;
+  margin: 0 0 36px 0 !important;
+  font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.wellbeing-hero-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important;
+}
+
+.wellbeing-hero-btn {
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #111827 !important;
+  background: #FFBF43 !important;
+  border-radius: 50px !important;
+  padding: 8px 8px 8px 30px !important;
+  gap: 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  box-shadow: 0 10px 25px rgba(255, 191, 67, 0.35) !important;
+  transition: all 0.3s ease !important;
+}
+
+.wellbeing-hero-btn:hover {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  transform: translateY(-2px) !important;
+}
+
+.wellbeing-hero-btn i {
+  color: #FFFFFF !important;
+  background: #111827 !important;
+  font-size: 18px !important;
+  padding: 10px 11px !important;
+  border-radius: 50px !important;
+}
+
+.wellbeing-hero-secondary-btn {
+  font-family: "Instrument Sans", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 50px !important;
+  padding: 14px 30px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  backdrop-filter: blur(6px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.wellbeing-hero-secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+.wellbeing-rotating-badge {
+  position: absolute !important;
+  bottom: 50px !important;
+  right: 10% !important;
+  z-index: 10 !important;
+}
+
+.wellbeing-rotating-badge img {
+  width: 130px !important;
+  height: 130px !important;
+  border-radius: 50% !important;
+  animation: rotateEpcBadge 18s linear infinite !important;
+}
+
+/* Feature Grid Card Title Optimization */
+.detail-pillars-grid h3 {
+  line-height: 1.22 !important;
+  margin-bottom: 16px !important;
+  font-size: 18.5px !important;
+}
+
+.detail-pillars-grid h3 span {
+  line-height: 1.22 !important;
+  display: inline-block !important;
+}
+
+/* Training & Consultation Section */
+.wellbeing-training-section {
+  padding: 90px 20px;
+  background: #000000;
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wellbeing-training-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wellbeing-training-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 55px;
+}
+
+.wellbeing-training-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #FFBF43;
+  background: rgba(255, 191, 67, 0.12);
+  border: 1px solid rgba(255, 191, 67, 0.3);
+  padding: 6px 18px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.wellbeing-training-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.wellbeing-training-subtitle {
+  font-size: 16px;
+  color: #9CA3AF;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.wellbeing-training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.wellbeing-training-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 3px solid #FFBF43;
+  border-radius: 20px;
+  padding: 34px 30px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.wellbeing-training-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 191, 67, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.wellbeing-training-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wellbeing-training-icon {
+  font-size: 32px;
+}
+
+.wellbeing-training-card-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #FFBF43;
+  background: rgba(255, 191, 67, 0.12);
+  border: 1px solid rgba(255, 191, 67, 0.25);
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.wellbeing-training-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.wellbeing-training-card-desc {
+  font-size: 14.5px;
+  color: #9CA3AF;
+  line-height: 1.6;
+  margin: 0 0 22px;
+}
+
+.wellbeing-training-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wellbeing-training-bullets li {
+  font-size: 14px;
+  color: #D1D5DB;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wellbeing-training-bullets .bullet-check {
+  color: #FFBF43;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.wellbeing-training-cta-box {
+  background: linear-gradient(135deg, rgba(255, 191, 67, 0.1) 0%, rgba(255, 191, 67, 0.02) 100%);
+  border: 1px solid rgba(255, 191, 67, 0.25);
+  border-radius: 20px;
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.wellbeing-training-cta-content h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.wellbeing-training-cta-content p {
+  font-size: 15px;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+.wellbeing-training-cta-btn {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111827;
+  background: #FFBF43;
+  border-radius: 50px;
+  padding: 8px 8px 8px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(255, 191, 67, 0.3);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.wellbeing-training-cta-btn:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+.wellbeing-training-cta-btn i {
+  color: #ffffff;
+  background: #111827;
+  font-size: 16px;
+  padding: 8px 9px;
+  border-radius: 50px;
+}
+
+@media (max-width: 992px) {
+  .wellbeing-training-grid {
+    grid-template-columns: 1fr;
+  }
+  .wellbeing-training-cta-box {
+    text-align: center;
+    justify-content: center;
+  }
+  .wellbeing-training-cta-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .wellbeing-hero-section {
+    padding: 120px 15px 50px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  .wellbeing-hero-content {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .wellbeing-subtitle-pill {
+    font-size: 11px !important;
+    padding: 6px 16px !important;
+  }
+  .wellbeing-hero-title-solid {
+    font-size: clamp(26px, 7vw, 44px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    text-align: center !important;
+    margin-bottom: 4px !important;
+  }
+  .wellbeing-hero-title-outlined {
+    font-size: clamp(26px, 7vw, 44px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 18px !important;
+    text-align: center !important;
+  }
+  .wellbeing-hero-description {
+    font-size: 15px !important;
+    text-align: center !important;
+    margin-bottom: 28px !important;
+  }
+  .wellbeing-hero-actions {
+    justify-content: center !important;
+  }
+  .wellbeing-rotating-badge {
+    display: none !important;
+  }
+  .wellbeing-training-title {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+  .wellbeing-training-card {
+    padding: 24px 20px;
+  }
+  .wellbeing-training-cta-box {
+    padding: 24px 20px;
+  }
+}

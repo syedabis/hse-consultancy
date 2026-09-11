@@ -9,6 +9,9 @@ export default function FeaturedProjects({
 }) {
   if (!projects || projects.length === 0) return null;
 
+  // Duplicate items for infinite seamless horizontal loop
+  const duplicatedProjects = [...projects, ...projects];
+
   return (
     <section className="detail-projects-section">
       <div className="detail-container">
@@ -17,35 +20,37 @@ export default function FeaturedProjects({
           <h2>{title}</h2>
         </div>
 
-        <div className="detail-projects-grid">
-          {projects.map((proj, idx) => {
-            const cardContent = (
-              <>
-                <div className="detail-project-img">
-                  <img src={proj.image} alt={proj.title} loading="lazy" />
-                </div>
-                <div className="detail-project-body">
-                  {proj.tag && <span className="detail-project-tag">{proj.tag}</span>}
-                  <h4>{proj.title}</h4>
-                  {proj.desc && <p>{proj.desc}</p>}
-                </div>
-              </>
-            );
-
-            if (proj.link) {
-              return (
-                <Link key={idx} href={proj.link} className="detail-project-card">
-                  {cardContent}
-                </Link>
+        <div className="detail-projects-carousel-outer">
+          <div className="detail-projects-track">
+            {duplicatedProjects.map((proj, idx) => {
+              const cardContent = (
+                <>
+                  <div className="detail-project-img">
+                    <img src={proj.image} alt={proj.title} loading="lazy" />
+                  </div>
+                  <div className="detail-project-body">
+                    {proj.tag && <span className="detail-project-tag">{proj.tag}</span>}
+                    <h4>{proj.title}</h4>
+                    {proj.desc && <p>{proj.desc}</p>}
+                  </div>
+                </>
               );
-            }
 
-            return (
-              <div key={idx} className="detail-project-card">
-                {cardContent}
-              </div>
-            );
-          })}
+              if (proj.link) {
+                return (
+                  <Link key={idx} href={proj.link} className="detail-project-card">
+                    {cardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <div key={idx} className="detail-project-card">
+                  {cardContent}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

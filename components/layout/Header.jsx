@@ -8,9 +8,9 @@ const NAV_ITEMS = [
   { href: "/", label: "Home" },
   { href: "/about-us/", label: "About Us" },
   { href: "/services/", label: "Services" },
+  { href: "/wellbeing/", label: "Wellbeing App" },
   { href: "/projects/", label: "Projects" },
   { href: "/our-team/", label: "Our Team" },
-  { href: "/contact-us/", label: "Contact Us" },
 ];
 
 export default function Header() {
@@ -124,7 +124,7 @@ export default function Header() {
                             <div className="vertical-menu vertical_menu-990">
                               <div className="menu-main-menu-container">
                                 <ul id="mobilemenu" className="d-block">
-                                  {NAV_ITEMS.map((item) => (
+                                  {[...NAV_ITEMS, { href: "/contact-us/", label: "Contact Us" }].map((item) => (
                                     <li
                                       key={item.href}
                                       className="menu-item menu-item-type-post_type menu-item-object-page"

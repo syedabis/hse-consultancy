@@ -334,4 +334,40 @@
 
 .footer-link:hover {
   color: #FFBF43 !important;
+}
+
+/* Header Navigation Pill Single Row Guarantee */
+@media (min-width: 1025px) {
+  .custom-header-builder .header_mega-menu .menu,
+  #menu-main-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+  }
+
+  .custom-header-builder .header_mega-menu .menu > li,
+  #menu-main-menu > li {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .custom-header-builder .header_mega-menu ul li.menu-item > .menu-link {
+    font-size: 14px !important;
+    letter-spacing: 0.3px !important;
+    white-space: nowrap !important;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .elementor-element-b57196b > .elementor-widget-container {
+    padding: 0px 24px !important;
+    border-radius: 80px !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
 }

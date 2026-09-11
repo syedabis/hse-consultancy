@@ -63,17 +63,18 @@ export default function PillarsSection({ eyebrow, title, pillars }) {
             >
               <h3
                 style={{
-                  fontSize: "20px",
+                  fontSize: "19px",
                   fontWeight: "700",
                   color: "#FFFFFF",
-                  margin: "0 0 20px",
+                  margin: "0 0 18px",
                   display: "flex",
-                  alignItems: "center",
-                  gap: "10px",
+                  alignItems: "flex-start",
+                  gap: "12px",
+                  lineHeight: "1.3",
                 }}
               >
-                <i className="flaticon flaticon-checked" style={{ color: "#FFBF43", fontSize: "20px" }}></i>
-                {pillar.title}
+                <i className="flaticon flaticon-checked" style={{ color: "#FFBF43", fontSize: "18px", marginTop: "3px", flexShrink: 0 }}></i>
+                <span style={{ lineHeight: "1.3", margin: 0 }}>{pillar.title}</span>
               </h3>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {pillar.items.map((item, itemIdx) => (
