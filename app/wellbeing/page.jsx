@@ -222,7 +222,7 @@ export default function WellbeingLandingPage() {
           "Seamlessly available across iOS, Android, and Web, Solace combines a 24/7 floating AI chatbot, interactive vitals logger, BMI risk calculator, background audio meditation, and step-guided Pilates video routines.",
           "From daily meal logging and curated healthy recipes to 1-on-1 certified coach consultations and live wellness webinars, Solace gives you everything you need to thrive in one secure platform.",
         ]}
-        image="/Wellbeing/friends-enjoying-dinner-at-restaurant-together-2026-03-15-23-34-54-utc.jpg.jpeg"
+        image="/smiling-adults-holding.jpeg"
         imageAlt="Solace Wellbeing Accessible To Everyone"
         ctaText="Explore All Capabilities ↗"
         ctaLink="/contact-us/"
